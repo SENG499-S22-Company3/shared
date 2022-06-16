@@ -55,12 +55,6 @@ jobs:
             npm-
       - name: Install dependencies
         run: npm ci --no-audit --no-progress
-      - name: Code Linting
-        run: npm run lint
-      - name: Migrate database
-        run: npx prisma migrate dev
-      - name: Seed database
-        run: npx prisma db seed
       - name: Test
         env:
           BACKEND_URL: http://localhost:4000
