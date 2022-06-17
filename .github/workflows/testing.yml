@@ -12,6 +12,8 @@ jobs:
       # Label used to access the service container
       algorithm1:
         image: ghcr.io/seng499-s22-company3/algorithm-1:latest
+        env:
+          PORT: 4040
         ports:
           - 4040:4040
       backend:
