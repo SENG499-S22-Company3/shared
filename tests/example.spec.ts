@@ -8,6 +8,7 @@ import {
 } from "@apollo/client/core";
 
 const BACKEND = process.env.BACKEND_URL || "http://localhost:4000";
+const ALGORITHM1 = process.env.ALGORITHM1 || "http://localhost:4040/";
 
 // for REST based calls, could probably replace with formal fetch/axios etc.
 const request = supertest(BACKEND);
@@ -27,6 +28,16 @@ describe("HTTP Rest API Example", () => {
     const response = await request.get("/healthcheck");
     expect(response.statusCode).toBe(200);
     expect(response.text).toEqual("OK");
+  });
+
+  describe("algorithm1", () => {
+    it("should return a running message", async () => {
+      const response = await fetch(ALGORITHM1);
+      expect(response.status).toBe(200);
+      expect(await response.text()).toEqual(
+        "Algorithm 1 REST server is alive!"
+      );
+    });
   });
 });
 
