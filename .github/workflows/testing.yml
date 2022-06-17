@@ -39,7 +39,7 @@ jobs:
           # Maps tcp port 5432 on service container to the host
           - 5432:5432
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Checkout tools repo
         uses: actions/checkout@v3
         with:
@@ -61,6 +61,8 @@ jobs:
       - name: Database migrations
         run: npx -y prisma migrate dev && npx -y prisma db seed
         working-directory: c3/backend
+        env:
+          DATABASE_URL: postgres://postgres:postgres@localhost:5432/postgres
       - name: Test
         env:
           BACKEND_URL: http://localhost:4000
