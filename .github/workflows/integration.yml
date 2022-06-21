@@ -1,8 +1,9 @@
 name: Integration Testing
 
-on: [push]
-#  repository_dispatch:
-#    types: [algorithm-1]
+#on: [push]
+on:
+  repository_dispatch:
+    types: [algorithm-1]
 
 jobs:
   integration:
@@ -51,6 +52,6 @@ jobs:
     steps:
       - name: Checkout shared repo 
         uses: actions/checkout@v3
-#        with:
-#          ref: ${{ github.event.client_payload.ref }}
-#      - run: echo ${{ github.event.client_payload.sha }}
+        with:
+          ref: ${{ github.event.client_payload.ref }}
+      - run: echo ${{ github.event.client_payload.repo }}
