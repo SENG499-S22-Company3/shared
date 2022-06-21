@@ -1,6 +1,6 @@
 name: Integration Testing
 
-on:
+on: [push]
 #  repository_dispatch:
 #    types: [algorithm-1]
 
