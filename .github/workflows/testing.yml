@@ -3,6 +3,15 @@ on:
   push:
     branches: [main]
   pull_request:
+env:
+  # company 3
+  C3_ALG1: ghcr.io/seng499-s22-company3/algorithm-1:latest
+  C3_ALG2: ghcr.io/seng499-s22-company3/algorithm-2:latest
+  C3_BACKEND: ghcr.io/seng499-s22-company3/backend:latest
+  # company 4 - TODO
+  C4_ALG1: ""
+  C4_ALG2: ""
+  C4_BACKEND: ""
 jobs:
   test:
     name: Test
@@ -11,13 +20,19 @@ jobs:
     services:
       # Label used to access the service container
       algorithm1:
-        image: ghcr.io/seng499-s22-company3/algorithm-1:latest
+        image: ${{ env.C3_ALG1 }}
         env:
           PORT: 4040
         ports:
           - 4040:4040
+      algorithm2:
+        image: ${{ env.C3_ALG2 }}
+        env:
+          PORT: 4041
+        ports:
+          - 4041:4041
       backend:
-        image: aomi/seng499c3-backend:latest
+        image: ${{ env.C3_BACKEND }}
         env:
           PORT: 4000
           DATABASE_URL: postgres://postgres:postgres@postgres:5432/postgres
