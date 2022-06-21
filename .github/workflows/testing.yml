@@ -20,19 +20,19 @@ jobs:
     services:
       # Label used to access the service container
       algorithm1:
-        image: ${{ env.C3_ALG1 }}
+        image: "$C3_ALG1"
         env:
           PORT: 4040
         ports:
           - 4040:4040
       algorithm2:
-        image: ${{ env.C3_ALG2 }}
+        image: "$C3_ALG2"
         env:
           PORT: 4041
         ports:
           - 4041:4041
       backend:
-        image: ${{ env.C3_BACKEND }}
+        image: "$C3_BACKEND"
         env:
           PORT: 4000
           DATABASE_URL: postgres://postgres:postgres@postgres:5432/postgres
