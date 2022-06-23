@@ -1,0 +1,29 @@
+name: Documentation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  docs:
+    name: End to End Integration Testing
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout shared repo
+        uses: actions/checkout@v3
+      - name: Generate Swagger UI (Algo 1)
+        uses: Legion2/swagger-ui-action@v1
+        with:
+          output: dist/algo1/swagger-ui
+          spec-file: algo1/openapi.json
+      - name: Generate Swagger UI (Algo 2)
+        uses: Legion2/swagger-ui-action@v1
+        with:
+          output: dist/algo2/swagger-ui
+          spec-file: algo2/openapi.json
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
