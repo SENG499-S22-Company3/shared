@@ -1,5 +1,32 @@
+# This docker-compose file can be used to reproduce the E2E docker environment to 
+# debug issues and tests.
+# Run `docker-compose build` followed by `docker-compose up` to test the application.
+# Make sure postgresql is not running locally, you may have to disable the service with
+# `sudo systemctl stop postgresql`.
 version: "3"
 services:
+  c3algo1:
+    container_name: company-3-algorithm-1
+    image: ghcr.io/seng499-s22-company3/algorithm-1:latest
+    ports:
+      - 4040:4040
+    environment:
+      PORT: 4040
+  c3algo2:
+    container_name: company-3-algorithm-2
+    image: ghcr.io/seng499-s22-company3/algorithm-2:latest
+    ports:
+      - 5000:5000
+    environment:
+      PORT: 5000
+  c3backend:
+    container_name: company-3-backend
+    image: ghcr.io/seng499-s22-company3/backend:latest
+    ports:
+      - 4000:4000
+    environment:
+      PORT: 4000
+      DATABASE_URL: postgres://postgres:postgres@postgres:5432/postgres
   # Container name "database"
   postgres:
     # Official Postgres image from DockerHub (we use the last version)
@@ -17,24 +44,3 @@ services:
       # of `/var/lib/postgresql/data/`, automatically the change will appear in `db-data`.
       # You don't need to create the `db-data` folder. Docker Compose will do it for you.
       - ./db-data/:/var/lib/postgresql/data/
-  c3backend:
-    container_name: Company 3 Backend
-    image: ghcr.io/seng499-s22-company3/backend:latest
-    ports:
-      - 4000:4000
-    env:
-      PORT: 4000
-  c3algo1:
-    container_name: Company 3 Algorithm 1
-    image: ghcr.io/seng499-s22-company3/algorithm-2:latest
-    ports:
-      - 4040:4040
-    env:
-      PORT: 4040
-  c3algo2:
-    container_name: Company 3 Algorithm 2
-    image: ghcr.io/seng499-s22-company3/algorithm-2:latest
-    ports:
-      - 4041:4041
-    env:
-      PORT: 4041
