@@ -12,16 +12,16 @@ jobs:
     steps:
       - name: Checkout shared repo
         uses: actions/checkout@v3
-      - name: Generate Swagger UI (Algo 1)
+      - name: Generate Swagger UI (Algorithm 1)
         uses: Legion2/swagger-ui-action@v1
         with:
-          output: dist/algo1/swagger-ui
-          spec-file: algo1/openapi.json
-      - name: Generate Swagger UI (Algo 2)
+          output: dist/algorithm1/swagger-ui
+          spec-file: algorithm1/openapi.json
+      - name: Generate Swagger UI (Algorithm 2)
         uses: Legion2/swagger-ui-action@v1
         with:
-          output: dist/algo2/swagger-ui
-          spec-file: algo2/openapi.json
+          output: dist/algorithm2/swagger-ui
+          spec-file: algorithm2/openapi.json
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
