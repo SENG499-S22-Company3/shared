@@ -1,31 +1,18 @@
-import fetch from "cross-fetch";
 import supertest from "supertest";
 import {
-    ApolloClient,
     gql,
-    InMemoryCache,
-    HttpLink,
 } from "@apollo/client/core";
-
-// Declare URLs for algorithm 1, algorithm 2, and backend
-const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:4000";
-const ALGORITHM1_URL = process.env.ALGORITHM1_URL || "http://localhost:4040/";
-const ALGORITHM2_URL = process.env.ALGORITHM2_URL || "http://localhost:5000/";
+import {
+    BACKEND_URL,
+    ALGORITHM1_URL,
+    ALGORITHM2_URL,
+    apollo_client,
+} from "./test_config";
 
 // Setup supertest for requests to each module
 const request_backend = supertest(BACKEND_URL);
 const request_algorithm1 = supertest(ALGORITHM1_URL);
 const request_algorithm2 = supertest(ALGORITHM2_URL);
-
-// Setup ApolloClient to execute GraphQL calls
-const client = new ApolloClient({
-    cache: new InMemoryCache(),
-    link: new HttpLink({
-      uri: `${BACKEND_URL}/graphql`,
-      fetch,
-    }),
-    credentials: "include",
-});
 
 describe("Algorithm 1 healthchecks", () => {
     it("should return a running message", async () => {
@@ -58,7 +45,7 @@ describe("Backend healthchecks", () => {
             }
           }
         `;
-        const response = await client.query({ query });
+        const response = await apollo_client.query({ query });
         expect(response.error).toBeUndefined();
         expect(response.data.me).toBe(null);        
     });
@@ -74,7 +61,7 @@ describe("Backend healthchecks", () => {
         }
       `;
   
-      const response = await client.mutate({ mutation });
+      const response = await apollo_client.mutate({ mutation });
       expect(response.errors).toBeUndefined();
       expect(response.data.login.success).toBe(false);
       expect(response.data.login.message).toBeDefined();
