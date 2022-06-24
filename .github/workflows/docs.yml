@@ -7,7 +7,7 @@ on:
 
 jobs:
   docs:
-    name: End to End Integration Testing
+    name: OpenAPI Documentation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout shared repo
@@ -15,15 +15,15 @@ jobs:
       - name: Generate Swagger UI (Algorithm 1)
         uses: Legion2/swagger-ui-action@v1
         with:
-          output: dist/algorithm1/swagger-ui
+          output: docs
           spec-file: algorithm1/openapi.json
-      - name: Generate Swagger UI (Algorithm 2)
-        uses: Legion2/swagger-ui-action@v1
-        with:
-          output: dist/algorithm2/swagger-ui
-          spec-file: algorithm2/openapi.json
+      # - name: Generate Swagger UI (Algorithm 2)
+      #   uses: Legion2/swagger-ui-action@v1
+      #   with:
+      #     output: dist/algorithm2/swagger-ui
+      #     spec-file: algorithm2/openapi.json
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
+          publish_dir: docs
