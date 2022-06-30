@@ -1,11 +1,11 @@
 # Algorithm 1
 
-algorithm1/ @SENG499-S22-Company3/algorithm-1
+algorithm1/ @algorithm-1
 
 # Algorithm 2
 
-algorithm2/ @SENG499-S22-Company3/algorithm-2
+algorithm2/ @algorithm-2
 
 # Backend
 
-graphql/ @SENG499-S22-Company3/backend @szeckirjr @keithradford @rcrossf @a-mon @peterrwilson99
+graphql/ @backend @szeckirjr @keithradford @rcrossf @a-mon @peterrwilson99
