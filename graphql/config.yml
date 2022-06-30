@@ -1,0 +1,29 @@
+spectaql:
+  displayAllServers: true
+
+introspection:
+  removeTrailingPeriodFromDescriptions: false
+  schemaFile: ./graphql/schema.graphql
+  # metadataFile: ./examples/data/metadata.json
+  # dynamicExamplesProcessingModule: ./examples/customizations/examples
+  queryNameStrategy: capitalizeFirst
+  fieldExpansionDepth: 2
+
+extensions:
+  graphqlScalarExamples: true
+
+info:
+  title: SENG 499 - Company 3/4 GraphQL API Reference
+  description: This is the joint GraphQL schema from Company 3/4 for SENG 499 Summer 2022 capstone project at the University of Victoria.
+  x-introItems:
+    - title: Company 3 Frontend
+      description: https://seng499company3frontend.herokuapp.com/app
+    - title: Company 3 Backend
+      description: https://seng499-c3-backend.herokuapp.com/graphql
+    - title: Company 3 Algorithm 1
+      description: https://schedulater-algorithm1.herokuapp.com
+
+servers:
+  - url: https://seng499-c3-backend.herokuapp.com/graphql
+    description: Production
+    production: true
