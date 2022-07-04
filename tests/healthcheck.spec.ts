@@ -1,12 +1,9 @@
 import supertest from "supertest";
 import {
-    gql,
-} from "@apollo/client/core";
-import {
     BACKEND_URL,
     ALGORITHM1_URL,
     ALGORITHM2_URL,
-    apollo_client,
+    sendGraphQLQuery,
 } from "./test_config";
 
 // Setup supertest for requests to each module
@@ -38,33 +35,15 @@ describe("Backend healthchecks", () => {
     });
 
     it("should return a null result for the GraphQL 'me' query", async () => {
-        const query = gql`
-          query {
+        const responseMeQuery = await sendGraphQLQuery(
+          `query {
             me {
               id
             }
-          }
-        `;
-        const response = await apollo_client.query({ query });
-        expect(response.error).toBeUndefined();
-        expect(response.data.me).toBe(null);        
-    });
+          }`
+        )
 
-    it("should fail login with invalid credentials", async () => {
-      const mutation = gql`
-        mutation {
-          login(username: "test", password: "test") {
-            message
-            token
-            success
-          }
-        }
-      `;
-  
-      const response = await apollo_client.mutate({ mutation });
-      expect(response.errors).toBeUndefined();
-      expect(response.data.login.success).toBe(false);
-      expect(response.data.login.message).toBeDefined();
-      expect(response.data.login.token).toBeDefined();    
+        const responseMeQueryJSON = await responseMeQuery.json();
+        expect(responseMeQueryJSON.data.me).toBe(null);      
     });
 });
