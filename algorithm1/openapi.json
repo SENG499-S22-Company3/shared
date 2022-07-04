@@ -1,0 +1,248 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "version" : "2.0",
+    "title" : "algorithm-1",
+    "description" : "This is the Algorithm-1 API endpoint specs for SENG499 Capstone Company 3 & 4."
+  },
+  "paths" : {
+    "/schedule" : {
+      "post" : {
+        "summary" : "Generate schedule(s)",
+        "description" : "Takes 3 inputs and returns 1 to 3 semesters for Fall, Spring, and Summer terms accordingly. Would return semester schedules for filled fields. Therefore, if fall is the only field then the other will be empty.",
+        "responses" : {
+          "200" : {
+            "description" : "Schedule(s) generated successfully and returned.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "items" : {
+                    "$ref" : "#/components/schemas/Schedule"
+                  },
+                  "example" : {
+                    "fallCourses" : [ ],
+                    "SpringCourses" : [ ],
+                    "SummerCourses" : [ ]
+                  }
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Error generating schedule(s)."
+          }
+        },
+        "requestBody" : {
+          "description" : "This is the request body format.",
+          "required" : true,
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "hardScheduled" : {
+                    "type" : "object",
+                    "items" : {
+                      "$ref" : "#/components/schemas/Schedule"
+                    },
+                    "description": "Courses that need to be scheduled at a specific time. Courses like ENGR, CHEM, or a course Rich wants at a specific time.",
+                    "example" : {
+                      "fallCourses" : [ ],
+                      "SpringCourses" : [ ],
+                      "SummerCourses" : [ ]
+                    }
+                  },
+                  "coursesToSchedule" : {
+                    "type" : "object",
+                    "items" : {
+                      "$ref" : "#/components/schemas/Schedule"
+                    },
+                    "description": "Courses that need to be scheduled by the algorithm.",
+                    "example" : {
+                      "fallCourses" : [ ],
+                      "SpringCourses" : [ ],
+                      "SummerCourses" : [ ]
+                    }
+                  },
+                  "professors" : {
+                    "type" : "array",
+                    "items" : {
+                      "$ref" : "#/components/schemas/Professor"
+                    },
+                    "description": "List of professors and their preferences.",
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Schedule" : {
+        "type" : "object",
+        "required" : [ "FallCourses", "SpringCourses", "SummerCourses" ],
+        "properties" : {
+          "fallCourses" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/Course"
+            }
+          },
+          "springCourses" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/Course"
+            }
+          },
+          "summerCourses" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/Course"
+            }
+          }
+        }
+      },
+      "Course" : {
+        "type" : "object",
+        "required" : [ "CourseNumber", "Subject", "SequenceNumber", "CourseTitle" ],
+        "properties" : {
+          "CourseNumber" : {
+            "type" : "string",
+            "example" : "111"
+          },
+          "Subject" : {
+            "type" : "string",
+            "example" : "CSC"
+          },
+          "SequenceNumber" : {
+            "type" : "string",
+            "example" : "A01"
+          },
+          "CourseTitle" : {
+            "type" : "string",
+            "example" : "Fundamentals of Programming with Engineering Applications"
+          },
+          "Assignment" : {
+            "type" : "object",
+            "items" : {
+              "$ref" : "#/components/schemas/Assignment"
+            }
+          },
+          "Prof" : {
+            "type" : "object",
+            "items" : {
+              "$ref" : "#/components/schemas/Professor"
+            }
+          }
+        }
+      },
+      "Assignment" : {
+        "type" : "object",
+        "required" : [ "StartDate", "EndDate", "BeginTime", "EndTime", "HoursWeek", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ],
+        "properties" : {
+          "StartDate" : {
+            "type" : "string",
+            "example" : "Jan 07, 2019"
+          },
+          "EndDate" : {
+            "type" : "string",
+            "example" : "Apr 05, 2019"
+          },
+          "BeginTime" : {
+            "type" : "string",
+            "example" : "0830"
+          },
+          "EndTime" : {
+            "type" : "string",
+            "example" : "0930"
+          },
+          "HoursWeek" : {
+            "type" : "integer",
+            "example" : 3
+          },
+          "Sunday" : {
+            "type" : "boolean",
+            "example" : false
+          },
+          "Monday" : {
+            "type" : "boolean",
+            "example" : true
+          },
+          "Tuesday" : {
+            "type" : "boolean",
+            "example" : false
+          },
+          "Wednesday" : {
+            "type" : "boolean",
+            "example" : false
+          },
+          "Thursday" : {
+            "type" : "boolean",
+            "example" : true
+          },
+          "Friday" : {
+            "type" : "boolean",
+            "example" : false
+          },
+          "Saturday" : {
+            "type" : "boolean",
+            "example" : false
+          }
+        }
+      },
+      "Professor" : {
+        "type" : "object",
+        "required" : [ "Preferences", "DisplayName" ],
+        "properties" : {
+          "Preferences" : {
+            "type" : "object",
+            "items" : {
+              "$ref" : "#/components/schemas/Preference"
+            }
+          },
+          "DisplayName" : {
+            "type" : "string",
+            "example" : "Michael, Zastre"
+          },
+          "FallTermCourses" : {
+            "type" : "integer",
+            "example" : 1
+          },
+          "SpringTermCourses" : {
+            "type" : "integer",
+            "example" : 1
+          },
+          "SummerTermCourses" : {
+            "type" : "integer",
+            "example" : 1
+          }
+        }
+      },
+      "Preference" : {
+        "type" : "object",
+        "required" : [ "CourseNum", "PreferenceNum" ],
+        "properties" : {
+          "CourseNum" : {
+            "type" : "string",
+            "example" : "CSC111"
+          },
+          "PreferenceNum" : {
+            "type" : "integer",
+            "example" : 0
+          },
+          "Term" : {
+            "type" : "string",
+            "enum" : [ "FALL", "SPRING", "SUMMER" ]
+          }
+        }
+      }
+    }
+  },
+  "servers" : [ {
+    "url" : "https://virtserver.swaggerhub.com/GAGNE16/algorithm-1/1.0"
+  } ]
+}
