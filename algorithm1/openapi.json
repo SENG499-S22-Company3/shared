@@ -46,6 +46,7 @@
                     "items" : {
                       "$ref" : "#/components/schemas/Schedule"
                     },
+                    "description": "Courses that need to be scheduled at a specific time. Courses like ENGR, CHEM, or a course Rich wants at a specific time.",
                     "example" : {
                       "fallCourses" : [ ],
                       "SpringCourses" : [ ],
@@ -57,6 +58,7 @@
                     "items" : {
                       "$ref" : "#/components/schemas/Schedule"
                     },
+                    "description": "Courses that need to be scheduled by the algorithm.",
                     "example" : {
                       "fallCourses" : [ ],
                       "SpringCourses" : [ ],
@@ -67,7 +69,8 @@
                     "type" : "array",
                     "items" : {
                       "$ref" : "#/components/schemas/Professor"
-                    }
+                    },
+                    "description": "List of professors and their preferences.",
                   }
                 }
               }
@@ -81,7 +84,7 @@
     "schemas" : {
       "Schedule" : {
         "type" : "object",
-        "required" : [ "FallCourses", "SprintCourses", "SummerCourses" ],
+        "required" : [ "FallCourses", "SpringCourses", "SummerCourses" ],
         "properties" : {
           "fallCourses" : {
             "type" : "array",
@@ -115,7 +118,7 @@
             "type" : "string",
             "example" : "CSC"
           },
-          "SquenceNumber" : {
+          "SequenceNumber" : {
             "type" : "string",
             "example" : "A01"
           },
