@@ -74,7 +74,7 @@
           "seng_ratio": {
             "type": "number",
             "description": "Ratio for number of SENG students to have allocated to the total course size: default 0.75 otherwise input ratio [0-1]",
-            "example": 0.3
+            "example": 0.75
           },
           "semester": {
             "type": "string",
