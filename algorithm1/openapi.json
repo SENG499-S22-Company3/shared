@@ -70,7 +70,7 @@
                     "items" : {
                       "$ref" : "#/components/schemas/Professor"
                     },
-                    "description": "List of professors and their preferences.",
+                    "description": "List of professors and their preferences."
                   }
                 }
               }
@@ -84,7 +84,7 @@
     "schemas" : {
       "Schedule" : {
         "type" : "object",
-        "required" : [ "FallCourses", "SpringCourses", "SummerCourses" ],
+        "required" : [ "fallCourses", "springCourses", "summerCourses" ],
         "properties" : {
           "fallCourses" : {
             "type" : "array",
@@ -108,87 +108,96 @@
       },
       "Course" : {
         "type" : "object",
-        "required" : [ "CourseNumber", "Subject", "SequenceNumber", "CourseTitle" ],
+        "required" : [ "courseNumber", "subject", "sequenceNumber", "courseTitle", "courseCapacity", "numSections" ],
         "properties" : {
-          "CourseNumber" : {
+          "courseNumber" : {
             "type" : "string",
             "example" : "111"
           },
-          "Subject" : {
+          "subject" : {
             "type" : "string",
             "example" : "CSC"
           },
-          "SequenceNumber" : {
+          "sequenceNumber" : {
             "type" : "string",
             "example" : "A01"
           },
-          "CourseTitle" : {
+          "courseTitle" : {
             "type" : "string",
             "example" : "Fundamentals of Programming with Engineering Applications"
           },
-          "Assignment" : {
+          "assignment" : {
             "type" : "object",
             "items" : {
               "$ref" : "#/components/schemas/Assignment"
             }
           },
-          "Prof" : {
+          "prof" : {
             "type" : "object",
             "items" : {
               "$ref" : "#/components/schemas/Professor"
             }
+          },
+          "courseCapacity" : {
+            "type" : "integer",
+            "example" : 100
+          },
+          "numSections": {
+            "type": "interger",
+            "example": 2,
+            "description": "Number of sections a course needs to be split into. Default 1."
           }
         }
       },
       "Assignment" : {
         "type" : "object",
-        "required" : [ "StartDate", "EndDate", "BeginTime", "EndTime", "HoursWeek", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ],
+        "required" : [ "startDate", "endDate", "beginTime", "endTime", "hoursWeek", "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday" ],
         "properties" : {
-          "StartDate" : {
+          "startDate" : {
             "type" : "string",
             "example" : "Jan 07, 2019"
           },
-          "EndDate" : {
+          "endDate" : {
             "type" : "string",
             "example" : "Apr 05, 2019"
           },
-          "BeginTime" : {
+          "beginTime" : {
             "type" : "string",
             "example" : "0830"
           },
-          "EndTime" : {
+          "endTime" : {
             "type" : "string",
             "example" : "0930"
           },
-          "HoursWeek" : {
+          "hoursWeek" : {
             "type" : "integer",
             "example" : 3
           },
-          "Sunday" : {
+          "sunday" : {
             "type" : "boolean",
             "example" : false
           },
-          "Monday" : {
+          "monday" : {
             "type" : "boolean",
             "example" : true
           },
-          "Tuesday" : {
+          "tuesday" : {
             "type" : "boolean",
             "example" : false
           },
-          "Wednesday" : {
+          "wednesday" : {
             "type" : "boolean",
             "example" : false
           },
-          "Thursday" : {
+          "thursday" : {
             "type" : "boolean",
             "example" : true
           },
-          "Friday" : {
+          "friday" : {
             "type" : "boolean",
             "example" : false
           },
-          "Saturday" : {
+          "saturday" : {
             "type" : "boolean",
             "example" : false
           }
@@ -196,27 +205,27 @@
       },
       "Professor" : {
         "type" : "object",
-        "required" : [ "Preferences", "DisplayName" ],
+        "required" : [ "preferences", "displayName" ],
         "properties" : {
-          "Preferences" : {
+          "preferences" : {
             "type" : "object",
             "items" : {
               "$ref" : "#/components/schemas/Preference"
             }
           },
-          "DisplayName" : {
+          "displayName" : {
             "type" : "string",
             "example" : "Michael, Zastre"
           },
-          "FallTermCourses" : {
+          "fallTermCourses" : {
             "type" : "integer",
             "example" : 1
           },
-          "SpringTermCourses" : {
+          "springTermCourses" : {
             "type" : "integer",
             "example" : 1
           },
-          "SummerTermCourses" : {
+          "summerTermCourses" : {
             "type" : "integer",
             "example" : 1
           }
@@ -224,17 +233,17 @@
       },
       "Preference" : {
         "type" : "object",
-        "required" : [ "CourseNum", "PreferenceNum" ],
+        "required" : [ "courseNum", "preferenceNum" ],
         "properties" : {
-          "CourseNum" : {
+          "courseNum" : {
             "type" : "string",
             "example" : "CSC111"
           },
-          "PreferenceNum" : {
+          "preferenceNum" : {
             "type" : "integer",
             "example" : 0
           },
-          "Term" : {
+          "term" : {
             "type" : "string",
             "enum" : [ "FALL", "SPRING", "SUMMER" ]
           }
