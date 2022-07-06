@@ -178,7 +178,7 @@ input CourseInput {
   """
   Number of Sections for a course
   """
-  sections: Int!
+  section: Int!
 }
 
 type CourseID {
