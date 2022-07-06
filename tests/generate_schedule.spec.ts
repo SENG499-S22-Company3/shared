@@ -20,7 +20,7 @@ describe("Generate base schedule with courses to timeslots and professors to cou
     expect(response.data.generateSchedule.success).toBeFalsy();
   });
 
-  it("should return a valid schedule when logged in", async () => {
+  it("should allow schedule generation when logged in", async () => {
     const client = request.createApolloClient();
     // Login
     const loginResponse = await client.mutate({
