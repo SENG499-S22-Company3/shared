@@ -35,7 +35,7 @@ describe("Generate base schedule with courses to timeslots and professors to cou
       `,
     });
 
-    expect(loginResponse.data.login.success).toEqual(true);
+    expect(loginResponse.data.login.success).toBeTruthy();
     expect(loginResponse.data.login.token).toEqual("");
     expect(loginResponse.data.login.message).toEqual("Success");
 
