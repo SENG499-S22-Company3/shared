@@ -89,7 +89,7 @@ type Mutation {
   """
   Edit schedule and Plug and Play Compnay 3's and 4's Algorithms
   """
-  editSchedule(input: EditCourseInput): Response!
+  editCourse(input: EditCourseInput): Response!
 }
 
 type Response {
