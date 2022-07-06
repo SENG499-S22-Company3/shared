@@ -152,6 +152,7 @@ input GenerateScheduleInput {
 }
 
 input EditCourseInput {
+  course: CourseInput!
   hoursPerWeek: Float
   capacity: Int
   sectionNumber: String
