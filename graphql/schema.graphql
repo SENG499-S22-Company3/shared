@@ -87,13 +87,9 @@ type Mutation {
   """
   generateSchedule(input: GenerateScheduleInput!): Response!
   """
-  Edit schedule
+  Edit schedule and Plug and Play Compnay 3's and 4's Algorithms
   """
   editSchedule(input: EditCourseInput): Response!
-  """
-  Plug and Play Compnay 3's and 4's Algorithms
-  """
-  company(input: CompanyInput): Response!
 }
 
 type Response {
@@ -151,9 +147,6 @@ input GenerateScheduleInput {
   year: Int!
   term: Term!
   courses: [CourseInput!]
-}
-
-input CompanyInput {
   algorithm1: Company!
   algorithm2: Company!
 }
@@ -182,6 +175,10 @@ input CourseInput {
   Course code, e.g. 499, 310
   """
   code: String!
+  """
+  Number of Sections for a course
+  """
+  sections: Int!
 }
 
 type CourseID {
