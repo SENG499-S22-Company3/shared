@@ -1,55 +1,58 @@
-import {
-    sendGraphQLQuery,
-} from "./test_config";
+import { gql } from "@apollo/client/core";
+import { request } from "../config";
 
 describe("Generate base schedule with courses to timeslots and professors to courses assigned", () => {
-    it("should return an authentication error when not logged in", async () => {
-        // Attempt to generate schedule
-        const responseGenerateSchedule = await sendGraphQLQuery(
-          `mutation {
-            generateSchedule(input: { year: 2022 }) {
-                message
-                success
-            }
-          }`
-        );
-
-        const responseJSONLogin = await responseGenerateSchedule.json();
-        expect(responseJSONLogin.data.generateSchedule.message).toEqual("Not logged in");
-        expect(responseJSONLogin.data.generateSchedule.success).toEqual(false);
+  it("should return an authentication error when not logged in", async () => {
+    const client = request.createApolloClient();
+    // Attempt to generate schedule
+    const response = await client.mutate({
+      mutation: gql`
+        mutation {
+          generateSchedule(input: { year: 2022 }) {
+            message
+            success
+          }
+        }
+      `,
     });
 
-    it("should return a valid schedule when logged in", async () => {
-        // Login
-        const responseLogin = await sendGraphQLQuery(
-          `mutation {
-            login(username: "testadmin", password: "testpassword") {
-                success
-                token
-                message
-            }
-          }`
-        );
+    expect(response.data.generateSchedule.message).toEqual("Not logged in");
+    expect(response.data.generateSchedule.success).toBeFalsy();
+  });
 
-        const responseJSONLogin = await responseLogin.json();
-        const responseHeadersLogin = await responseLogin.headers;
-        const sessionCookie = await responseHeadersLogin.get("set-cookie") || "";
-        expect(responseJSONLogin.data.login.success).toEqual(true);
-        expect(responseJSONLogin.data.login.token).toEqual("");
-        expect(responseJSONLogin.data.login.message).toEqual("Success");
-
-
-        const responseGenerateSchedule = await sendGraphQLQuery(
-          `mutation {
-            generateSchedule(input: { year: 2022 }) {
-                message
-                success
-            }
-          }`,
-          sessionCookie
-        )
-        const responseGenerateScheduleJSON = await responseGenerateSchedule.json();
-        expect(responseGenerateScheduleJSON.data.generateSchedule.message).toEqual("Generating Schedule for Year: 2022");
-        expect(responseGenerateScheduleJSON.data.generateSchedule.success).toEqual(true);
+  it("should return a valid schedule when logged in", async () => {
+    const client = request.createApolloClient();
+    // Login
+    const loginResponse = await client.mutate({
+      mutation: gql`
+        mutation {
+          login(username: "testadmin", password: "testpassword") {
+            success
+            token
+            message
+          }
+        }
+      `,
     });
+
+    expect(loginResponse.data.login.success).toEqual(true);
+    expect(loginResponse.data.login.token).toEqual("");
+    expect(loginResponse.data.login.message).toEqual("Success");
+
+    const generateScheduleResponse = await client.mutate({
+      mutation: gql`
+        mutation {
+          generateSchedule(input: { year: 2022 }) {
+            message
+            success
+          }
+        }
+      `,
+    });
+
+    expect(generateScheduleResponse.data.generateSchedule.message).toEqual(
+      "Generating Schedule for Year: 2022"
+    );
+    expect(generateScheduleResponse.data.generateSchedule.success).toBeTruthy();
+  });
 });

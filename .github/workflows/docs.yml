@@ -7,11 +7,15 @@ on:
 
 jobs:
   docs:
-    name: OpenAPI Documentation
+    name: Documentation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout shared repo
         uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - name: Generate Swagger UI (Algorithm 1)
         uses: Legion2/swagger-ui-action@v1
         with:
@@ -22,6 +26,8 @@ jobs:
         with:
           output: dist/algorithm2
           spec-file: algorithm2/openapi.json
+      - name: Generate GraphQL Documentation
+        run: npx -y spectaql graphql/config.yml -t dist/graphql
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
