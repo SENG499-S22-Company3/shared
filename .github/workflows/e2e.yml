@@ -1,7 +1,9 @@
 name: E2E Testing
 
 on:
-  push: 
+  push:
+    branches: [main]
+  pull_request:
     branches: [main]
   repository_dispatch:
     types: 
@@ -39,6 +41,8 @@ jobs:
         env:
           PORT: 4000
           DATABASE_URL: postgres://postgres:postgres@postgres:5432/postgres
+          CI: false
+          NODE_ENV: development
         ports:
           - 4000:4000
         # options: >-
