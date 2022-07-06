@@ -89,7 +89,11 @@ type Mutation {
   """
   Edit schedule
   """
-  editSchedule(year: Int!): Response!
+  editSchedule(input: EditCourseInput): Response!
+  """
+  Plug and Play Compnay 3's and 4's Algorithms
+  """
+  company(input: CompanyInput): Response!
 }
 
 type Response {
@@ -146,7 +150,38 @@ input CoursePreferenceInput {
 input GenerateScheduleInput {
   year: Int!
   term: Term!
-  courses: CourseID!
+  courses: [CourseInput!]
+}
+
+input CompanyInput {
+  algorithm1: Company!
+  algorithm2: Company!
+}
+
+input EditCourseInput {
+  hoursPerWeek: Float
+  capacity: Int
+  sectionNumber: String
+  startDate: Date
+  endDate: Date
+  meetingTimes: [MeetingTimeInput!]
+}
+
+input MeetingTimeInput {
+  day: Day!
+  startTime: Date!
+  endTime: Date!
+}
+
+input CourseInput {
+  """
+  Course subject, e.g. SENG, CSC
+  """
+  subject: String!
+  """
+  Course code, e.g. 499, 310
+  """
+  code: String!
 }
 
 type CourseID {
@@ -269,7 +304,7 @@ type AuthPayload {
   """
   Auth token used for future requests
   """
-  token: String!
+  token: String! @deprecated
   """
   Optional error message if success is false
   """
@@ -345,4 +380,12 @@ enum Term {
   FALL
   SPRING
   SUMMER
+}
+
+"""
+Company 3 and 4
+"""
+enum Company {
+  COMPANY3
+  COMPANY4
 }
