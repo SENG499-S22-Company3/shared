@@ -1,4 +1,4 @@
-name: E2E Testing
+name: Company 4 E2E Testing
 
 on:
   push: 

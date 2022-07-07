@@ -1,4 +1,4 @@
-name: E2E Testing
+name: Company 3 E2E Testing
 
 on:
   push:
@@ -7,9 +7,9 @@ on:
     branches: [main]
   repository_dispatch:
     types: 
-      - algorithm-1
-      - algorithm-2
-      - backend
+      - company3-algorithm-1
+      - company3-algorithm-2
+      - company3-backend
 
 # Make sure URLs defined here correspond with ports defined below
 env:
