@@ -108,7 +108,7 @@
       },
       "Course" : {
         "type" : "object",
-        "required" : [ "courseNumber", "subject", "sequenceNumber", "courseTitle", "courseCapacity", "numSections" ],
+        "required" : [ "courseNumber", "subject", "sequenceNumber", "streamSequence", "courseTitle", "courseCapacity", "numSections" ],
         "properties" : {
           "courseNumber" : {
             "type" : "string",
@@ -121,6 +121,10 @@
           "sequenceNumber" : {
             "type" : "string",
             "example" : "A01"
+          },
+          "streamSequence": {
+            "type" : "string",
+            "example" : "1A"
           },
           "courseTitle" : {
             "type" : "string",
