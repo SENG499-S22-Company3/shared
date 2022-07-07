@@ -16,7 +16,15 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/Schedule"
+                  "type" : "object",
+                  "items" : {
+                    "$ref" : "#/components/schemas/Schedule"
+                  },
+                  "example" : {
+                    "fallCourses" : [ ],
+                    "SpringCourses" : [ ],
+                    "SummerCourses" : [ ]
+                  }
                 }
               }
             }
@@ -31,7 +39,40 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/ScheduleConstraints"
+                "type" : "object",
+                "properties" : {
+                  "hardScheduled" : {
+                    "type" : "object",
+                    "items" : {
+                      "$ref" : "#/components/schemas/Schedule"
+                    },
+                    "description": "Courses that need to be scheduled at a specific time. Courses like ENGR, CHEM, or a course Rich wants at a specific time.",
+                    "example" : {
+                      "fallCourses" : [ ],
+                      "SpringCourses" : [ ],
+                      "SummerCourses" : [ ]
+                    }
+                  },
+                  "coursesToSchedule" : {
+                    "type" : "object",
+                    "items" : {
+                      "$ref" : "#/components/schemas/Schedule"
+                    },
+                    "description": "Courses that need to be scheduled by the algorithm.",
+                    "example" : {
+                      "fallCourses" : [ ],
+                      "SpringCourses" : [ ],
+                      "SummerCourses" : [ ]
+                    }
+                  },
+                  "professors" : {
+                    "type" : "array",
+                    "items" : {
+                      "$ref" : "#/components/schemas/Professor"
+                    },
+                    "description": "List of professors and their preferences."
+                  }
+                }
               }
             }
           }
@@ -90,10 +131,16 @@
             "example" : "Fundamentals of Programming with Engineering Applications"
           },
           "assignment" : {
-            "$ref" : "#/components/schemas/Assignment"
+            "type" : "object",
+            "items" : {
+              "$ref" : "#/components/schemas/Assignment"
+            }
           },
           "prof" : {
-            "$ref" : "#/components/schemas/Professor"
+            "type" : "object",
+            "items" : {
+              "$ref" : "#/components/schemas/Professor"
+            }
           },
           "courseCapacity" : {
             "type" : "integer",
@@ -165,7 +212,7 @@
         "required" : [ "preferences", "displayName" ],
         "properties" : {
           "preferences" : {
-            "type" : "array",
+            "type" : "object",
             "items" : {
               "$ref" : "#/components/schemas/Preference"
             }
@@ -203,25 +250,6 @@
           "term" : {
             "type" : "string",
             "enum" : [ "FALL", "SPRING", "SUMMER" ]
-          }
-        }
-      },
-      "ScheduleConstraints": {
-        "type" : "object",
-        "required": [ "hardScheduled", "coursesToSchedule", "professors" ],
-        "properties" : {
-          "hardScheduled" : {
-            "$ref" : "#/components/schemas/Schedule"
-          },
-          "coursesToSchedule" : {
-            "$ref" : "#/components/schemas/Schedule"
-          },
-          "professors" : {
-            "type" : "array",
-            "items" : {
-              "$ref" : "#/components/schemas/Professor"
-            },
-            "description": "List of professors and their preferences."
           }
         }
       }
