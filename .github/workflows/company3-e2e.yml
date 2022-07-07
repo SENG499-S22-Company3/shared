@@ -1,15 +1,14 @@
 name: Company 3 E2E Testing
 
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-  repository_dispatch:
-    types: 
-      - company3-algorithm-1
-      - company3-algorithm-2
-      - company3-backend
+on: [push]
+#    branches: [main]
+#  pull_request:
+#    branches: [main]
+#  repository_dispatch:
+#    types: 
+#      - company3-algorithm-1
+#      - company3-algorithm-2
+#      - company3-backend
 
 # Make sure URLs defined here correspond with ports defined below
 env:

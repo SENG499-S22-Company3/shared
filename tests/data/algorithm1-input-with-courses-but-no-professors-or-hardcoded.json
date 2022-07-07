@@ -1,0 +1,673 @@
+{
+  "hardScheduled": {
+    "fallCourses": [],
+    "springCourses": [],
+    "summerCourses": []
+  },
+  "coursesToSchedule": {
+    "fallCourses": [
+      {
+        "courseNumber": "310",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Human Computer Interaction",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "370",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Database Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "361",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Computer Communications and Networks",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "360",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Operating Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "320",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Fundamentals of Computer Science",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "230",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Introduction to Computer Architecture",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "226",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Algorithms and Data Structures II",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "225",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Algorithms and Data Structures I",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "115",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Fundamentals of Programming II",
+        "streamSequence": "1B",
+        "numSections": 1,
+        "courseCapacity": 300
+      },
+      {
+        "courseNumber": "111",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Fundamentals of Programming with Engineering Applications",
+        "streamSequence": "1A",
+        "numSections": 1,
+        "courseCapacity": 400
+      },
+      {
+        "courseNumber": "399",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Design Project I",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "380",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electronic Circuit II",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "370",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electromechanical Energy Conversion",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "365",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Applied Electronics and Electrical Machines",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "360",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Control Theory and Systems I",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "350",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Communications Theory and Systems I",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "355",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Microprocessor-Based Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "260",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Continuous-Time Signals and Systems",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "250",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Linear Circuits I",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "255",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Introduction to Computer Architecture",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "241",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Digital Design",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "216",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electricity and Magnetism",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "265",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Development Methods",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "321",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Requirements Engineering",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "350",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Architecture and Design",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "360",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Security Engineering",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "474",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Data Mining",
+        "streamSequence": "4B",
+        "numSections": 1,
+        "courseCapacity": 100
+      }
+    ],
+    "springCourses": [
+      {
+        "courseNumber": "275",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Testing",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "111",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Fundamentals of Programming with Engineering Applications",
+        "streamSequence": "1A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "115",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Fundamentals of Programming II",
+        "streamSequence": "1B",
+        "numSections": 1,
+        "courseCapacity": 330
+      },
+      {
+        "courseNumber": "225",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Algorithms and Data Structures I",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "226",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Algorithms and Data Structures II",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "230",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Introduction to Computer Architecture",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "320",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Foundations of Computer Science",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "360",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Operating Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "361",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Computer Communications and Networks",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "370",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Database Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "460",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Design and Analysis of Real-time Systems",
+        "streamSequence": "4B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "300",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Linear Circuits II",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "310",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Digital Signal Processing I",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "320",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electronic Devices I",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "330",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electronic Circuits I",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "340",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Applied Electromagnetics and Photonics",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "360",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Control Theory and Systems I",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "455",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Real Time Computer Systems Design Project",
+        "streamSequence": "4B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "458",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Communication Networks",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "265",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Development Methods",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "310",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Human Computer Interaction",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "321",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Requirements Engineering",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "371",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Evolution",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "401",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Social and Professional Issues",
+        "streamSequence": "4B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "468",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software System Scalability",
+        "streamSequence": "4B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "474",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Data Mining",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      }
+    ],
+    "summerCourses": [
+      {
+        "courseNumber": "310",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Human Computer Interaction",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "360",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Operating Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "275",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Testing",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "265",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Development Methods",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "115",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Fundamentals of Programming II",
+        "streamSequence": "1B",
+        "numSections": 1,
+        "courseCapacity": 175
+      },
+      {
+        "courseNumber": "225",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Algorithms and Data Structures I",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "226",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Algorithms and Data Structures II",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "230",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Introduction to Computer Architecture",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "320",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Foundations of Computer Science",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "370",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Database Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "216",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electricity and Magnetism",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "220",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electrical Properties of Materials",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "250",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Linear Circuits I",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "260",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Continuous-Time Signals and Systems",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "299",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Introduction to Electrical and Computer Engineering Design",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "310",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Digital Signal Processing I",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "499",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Design Project II",
+        "streamSequence": "4A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "426",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Quality Engineering",
+        "streamSequence": "4A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "440",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Embedded Systems",
+        "streamSequence": "4A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "499",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Design Project II",
+        "streamSequence": "4A",
+        "numSections": 1,
+        "courseCapacity": 100
+      }
+    ]
+  },
+  "professors": []
+}
