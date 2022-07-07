@@ -11,10 +11,10 @@ describe("Generate base schedule with courses to timeslots and professors to cou
         mutation {
           generateSchedule(
             input: {
+              algorithm1: COMPANY3
+              algorithm2: COMPANY4
+              term: SUMMER
               year: 2022
-              term: "SUMMER"
-              algorithm1: "COMPANY3"
-              algorithm2: "COMPANY3"
             }
           ) {
             message
@@ -52,10 +52,10 @@ describe("Generate base schedule with courses to timeslots and professors to cou
         mutation {
           generateSchedule(
             input: {
+              algorithm1: COMPANY3
+              algorithm2: COMPANY4
+              term: SUMMER
               year: 2022
-              term: "SUMMER"
-              algorithm1: "COMPANY3"
-              algorithm2: "COMPANY3"
             }
           ) {
             message
