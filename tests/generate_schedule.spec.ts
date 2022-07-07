@@ -5,6 +5,7 @@ describe("Generate base schedule with courses to timeslots and professors to cou
   it("should return an authentication error when not logged in", async () => {
     const client = request.createApolloClient();
     // Attempt to generate schedule
+
     const response = await client.mutate({
       mutation: gql`
         mutation {
@@ -13,8 +14,7 @@ describe("Generate base schedule with courses to timeslots and professors to cou
               year: 2022
               term: "SUMMER"
               algorithm1: "COMPANY3"
-              algorithm2: "COMPANY4"
-              courses: []
+              algorithm2: "COMPANY3"
             }
           ) {
             message
@@ -50,7 +50,14 @@ describe("Generate base schedule with courses to timeslots and professors to cou
     const generateScheduleResponse = await client.mutate({
       mutation: gql`
         mutation {
-          generateSchedule(input: { year: 2022 }) {
+          generateSchedule(
+            input: {
+              year: 2022
+              term: "SUMMER"
+              algorithm1: "COMPANY3"
+              algorithm2: "COMPANY3"
+            }
+          ) {
             message
             success
           }
