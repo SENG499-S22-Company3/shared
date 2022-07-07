@@ -90,16 +90,10 @@
             "example" : "Fundamentals of Programming with Engineering Applications"
           },
           "assignment" : {
-            "type" : "object",
-            "items" : {
-              "$ref" : "#/components/schemas/Assignment"
-            }
+            "$ref" : "#/components/schemas/Assignment"
           },
           "prof" : {
-            "type" : "object",
-            "items" : {
-              "$ref" : "#/components/schemas/Professor"
-            }
+            "$ref" : "#/components/schemas/Professor"
           },
           "courseCapacity" : {
             "type" : "integer",
