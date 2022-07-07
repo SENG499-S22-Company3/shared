@@ -8,7 +8,15 @@ describe("Generate base schedule with courses to timeslots and professors to cou
     const response = await client.mutate({
       mutation: gql`
         mutation {
-          generateSchedule(input: { year: 2022 }) {
+          generateSchedule(
+            input: {
+              year: 2022
+              term: "SUMMER"
+              algorithm1: "COMPANY3"
+              algorithm2: "COMPANY4"
+              courses: []
+            }
+          ) {
             message
             success
           }
