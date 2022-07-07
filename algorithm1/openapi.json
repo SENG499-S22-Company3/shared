@@ -16,15 +16,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "object",
-                  "items" : {
-                    "$ref" : "#/components/schemas/Schedule"
-                  },
-                  "example" : {
-                    "fallCourses" : [ ],
-                    "SpringCourses" : [ ],
-                    "SummerCourses" : [ ]
-                  }
+                  "$ref" : "#/components/schemas/Schedule"
                 }
               }
             }
@@ -42,28 +34,10 @@
                 "type" : "object",
                 "properties" : {
                   "hardScheduled" : {
-                    "type" : "object",
-                    "items" : {
-                      "$ref" : "#/components/schemas/Schedule"
-                    },
-                    "description": "Courses that need to be scheduled at a specific time. Courses like ENGR, CHEM, or a course Rich wants at a specific time.",
-                    "example" : {
-                      "fallCourses" : [ ],
-                      "SpringCourses" : [ ],
-                      "SummerCourses" : [ ]
-                    }
+                    "$ref" : "#/components/schemas/Schedule"
                   },
                   "coursesToSchedule" : {
-                    "type" : "object",
-                    "items" : {
-                      "$ref" : "#/components/schemas/Schedule"
-                    },
-                    "description": "Courses that need to be scheduled by the algorithm.",
-                    "example" : {
-                      "fallCourses" : [ ],
-                      "SpringCourses" : [ ],
-                      "SummerCourses" : [ ]
-                    }
+                    "$ref" : "#/components/schemas/Schedule"
                   },
                   "professors" : {
                     "type" : "array",
@@ -212,7 +186,7 @@
         "required" : [ "preferences", "displayName" ],
         "properties" : {
           "preferences" : {
-            "type" : "object",
+            "type" : "array",
             "items" : {
               "$ref" : "#/components/schemas/Preference"
             }
