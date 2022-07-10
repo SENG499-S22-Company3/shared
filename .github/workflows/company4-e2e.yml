@@ -8,6 +8,7 @@ on:
       - company4-algorithm-1
       - company4-algorithm-2
       - company4-backend
+  pull_request:
 
 # Make sure URLs defined here correspond with ports defined below
 env:
