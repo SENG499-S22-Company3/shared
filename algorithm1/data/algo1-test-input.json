@@ -1,0 +1,3391 @@
+{
+  "hardScheduled": {
+    "fallCourses": [
+      {
+        "courseNumber": "101",
+        "subject": "CHEM",
+        "sequenceNumber": "A01",
+        "streamSequence": "2A",
+        "courseTitle": "Properties of Materials",
+        "assignment": {
+          "startDate": "Sep 05, 2018",
+          "endDate": "Dec 05, 2018",
+          "beginTime": "1300",
+          "endTime": "1420",
+          "hoursWeek": 3,
+          "sunday": false,
+          "monday": true,
+          "tuesday": false,
+          "wednesday": false,
+          "thursday": true,
+          "friday": false,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      },
+      {
+        "courseNumber": "101",
+        "subject": "CHEM",
+        "sequenceNumber": "A02",
+        "streamSequence": "2A",
+        "courseTitle": "Properties of Materials",
+        "assignment": {
+          "startDate": "Sep 05, 2018",
+          "endDate": "Dec 05, 2018",
+          "beginTime": "0930",
+          "endTime": "1020",
+          "hoursWeek": 3,
+          "sunday": false,
+          "monday": false,
+          "tuesday": true,
+          "wednesday": true,
+          "thursday": false,
+          "friday": true,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      },
+      {
+        "courseNumber": "101",
+        "subject": "CHEM",
+        "sequenceNumber": "A03",
+        "streamSequence": "2A",
+        "courseTitle": "Properties of Materials",
+        "assignment": {
+          "startDate": "Sep 05, 2018",
+          "endDate": "Dec 05, 2018",
+          "beginTime": "1230",
+          "endTime": "1320",
+          "hoursWeek": 3,
+          "sunday": false,
+          "monday": false,
+          "tuesday": true,
+          "wednesday": true,
+          "thursday": false,
+          "friday": true,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      },
+      {
+        "courseNumber": "110",
+        "subject": "PHYS",
+        "sequenceNumber": "A01",
+        "streamSequence": "1A",
+        "courseTitle": "Introductory Physics I",
+        "assignment": {
+          "startDate": "Sep 05, 2018",
+          "endDate": "Dec 05, 2018",
+          "beginTime": "1030",
+          "endTime": "1120",
+          "hoursWeek": 3,
+          "sunday": false,
+          "monday": false,
+          "tuesday": true,
+          "wednesday": true,
+          "thursday": false,
+          "friday": true,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      },
+      {
+        "courseNumber": "110",
+        "subject": "PHYS",
+        "sequenceNumber": "A02",
+        "streamSequence": "1A",
+        "courseTitle": "Introductory Physics I",
+        "assignment": {
+          "startDate": "Nov 17, 2018",
+          "endDate": "Nov 17, 2018",
+          "beginTime": "1400",
+          "endTime": "1530",
+          "hoursWeek": 1.5,
+          "sunday": false,
+          "monday": false,
+          "tuesday": false,
+          "wednesday": false,
+          "thursday": false,
+          "friday": false,
+          "saturday": true
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      }
+    ],
+    "springCourses": [
+      {
+        "courseNumber": "150",
+        "subject": "CHEM",
+        "sequenceNumber": "A01",
+        "streamSequence": "2A",
+        "courseTitle": "Engineering Chemistry",
+        "assignment": {
+          "startDate": "Jan 07, 2019",
+          "endDate": "Apr 05, 2019",
+          "beginTime": "0830",
+          "endTime": "0950",
+          "hoursWeek": 3,
+          "sunday": false,
+          "monday": true,
+          "tuesday": false,
+          "wednesday": false,
+          "thursday": true,
+          "friday": false,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      },
+      {
+        "courseNumber": "120",
+        "subject": "ENGR",
+        "sequenceNumber": "A01",
+        "streamSequence": "1B",
+        "courseTitle": "Design and Communication II",
+        "assignment": {
+          "startDate": "Jan 07, 2019",
+          "endDate": "Apr 05, 2019",
+          "beginTime": "1430",
+          "endTime": "1520",
+          "hoursWeek": 1,
+          "sunday": false,
+          "monday": false,
+          "tuesday": true,
+          "wednesday": false,
+          "thursday": false,
+          "friday": false,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      },
+      {
+        "courseNumber": "120",
+        "subject": "ENGR",
+        "sequenceNumber": "A02",
+        "streamSequence": "1B",
+        "courseTitle": "Design and Communication II",
+        "assignment": {
+          "startDate": "Jan 07, 2019",
+          "endDate": "Apr 05, 2019",
+          "beginTime": "1530",
+          "endTime": "1620",
+          "hoursWeek": 1,
+          "sunday": false,
+          "monday": false,
+          "tuesday": true,
+          "wednesday": false,
+          "thursday": false,
+          "friday": false,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      },
+      {
+        "courseNumber": "141",
+        "subject": "ENGR",
+        "sequenceNumber": "A01",
+        "streamSequence": "1B",
+        "courseTitle": "Engineering Mechanics",
+        "assignment": {
+          "startDate": "Jan 07, 2019",
+          "endDate": "Apr 05, 2019",
+          "beginTime": "1130",
+          "endTime": "1250",
+          "hoursWeek": 3,
+          "sunday": false,
+          "monday": true,
+          "tuesday": false,
+          "wednesday": false,
+          "thursday": true,
+          "friday": false,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      },
+      {
+        "courseNumber": "101",
+        "subject": "MATH",
+        "sequenceNumber": "A01",
+        "streamSequence": "1B",
+        "courseTitle": "Calculus II",
+        "assignment": {
+          "startDate": "Jan 07, 2019",
+          "endDate": "Apr 05, 2019",
+          "beginTime": "1430",
+          "endTime": "1520",
+          "hoursWeek": 3,
+          "sunday": false,
+          "monday": true,
+          "tuesday": false,
+          "wednesday": true,
+          "thursday": true,
+          "friday": false,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      },
+      {
+        "courseNumber": "101",
+        "subject": "MATH",
+        "sequenceNumber": "A02",
+        "streamSequence": "1B",
+        "courseTitle": "Calculus II",
+        "assignment": {
+          "startDate": "Jan 07, 2019",
+          "endDate": "Apr 05, 2019",
+          "beginTime": "0830",
+          "endTime": "0920",
+          "hoursWeek": 3,
+          "sunday": false,
+          "monday": false,
+          "tuesday": true,
+          "wednesday": true,
+          "thursday": false,
+          "friday": true,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      },
+      {
+        "courseNumber": "101",
+        "subject": "MATH",
+        "sequenceNumber": "A03",
+        "streamSequence": "1B",
+        "courseTitle": "Calculus II",
+        "assignment": {
+          "startDate": "Jan 07, 2019",
+          "endDate": "Apr 05, 2019",
+          "beginTime": "1230",
+          "endTime": "1320",
+          "hoursWeek": 3,
+          "sunday": false,
+          "monday": false,
+          "tuesday": true,
+          "wednesday": true,
+          "thursday": false,
+          "friday": true,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      },
+      {
+        "courseNumber": "101",
+        "subject": "MATH",
+        "sequenceNumber": "A04",
+        "streamSequence": "1B",
+        "courseTitle": "Calculus II",
+        "assignment": {
+          "startDate": "Jan 07, 2019",
+          "endDate": "Apr 05, 2019",
+          "beginTime": "1330",
+          "endTime": "1420",
+          "hoursWeek": 3,
+          "sunday": false,
+          "monday": false,
+          "tuesday": true,
+          "wednesday": true,
+          "thursday": false,
+          "friday": true,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      }
+    ],
+    "summerCourses": [
+      {
+        "courseNumber": "180",
+        "subject": "ECON",
+        "sequenceNumber": "A01",
+        "streamSequence": "2B",
+        "courseTitle": "Introduction to Principles of Microeconomics and Financial Project Evaluation",
+        "assignment": {
+          "startDate": "May 13, 2019",
+          "endDate": "Jun 28, 2019",
+          "beginTime": "1430",
+          "endTime": "1620",
+          "hoursWeek": 6,
+          "sunday": false,
+          "monday": true,
+          "tuesday": false,
+          "wednesday": true,
+          "thursday": true,
+          "friday": false,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "TBD"
+        }
+      }
+    ]
+  },
+  "coursesToSchedule": {
+    "fallCourses": [
+      {
+        "courseNumber": "310",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Human Computer Interaction",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "370",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Database Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "361",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Computer Communications and Networks",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "360",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Operating Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "320",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Fundamentals of Computer Science",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "230",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Introduction to Computer Architecture",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "226",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Algorithms and Data Structures II",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "225",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Algorithms and Data Structures I",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "115",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Fundamentals of Programming II",
+        "streamSequence": "1B",
+        "numSections": 2,
+        "courseCapacity": 300
+      },
+      {
+        "courseNumber": "111",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Fundamentals of Programming with Engineering Applications",
+        "streamSequence": "1A",
+        "numSections": 3,
+        "courseCapacity": 400
+      },
+      {
+        "courseNumber": "399",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Design Project I",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "380",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electronic Circuit II",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "370",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electromechanical Energy Conversion",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "365",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Applied Electronics and Electrical Machines",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "360",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Control Theory and Systems I",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "350",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Communications Theory and Systems I",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "355",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Microprocessor-Based Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "260",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Continuous-Time Signals and Systems",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "250",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Linear Circuits I",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "255",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Introduction to Computer Architecture",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "241",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Digital Design",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "216",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electricity and Magnetism",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "265",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Development Methods",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "321",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Requirements Engineering",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "350",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Architecture and Design",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "360",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Security Engineering",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "474",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Data Mining",
+        "streamSequence": "4B",
+        "numSections": 1,
+        "courseCapacity": 100
+      }
+    ],
+    "springCourses": [
+      {
+        "courseNumber": "275",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Testing",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "111",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Fundamentals of Programming with Engineering Applications",
+        "streamSequence": "1A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "115",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Fundamentals of Programming II",
+        "streamSequence": "1B",
+        "numSections": 3,
+        "courseCapacity": 330
+      },
+      {
+        "courseNumber": "225",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Algorithms and Data Structures I",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "226",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Algorithms and Data Structures II",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "230",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Introduction to Computer Architecture",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "320",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Foundations of Computer Science",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "360",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Operating Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "361",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Computer Communications and Networks",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "370",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Database Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "460",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Design and Analysis of Real-time Systems",
+        "streamSequence": "4B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "300",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Linear Circuits II",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "310",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Digital Signal Processing I",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "320",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electronic Devices I",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "330",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electronic Circuits I",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "340",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Applied Electromagnetics and Photonics",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "360",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Control Theory and Systems I",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "455",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Real Time Computer Systems Design Project",
+        "streamSequence": "4B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "458",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Communication Networks",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "265",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Development Methods",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "310",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Human Computer Interaction",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "321",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Requirements Engineering",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "371",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Evolution",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "401",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Social and Professional Issues",
+        "streamSequence": "4B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "468",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software System Scalability",
+        "streamSequence": "4B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "474",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Data Mining",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      }
+    ],
+    "summerTermCourses": [
+      {
+        "courseNumber": "310",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Human Computer Interaction",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "360",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Operating Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "275",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Testing",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "265",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Development Methods",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "115",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Fundamentals of Programming II",
+        "streamSequence": "1B",
+        "numSections": 2,
+        "courseCapacity": 175
+      },
+      {
+        "courseNumber": "225",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Algorithms and Data Structures I",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "226",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Algorithms and Data Structures II",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "230",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Introduction to Computer Architecture",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "320",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Foundations of Computer Science",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "370",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "courseTitle": "Database Systems",
+        "streamSequence": "3B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "216",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electricity and Magnetism",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "220",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Electrical Properties of Materials",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "250",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Linear Circuits I",
+        "streamSequence": "2A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "260",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Continuous-Time Signals and Systems",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "299",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Introduction to Electrical and Computer Engineering Design",
+        "streamSequence": "2B",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "310",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Digital Signal Processing I",
+        "streamSequence": "3A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "499",
+        "subject": "ECE",
+        "sequenceNumber": "A01",
+        "courseTitle": "Design Project II",
+        "streamSequence": "4A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "426",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Software Quality Engineering",
+        "streamSequence": "4A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "440",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Embedded Systems",
+        "streamSequence": "4A",
+        "numSections": 1,
+        "courseCapacity": 100
+      },
+      {
+        "courseNumber": "499",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "courseTitle": "Design Project II",
+        "streamSequence": "4A",
+        "numSections": 1,
+        "courseCapacity": 100
+      }
+    ]
+  },
+  "professors": [
+    {
+      "displayName": "Berg, Celina",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG265",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG275",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC370",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG310",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG350",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG435",
+          "preferenceNum": 3
+        }
+      ]
+    },
+    {
+      "displayName": "Bird, Bill",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC360",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC370",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG310",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG435",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG466",
+          "preferenceNum": 6
+        }
+      ]
+    },
+    {
+      "displayName": "Chester, Sean",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG275",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC361",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC460",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "Corless, Jason",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC361",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC460",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "Damian, Daniela",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG265",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC320",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC360",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC370",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG321",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "SENG421",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "Ernst, Neil",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG275",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC320",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC360",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC370",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG310",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG321",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG360",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG401",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG411",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG421",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG435",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG466",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG474",
+          "preferenceNum": 3
+        }
+      ]
+    },
+    {
+      "displayName": "Estey, Anthony",
+      "preferences": [
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG275",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "Ganti, Sudhakar",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG275",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "German, Daniel",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG265",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC361",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG310",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG321",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG350",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG360",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG371",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC460",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG401",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG421",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG466",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG474",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Haworth, Brandon",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC360",
+          "preferenceNum": 6
+        }
+      ]
+    },
+    {
+      "displayName": "Jabbari, Hosna",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 3
+        }
+      ]
+    },
+    {
+      "displayName": "Jackson, LillAnne",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG371",
+          "preferenceNum": 6
+        }
+      ]
+    },
+    {
+      "displayName": "Kapron, Bruce",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC320",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC360",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC361",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC370",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG371",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "King, Valerie",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG265",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC370",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG321",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG350",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG360",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG401",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG421",
+          "preferenceNum": 6
+        }
+      ]
+    },
+    {
+      "displayName": "Koroth, Sajin",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC360",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC370",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG310",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG435",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG466",
+          "preferenceNum": 6
+        }
+      ]
+    },
+    {
+      "displayName": "Little, Rich",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG265",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC370",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG310",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG321",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC460",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG401",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG421",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG435",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG466",
+          "preferenceNum": 6
+        }
+      ]
+    },
+    {
+      "displayName": "Mehta, Nishant",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG275",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Muller, Hausi",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG265",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG275",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC320",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC360",
+          "preferenceNum": 3
+        }
+      ]
+    },
+    {
+      "displayName": "Nacenta, Miguel",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG265",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG310",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG321",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG421",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG435",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG466",
+          "preferenceNum": 6
+        }
+      ]
+    },
+    {
+      "displayName": "Numanagi\u0107, Ibrahim",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG310",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG435",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "Pan, Jianping",
+      "preferences": [
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG371",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG421",
+          "preferenceNum": 3
+        }
+      ]
+    },
+    {
+      "displayName": "Perin, Charles",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG275",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC370",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG421",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "Schneider, Teseo",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG275",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC361",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG321",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG401",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG411",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG421",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG474",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Somanath, Sowmya",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC320",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC360",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC361",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG350",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG421",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Srinivasan, Venkatesh",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC320",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC360",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG350",
+          "preferenceNum": 3
+        }
+      ]
+    },
+    {
+      "displayName": "Stege, Ulrike",
+      "preferences": [
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG275",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG371",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Storey, Margaret-Anne",
+      "preferences": [
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG371",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG421",
+          "preferenceNum": 3
+        }
+      ]
+    },
+    {
+      "displayName": "Summers, Cecilia",
+      "preferences": [
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG275",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG421",
+          "preferenceNum": 6
+        }
+      ]
+    },
+    {
+      "displayName": "Thomo, Alex",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC370",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG371",
+          "preferenceNum": 6
+        }
+      ]
+    },
+    {
+      "displayName": "Tzanetakis, George",
+      "preferences": [
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG265",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC361",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC370",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG371",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC460",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Weber, Jens",
+      "preferences": [
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC361",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "SENG321",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC460",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "SENG466",
+          "preferenceNum": 2
+        }
+      ]
+    },
+    {
+      "displayName": "Wu, Kui",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG265",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC360",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG360",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG411",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG421",
+          "preferenceNum": 3
+        }
+      ]
+    },
+    {
+      "displayName": "Zastre, Michael",
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG265",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG275",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC360",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC370",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "SENG310",
+          "preferenceNum": 3
+        }
+      ]
+    },
+    {
+      "displayName": "Adams, Michael",
+      "preferences": [
+        {
+          "courseNum": "ECE260",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE299",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 5
+        },
+        {
+          "courseNum": "ECE360",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE403",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG499",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Agathoklis, Panajotis",
+      "preferences": [
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE299",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE330",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE360",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE380",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE399",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE499",
+          "preferenceNum": 2
+        }
+      ]
+    },
+    {
+      "displayName": "AlTawy, Riham",
+      "preferences": [
+        {
+          "courseNum": "ECE241",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE242",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE255",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE260",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE320",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE355",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE356",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE403",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE458",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG499",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Baniasadi, Amirali",
+      "preferences": [
+        {
+          "courseNum": "ECE241",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE242",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 5
+        },
+        {
+          "courseNum": "ECE255",
+          "preferenceNum": 5
+        },
+        {
+          "courseNum": "ECE299",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE320",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE350",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE355",
+          "preferenceNum": 5
+        },
+        {
+          "courseNum": "ECE356",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE399",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE403",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE410",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE455",
+          "preferenceNum": 5
+        },
+        {
+          "courseNum": "ECE458",
+          "preferenceNum": 3
+        }
+      ]
+    },
+    {
+      "displayName": "Bornemann, Jens",
+      "preferences": [
+        {
+          "courseNum": "ECE216",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE220",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE260",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE299",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE300",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE320",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE330",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE340",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE350",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE365",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "Branzan Albu, Alexandra",
+      "preferences": [
+        {
+          "courseNum": "ECE255",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE260",
+          "preferenceNum": 5
+        },
+        {
+          "courseNum": "ECE299",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 5
+        },
+        {
+          "courseNum": "ECE399",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE403",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE458",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE499",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "SENG499",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Cai, Lin",
+      "preferences": [
+        {
+          "courseNum": "ECE260",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE330",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE350",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE458",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE463",
+          "preferenceNum": 6
+        }
+      ]
+    },
+    {
+      "displayName": "Capson, David",
+      "preferences": [
+        {
+          "courseNum": "ECE241",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE255",
+          "preferenceNum": 5
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE355",
+          "preferenceNum": 5
+        },
+        {
+          "courseNum": "ECE360",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE455",
+          "preferenceNum": 3
+        }
+      ]
+    },
+    {
+      "displayName": "Darcie, Ted",
+      "preferences": [
+        {
+          "courseNum": "ECE216",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE220",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE340",
+          "preferenceNum": 3
+        }
+      ]
+    },
+    {
+      "displayName": "Dimopoulos, Nikitas",
+      "preferences": [
+        {
+          "courseNum": "ECE241",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE255",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE355",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE455",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE458",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE499",
+          "preferenceNum": 2
+        }
+      ]
+    },
+    {
+      "displayName": "Dong, Xiaodai",
+      "preferences": [
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE260",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE300",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 5
+        },
+        {
+          "courseNum": "ECE350",
+          "preferenceNum": 5
+        },
+        {
+          "courseNum": "ECE360",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE399",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE403",
+          "preferenceNum": 2
+        }
+      ]
+    },
+    {
+      "displayName": "Driessen, Peter",
+      "preferences": [
+        {
+          "courseNum": "ECE255",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE260",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE340",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE355",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE360",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE365",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE399",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE458",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE463",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE499",
+          "preferenceNum": 5
+        }
+      ]
+    },
+    {
+      "displayName": "Gebali, Fayez",
+      "preferences": [
+        {
+          "courseNum": "ECE241",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE255",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE260",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE300",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE330",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE350",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE355",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE360",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE365",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE463",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE499",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Gordon, Reuven",
+      "preferences": [
+        {
+          "courseNum": "ECE216",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE220",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE260",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE300",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE320",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE330",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE340",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE350",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE380",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Gulliver, Aaron",
+      "preferences": [
+        {
+          "courseNum": "ECE260",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE350",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE403",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "Li, Kin Fun",
+      "preferences": [
+        {
+          "courseNum": "ECE241",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE242",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE255",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE355",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE356",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE455",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE499",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "SENG468",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "Lu, Tao",
+      "preferences": [
+        {
+          "courseNum": "ECE216",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE220",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE260",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE320",
+          "preferenceNum": 5
+        },
+        {
+          "courseNum": "ECE330",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE340",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE350",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE360",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE380",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE399",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "McGuire, Michael",
+      "preferences": [
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE260",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE299",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE330",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE360",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE403",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE499",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "Neville, Stephen",
+      "preferences": [
+        {
+          "courseNum": "ECE355",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE360",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE403",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE458",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG426",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG468",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG499",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Papadopoulos, Christo",
+      "preferences": [
+        {
+          "courseNum": "ECE216",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE220",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE299",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE300",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE320",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE330",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE340",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE380",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "Popli, Dr. Navneet",
+      "preferences": [
+        {
+          "courseNum": "ECE242",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE255",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE330",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE355",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE356",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE399",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE455",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE458",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG440",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG499",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Rakhmatov, Daler",
+      "preferences": [
+        {
+          "courseNum": "ECE241",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE242",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE255",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE355",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE356",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE360",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE455",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "Saidaminov, Makhsud",
+      "preferences": [
+        {
+          "courseNum": "ECE220",
+          "preferenceNum": 2
+        },
+        {
+          "courseNum": "ECE320",
+          "preferenceNum": 2
+        }
+      ]
+    },
+    {
+      "displayName": "Sima, Mihai",
+      "preferences": [
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE255",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE300",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE320",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE330",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE355",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE356",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE380",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE455",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "SENG440",
+          "preferenceNum": 6
+        }
+      ]
+    },
+    {
+      "displayName": "Smith, Levi",
+      "preferences": [
+        {
+          "courseNum": "ECE216",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE220",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE299",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE320",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE340",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE370",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "So, Poman",
+      "preferences": [
+        {
+          "courseNum": "ECE216",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE330",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE340",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE360",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE370",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE458",
+          "preferenceNum": 3
+        }
+      ]
+    },
+    {
+      "displayName": "Thirumarai Chelvan, Ilamparithi",
+      "preferences": [
+        {
+          "courseNum": "ECE216",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE299",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE300",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE330",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE340",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE360",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE365",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE370",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE380",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE399",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE410",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE488",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE499",
+          "preferenceNum": 6
+        }
+      ]
+    },
+    {
+      "displayName": "Traore, Issa",
+      "preferences": [
+        {
+          "courseNum": "ECE458",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG426",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG499",
+          "preferenceNum": 1
+        }
+      ]
+    },
+    {
+      "displayName": "Yang, Hong-Chuan",
+      "preferences": [
+        {
+          "courseNum": "ECE216",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE250",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE260",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE310",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE330",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "ECE340",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE350",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE360",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "ECE399",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE403",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "ECE458",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "ECE463",
+          "preferenceNum": 3
+        }
+      ]
+    }
+  ]
+}
