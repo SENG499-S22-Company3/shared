@@ -7,6 +7,8 @@
         "sequenceNumber": "A01",
         "streamSequence": "2A",
         "courseTitle": "Properties of Materials",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "Sep 05, 2018",
           "endDate": "Dec 05, 2018",
@@ -22,7 +24,8 @@
           "saturday": false
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       },
       {
@@ -31,6 +34,8 @@
         "sequenceNumber": "A02",
         "streamSequence": "2A",
         "courseTitle": "Properties of Materials",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "Sep 05, 2018",
           "endDate": "Dec 05, 2018",
@@ -46,7 +51,8 @@
           "saturday": false
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       },
       {
@@ -55,6 +61,8 @@
         "sequenceNumber": "A03",
         "streamSequence": "2A",
         "courseTitle": "Properties of Materials",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "Sep 05, 2018",
           "endDate": "Dec 05, 2018",
@@ -70,7 +78,8 @@
           "saturday": false
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       },
       {
@@ -79,6 +88,8 @@
         "sequenceNumber": "A01",
         "streamSequence": "1A",
         "courseTitle": "Introductory Physics I",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "Sep 05, 2018",
           "endDate": "Dec 05, 2018",
@@ -94,7 +105,8 @@
           "saturday": false
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       },
       {
@@ -103,6 +115,8 @@
         "sequenceNumber": "A02",
         "streamSequence": "1A",
         "courseTitle": "Introductory Physics I",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "Nov 17, 2018",
           "endDate": "Nov 17, 2018",
@@ -118,7 +132,8 @@
           "saturday": true
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       }
     ],
@@ -129,6 +144,8 @@
         "sequenceNumber": "A01",
         "streamSequence": "2A",
         "courseTitle": "Engineering Chemistry",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "Jan 07, 2019",
           "endDate": "Apr 05, 2019",
@@ -144,7 +161,8 @@
           "saturday": false
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       },
       {
@@ -153,6 +171,8 @@
         "sequenceNumber": "A01",
         "streamSequence": "1B",
         "courseTitle": "Design and Communication II",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "Jan 07, 2019",
           "endDate": "Apr 05, 2019",
@@ -168,7 +188,8 @@
           "saturday": false
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       },
       {
@@ -177,6 +198,8 @@
         "sequenceNumber": "A02",
         "streamSequence": "1B",
         "courseTitle": "Design and Communication II",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "Jan 07, 2019",
           "endDate": "Apr 05, 2019",
@@ -192,7 +215,8 @@
           "saturday": false
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       },
       {
@@ -201,6 +225,8 @@
         "sequenceNumber": "A01",
         "streamSequence": "1B",
         "courseTitle": "Engineering Mechanics",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "Jan 07, 2019",
           "endDate": "Apr 05, 2019",
@@ -216,7 +242,8 @@
           "saturday": false
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       },
       {
@@ -225,6 +252,8 @@
         "sequenceNumber": "A01",
         "streamSequence": "1B",
         "courseTitle": "Calculus II",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "Jan 07, 2019",
           "endDate": "Apr 05, 2019",
@@ -240,7 +269,8 @@
           "saturday": false
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       },
       {
@@ -249,6 +279,8 @@
         "sequenceNumber": "A02",
         "streamSequence": "1B",
         "courseTitle": "Calculus II",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "Jan 07, 2019",
           "endDate": "Apr 05, 2019",
@@ -264,7 +296,8 @@
           "saturday": false
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       },
       {
@@ -273,6 +306,8 @@
         "sequenceNumber": "A03",
         "streamSequence": "1B",
         "courseTitle": "Calculus II",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "Jan 07, 2019",
           "endDate": "Apr 05, 2019",
@@ -288,7 +323,8 @@
           "saturday": false
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       },
       {
@@ -297,6 +333,8 @@
         "sequenceNumber": "A04",
         "streamSequence": "1B",
         "courseTitle": "Calculus II",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "Jan 07, 2019",
           "endDate": "Apr 05, 2019",
@@ -312,7 +350,8 @@
           "saturday": false
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       }
     ],
@@ -323,6 +362,8 @@
         "sequenceNumber": "A01",
         "streamSequence": "2B",
         "courseTitle": "Introduction to Principles of Microeconomics and Financial Project Evaluation",
+        "numSections": 1,
+        "courseCapacity": 100,
         "assignment": {
           "startDate": "May 13, 2019",
           "endDate": "Jun 28, 2019",
@@ -338,7 +379,8 @@
           "saturday": false
         },
         "prof": {
-          "displayName": "TBD"
+          "displayName": "TBD",
+          "preferences": []
         }
       }
     ]
@@ -825,7 +867,7 @@
         "courseCapacity": 100
       }
     ],
-    "summerTermCourses": [
+    "summerCourses": [
       {
         "courseNumber": "310",
         "subject": "SENG",
