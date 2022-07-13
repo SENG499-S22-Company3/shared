@@ -145,7 +145,6 @@ input CoursePreferenceInput {
 
 input GenerateScheduleInput {
   year: Int!
-  term: Term!
   fallCourses: [CourseInput!]
   springCourses: [CourseInput!]
   summerCourses: [CourseInput!]
