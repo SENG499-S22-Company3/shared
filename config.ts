@@ -17,7 +17,7 @@ export const ALGORITHM2_URL =
   process.env.ALGORITHM2_URL || "http://localhost:5000/";
 
 const httpLink = createHttpLink({
-  uri: `${BACKEND_URL}/graphql`,
+  uri: BACKEND_URL,
   fetch,
   credentials: "include",
 });
