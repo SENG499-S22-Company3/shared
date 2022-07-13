@@ -36,7 +36,7 @@ jobs:
         ports:
           - 5000:5000
       backend:
-        image: ghcr.io/seng499-company-4/company4-backend:latest
+        image: ghcr.io/seng499-company-4/backend:latest
         env:
           PORT: 4000
           DATABASE_URL: postgres://postgres:postgres@postgres:5432/postgres
