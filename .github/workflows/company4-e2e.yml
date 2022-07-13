@@ -23,12 +23,6 @@ jobs:
     # Service containers to run with `container-job`
     services:
       # Label used to access the service container
-      algorithm1:
-        image: ghcr.io/seng499-company-4/company4-algorithm-1:latest
-        env:
-          PORT: 4040
-        ports:
-          - 4040:4040
       algorithm2:
         image: ghcr.io/seng499-company-4/company4-algorithm-2:latest
         env:
