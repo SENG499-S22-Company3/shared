@@ -13,7 +13,7 @@ on:
 
 # Make sure URLs defined here correspond with ports defined below
 env:
-  BACKEND_URL: http://localhost:4000
+  BACKEND_URL: http://localhost:4000/graphql
   ALGORITHM1_URL: http://localhost:4040
   ALGORITHM2_URL: http://localhost:5000
 
@@ -104,5 +104,5 @@ jobs:
 
       - name: Test
         env:
-          BACKEND_URL: http://localhost:4000
+          BACKEND_URL: http://localhost:4000/graphql
         run: npm test

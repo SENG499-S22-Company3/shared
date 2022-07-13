@@ -3,6 +3,8 @@ name: Company 4 E2E Testing
 on:
   push: 
     branches: [main]
+  pull_request:
+    branches: [main]
   repository_dispatch:
     types: 
       - company4-algorithm-1
