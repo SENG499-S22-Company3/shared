@@ -27,47 +27,54 @@ describe("Generate base schedule with courses to timeslots and professors to cou
     expect(response.data.generateSchedule.message).toEqual("Not logged in");
     expect(response.data.generateSchedule.success).toBeFalsy();
   });
-
-  it("should allow schedule generation when logged in", async () => {
-    const client = request.createApolloClient();
-    // Login
-    const loginResponse = await client.mutate({
-      mutation: gql`
-        mutation {
-          login(username: "testadmin", password: "testpassword") {
-            success
-            token
-            message
-          }
-        }
-      `,
-    });
-
-    expect(loginResponse.data.login.success).toBeTruthy();
-    expect(loginResponse.data.login.token).toEqual("");
-    expect(loginResponse.data.login.message).toEqual("Success");
-
-    const generateScheduleResponse = await client.mutate({
-      mutation: gql`
-        mutation {
-          generateSchedule(
-            input: {
-              algorithm1: COMPANY3
-              algorithm2: COMPANY4
-              term: SUMMER
-              year: 2022
+  describe("when logged in as an ADMIN", () => {
+    it("should allow schedule generation when logged in", async () => {
+      const client = request.createApolloClient();
+      // Login
+      const loginResponse = await client.mutate({
+        mutation: gql`
+          mutation {
+            login(username: "testadmin", password: "testpassword") {
+              success
+              token
+              message
             }
-          ) {
-            message
-            success
           }
-        }
-      `,
+        `,
+      });
+
+      expect(loginResponse.data.login.success).toBeTruthy();
+      expect(loginResponse.data.login.token).toEqual("");
+      expect(loginResponse.data.login.message).toEqual("Success");
+
+      const generateScheduleResponse = await client.mutate({
+        mutation: gql`
+          mutation {
+            generateSchedule(
+              input: {
+                algorithm1: COMPANY3
+                algorithm2: COMPANY4
+                term: SUMMER
+                year: 2022
+              }
+            ) {
+              message
+              success
+            }
+          }
+        `,
+      });
+
+      expect(generateScheduleResponse.data.generateSchedule.message).toEqual(
+        "Generating Schedule for Year: 2022"
+      );
+      expect(
+        generateScheduleResponse.data.generateSchedule.success
+      ).toBeTruthy();
     });
 
-    expect(generateScheduleResponse.data.generateSchedule.message).toEqual(
-      "Generating Schedule for Year: 2022"
-    );
-    expect(generateScheduleResponse.data.generateSchedule.success).toBeTruthy();
+    describe("when calling company 3 and company 4", () => {
+      it("should generate a schedule successfully", async () => {});
+    });
   });
 });
