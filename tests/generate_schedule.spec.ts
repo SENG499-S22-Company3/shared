@@ -111,6 +111,7 @@ describe("Generate base schedule with courses to timeslots and professors to cou
                 algorithm2: alg2,
                 term: "SUMMER",
                 year: 2022,
+                courses: [{ subject: "CSC", code: "225", section: 0 }],
               },
             },
           });
