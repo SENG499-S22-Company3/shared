@@ -35,10 +35,6 @@ jobs:
         image: ghcr.io/seng499-company-4/company4-algorithm-2:latest
         env:
           PORT: 5050
-          ALGO1_COMPANY_3_URL: http://localhost:4040
-          ALGO2_COMPANY_3_URL: http://localhost:5000
-          ALGO1_COMPANY_4_URL: http://localhost:5040
-          ALGO2_COMPANY_4_URL: http://localhost:5050
         ports:
           - 5050:5050
       # Label used to access the service container
@@ -61,6 +57,10 @@ jobs:
           DATABASE_URL: postgres://postgres:postgres@postgres:5432/postgres
           CI: false
           NODE_ENV: development
+          ALGO1_COMPANY_3_URL: http://localhost:4040
+          ALGO2_COMPANY_3_URL: http://localhost:5000
+          ALGO1_COMPANY_4_URL: http://localhost:5040
+          ALGO2_COMPANY_4_URL: http://localhost:5050
         ports:
           - 4000:4000
         # options: >-
