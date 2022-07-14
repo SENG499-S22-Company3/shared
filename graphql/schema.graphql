@@ -90,6 +90,45 @@ type Mutation {
   Edit schedule and Plug and Play Compnay 3's and 4's Algorithms
   """
   editCourse(input: EditCourseInput): Response!
+    @deprecated(reason: "Use updateSchedule instead")
+  """
+  Update an entire schdule.
+  """
+  updateSchedule(input: UpdateScheduleInput!): UpdateScheduleResponse!
+}
+
+input UpdateScheduleInput {
+  """
+  ID of the schedule to update. If not given, the current schedule will be updated.
+  """
+  id: ID
+  """
+  The updated courses
+  """
+  courses: [CourseSection!]!
+  """
+  Whether to perform validation on the backend through algorithm 1.
+  """
+  skipValidation: Boolean!
+  """
+  Which algorithm to use. 1 is the default. If COMPANY2 is selected then validation will not be performed regardless of skipValidation.
+  """
+  validation: Company!
+}
+
+type UpdateScheduleResponse {
+  """
+  Whether the update was successful
+  """
+  success: Boolean!
+  """
+  General messaging for the client to consume.
+  """
+  message: String
+  """
+  Errors associated to updating the schedule. Only populated if success is false. This could include validation issues.
+  """
+  errors: [String!]
 }
 
 type Response {
