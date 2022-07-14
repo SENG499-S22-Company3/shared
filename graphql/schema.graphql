@@ -105,7 +105,7 @@ input UpdateScheduleInput {
   """
   The updated courses
   """
-  courses: [CourseSection!]!
+  courses: [CourseSectionInput!]!
   """
   Whether to perform validation on the backend through algorithm 1.
   """
@@ -114,6 +114,41 @@ input UpdateScheduleInput {
   Which algorithm to use. 1 is the default. If COMPANY2 is selected then validation will not be performed regardless of skipValidation.
   """
   validation: Company!
+}
+
+input CourseSectionInput {
+  """
+  The course identifier
+  """
+  id: CourseUpdateInput!
+  """
+  How many hours per week a course takes
+  """
+  hoursPerWeek: Float!
+  """
+  Maximum capacity of the section
+  """
+  capacity: Int!
+  """
+  Section number for courses, eg: A01, A02
+  """
+  sectionNumber: String
+  """
+  Professor's info, if any professors are assigned. Usernames
+  """
+  professors: [String!]!
+  """
+  The start date of the course
+  """
+  startDate: Date!
+  """
+  The end date of the course
+  """
+  endDate: Date!
+  """
+  Days of the week the class is offered in - see Day
+  """
+  meetingTimes: [MeetingTimeInput!]!
 }
 
 type UpdateScheduleResponse {
@@ -219,6 +254,25 @@ input CourseInput {
   Number of Sections for a course
   """
   section: Int!
+}
+
+input CourseUpdateInput {
+  """
+  Course subject, e.g. SENG, CSC
+  """
+  subject: String!
+  """
+  Course title. e.g. Introduction to Artificial Intelligence
+  """
+  title: String!
+  """
+  Course code, e.g. 499, 310
+  """
+  code: String!
+  """
+  Term course is offered in
+  """
+  term: Term!
 }
 
 type CourseID {
