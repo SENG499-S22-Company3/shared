@@ -95,9 +95,6 @@
                     <a href="#mutation-resetPassword">resetPassword</a>
                   </li>
                   <li>
-                    <a href="#mutation-updateSchedule">updateSchedule</a>
-                  </li>
-                  <li>
                     <a href="#mutation-updateUser">updateUser</a>
                   </li>
                 </ul>
@@ -133,12 +130,6 @@
               </li>
               <li>
                 <a href="#definition-CourseSection">CourseSection</a>
-              </li>
-              <li>
-                <a href="#definition-CourseSectionInput">CourseSectionInput</a>
-              </li>
-              <li>
-                <a href="#definition-CourseUpdateInput">CourseUpdateInput</a>
               </li>
               <li>
                 <a href="#definition-CreateTeachingPreferenceInput">CreateTeachingPreferenceInput</a>
@@ -196,12 +187,6 @@
               </li>
               <li>
                 <a href="#definition-Term">Term</a>
-              </li>
-              <li>
-                <a href="#definition-UpdateScheduleInput">UpdateScheduleInput</a>
-              </li>
-              <li>
-                <a href="#definition-UpdateScheduleResponse">UpdateScheduleResponse</a>
               </li>
               <li>
                 <a href="#definition-UpdateUserInput">UpdateUserInput</a>
@@ -324,8 +309,8 @@ https://seng499-c3-backend.herokuapp.com/graphql
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"allUsers"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
       <span class="hljs-punctuation">{</span>
-        <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"username"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">987</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"username"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"displayName"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"password"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"role"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"ADMIN"</span><span class="hljs-punctuation">,</span>
@@ -391,7 +376,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"coursePreferences"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
-      <span class="hljs-punctuation">{</span><span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">CourseID</span><span class="hljs-punctuation">,</span> <span class="hljs-attr">"preference"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">987</span><span class="hljs-punctuation">}</span>
+      <span class="hljs-punctuation">{</span><span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">CourseID</span><span class="hljs-punctuation">,</span> <span class="hljs-attr">"preference"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">}</span>
     <span class="hljs-punctuation">]</span>
   <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span>
@@ -503,7 +488,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
     <span class="hljs-attr">"courses"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
       <span class="hljs-punctuation">{</span>
         <span class="hljs-attr">"CourseID"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">CourseID</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"hoursPerWeek"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">987.65</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"hoursPerWeek"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123.45</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"capacity"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"sectionNumber"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"professors"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">User</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
@@ -606,12 +591,12 @@ https://seng499-c3-backend.herokuapp.com/graphql
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"findUserById"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
       <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"username"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"username"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"displayName"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"password"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"role"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"ADMIN"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"preferences"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">CoursePreference</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"active"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"active"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"hasPeng"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span>
     <span class="hljs-punctuation">}</span>
   <span class="hljs-punctuation">}</span>
@@ -680,11 +665,11 @@ https://seng499-c3-backend.herokuapp.com/graphql
       <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"username"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"displayName"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"password"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"password"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"role"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"ADMIN"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"preferences"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">CoursePreference</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"active"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"hasPeng"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span>
+      <span class="hljs-attr">"active"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"hasPeng"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span>
     <span class="hljs-punctuation">}</span>
   <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span>
@@ -774,7 +759,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <h5>Variables</h5>
                   <html>
                   <head></head>
-                  <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span><span class="hljs-attr">"year"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">}</span>
+                  <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span><span class="hljs-attr">"year"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">987</span><span class="hljs-punctuation">}</span>
 </code></pre> </body>
                   </html>
                 </div>
@@ -1083,7 +1068,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <h5>Variables</h5>
                   <html>
                   <head></head>
-                  <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span><span class="hljs-attr">"username"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">}</span>
+                  <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span><span class="hljs-attr">"username"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">}</span>
 </code></pre> </body>
                   </html>
                 </div>
@@ -1095,8 +1080,8 @@ https://seng499-c3-backend.herokuapp.com/graphql
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"createUser"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
       <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"username"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"username"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"password"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
     <span class="hljs-punctuation">}</span>
   <span class="hljs-punctuation">}</span>
@@ -1111,14 +1096,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
             <div class="operation-group-name">
               <a href="#group-Operations-Mutations">Mutations</a>
             </div>
-            <h2 class="operation-heading operation-deprecated"> <code>editCourse</code> </h2>
-            <div class="doc-row">
-              <div class="doc-copy">
-                <div class="doc-copy-section">
-                  <div class="deprecation-reason"> Use updateSchedule instead </div>
-                </div>
-              </div>
-            </div>
+            <h2 class="operation-heading "> <code>editCourse</code> </h2>
             <div class="doc-row">
               <div class="doc-copy">
                 <div class="operation-description doc-copy-section">
@@ -1188,8 +1166,8 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"editCourse"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span>
+      <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
     <span class="hljs-punctuation">}</span>
   <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span>
@@ -1273,7 +1251,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"generateSchedule"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
     <span class="hljs-punctuation">}</span>
   <span class="hljs-punctuation">}</span>
@@ -1378,8 +1356,8 @@ https://seng499-c3-backend.herokuapp.com/graphql
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"login"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
       <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"token"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
+      <span class="hljs-attr">"token"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span>
     <span class="hljs-punctuation">}</span>
   <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span>
@@ -1435,7 +1413,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"logout"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
       <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"token"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"token"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
     <span class="hljs-punctuation">}</span>
   <span class="hljs-punctuation">}</span>
@@ -1510,7 +1488,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <h5>Variables</h5>
                   <html>
                   <head></head>
-                  <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span><span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">}</span>
+                  <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span><span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"4"</span><span class="hljs-punctuation">}</span>
 </code></pre> </body>
                   </html>
                 </div>
@@ -1522,95 +1500,8 @@ https://seng499-c3-backend.herokuapp.com/graphql
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"resetPassword"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
       <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"password"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
-    <span class="hljs-punctuation">}</span>
-  <span class="hljs-punctuation">}</span>
-<span class="hljs-punctuation">}</span>
-</code></pre> </body>
-                  </html>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="mutation-updateSchedule" class="operation operation-mutation" data-traverse-target="mutation-updateSchedule">
-            <div class="operation-group-name">
-              <a href="#group-Operations-Mutations">Mutations</a>
-            </div>
-            <h2 class="operation-heading "> <code>updateSchedule</code> </h2>
-            <div class="doc-row">
-              <div class="doc-copy">
-                <div class="operation-description doc-copy-section">
-                  <h5>Description</h5>
-                  <p>Update an entire schdule.</p>
-                </div>
-              </div>
-            </div>
-            <div class="doc-row">
-              <div class="doc-copy">
-                <div class="operation-response doc-copy-section">
-                  <h5>Response</h5>
-                  <p> Returns an
-                    <a href="#definition-UpdateScheduleResponse"><code>UpdateScheduleResponse!</code></a>
-                  </p>
-                </div>
-                <div class="operation-arguments doc-copy-section">
-                  <h5>Arguments</h5>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>input</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-UpdateScheduleInput"><code>UpdateScheduleInput!</code></a>
-                          </span>
-                        </td>
-                        <td> </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="doc-examples">
-                <h4 class="example-heading">Example</h4>
-                <div class="example-section example-section-is-code operation-query-example">
-                  <h5>Query</h5>
-                  <html>
-                  <head></head>
-                  <body><pre><code class="hljs language-gql"><span class="hljs-symbol"><span class="hljs-keyword">mutation</span> UpdateSchedule<span class="hljs-tag">(<span class="hljs-code">$input</span>:<span class="hljs-type"> UpdateScheduleInput!</span>)</span> <span class="hljs-tag">{
-  <span class="hljs-symbol">updateSchedule<span class="hljs-tag">(input: <span class="hljs-code">$input</span>)</span> <span class="hljs-tag">{
-    <span class="hljs-symbol">success</span>
-    <span class="hljs-symbol">message</span>
-    <span class="hljs-symbol">errors</span>
-  }</span></span>
-}</span></span>
-</code></pre> </body>
-                  </html>
-                </div>
-                <div class="example-section example-section-is-code operation-variables-example">
-                  <h5>Variables</h5>
-                  <html>
-                  <head></head>
-                  <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span><span class="hljs-attr">"input"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">UpdateScheduleInput</span><span class="hljs-punctuation">}</span>
-</code></pre> </body>
-                  </html>
-                </div>
-                <div class="example-section example-section-is-code operation-response-example">
-                  <h5>Response</h5>
-                  <html>
-                  <head></head>
-                  <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">"updateSchedule"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"errors"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">]</span>
+      <span class="hljs-attr">"password"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
     <span class="hljs-punctuation">}</span>
   <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span>
@@ -1781,7 +1672,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"token"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span>
+  <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
 <span class="hljs-punctuation">}</span>
 </code></pre> </body>
                   </html>
@@ -1858,7 +1749,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <html>
                   <head></head>
                   <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"currentPassword"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"currentPassword"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"newPassword"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
 <span class="hljs-punctuation">}</span>
 </code></pre> </body>
@@ -1979,8 +1870,8 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <html>
                   <head></head>
                   <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"subject"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"title"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"subject"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"title"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"code"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"term"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"FALL"</span>
 <span class="hljs-punctuation">}</span>
@@ -2181,9 +2072,9 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <head></head>
                   <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"subject"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"code"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"code"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"term"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"FALL"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"preference"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span>
+  <span class="hljs-attr">"preference"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">987</span>
 <span class="hljs-punctuation">}</span>
 </code></pre> </body>
                   </html>
@@ -2297,223 +2188,11 @@ https://seng499-c3-backend.herokuapp.com/graphql
   <span class="hljs-attr">"CourseID"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">CourseID</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"hoursPerWeek"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">987.65</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"capacity"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">987</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"sectionNumber"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"sectionNumber"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"professors"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">User</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"startDate"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2007-12-03"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"endDate"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2007-12-03"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"meetingTimes"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">MeetingTime</span><span class="hljs-punctuation">]</span>
-<span class="hljs-punctuation">}</span>
-</code></pre> </body>
-                  </html>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="definition-CourseSectionInput" class="definition definition-input-object" data-traverse-target="definition-CourseSectionInput">
-            <div class="definition-group-name">
-              <a href="#group-Types">Types</a>
-            </div>
-            <h2 class="definition-heading">CourseSectionInput</h2>
-            <div class="doc-row">
-              <div class="doc-copy">
-                <div class="definition-properties doc-copy-section">
-                  <h5>Fields</h5>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Input Field</th>
-                        <th>Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>id</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-CourseUpdateInput"><code>CourseUpdateInput!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>The course identifier</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>hoursPerWeek</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-Float"><code>Float!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>How many hours per week a course takes</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>capacity</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-Int"><code>Int!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>Maximum capacity of the section</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>sectionNumber</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-String"><code>String</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>Section number for courses, eg: A01, A02</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>professors</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-String"><code>[String!]!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>Professor&#39;s info, if any professors are assigned. Usernames</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>startDate</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-Date"><code>Date!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>The start date of the course</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>endDate</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-Date"><code>Date!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>The end date of the course</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>meetingTimes</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-MeetingTimeInput"><code>[MeetingTimeInput!]!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>Days of the week the class is offered in - see Day</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="doc-examples">
-                <div class="example-section example-section-is-code">
-                  <h5>Example</h5>
-                  <html>
-                  <head></head>
-                  <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">CourseUpdateInput</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"hoursPerWeek"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">987.65</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"capacity"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"sectionNumber"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"professors"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">"abc123"</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"startDate"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2007-12-03"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"endDate"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2007-12-03"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"meetingTimes"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">MeetingTimeInput</span><span class="hljs-punctuation">]</span>
-<span class="hljs-punctuation">}</span>
-</code></pre> </body>
-                  </html>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="definition-CourseUpdateInput" class="definition definition-input-object" data-traverse-target="definition-CourseUpdateInput">
-            <div class="definition-group-name">
-              <a href="#group-Types">Types</a>
-            </div>
-            <h2 class="definition-heading">CourseUpdateInput</h2>
-            <div class="doc-row">
-              <div class="doc-copy">
-                <div class="definition-properties doc-copy-section">
-                  <h5>Fields</h5>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Input Field</th>
-                        <th>Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>subject</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-String"><code>String!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>Course subject, e.g. SENG, CSC</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>title</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-String"><code>String!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>Course title. e.g. Introduction to Artificial Intelligence</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>code</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-String"><code>String!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>Course code, e.g. 499, 310</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>term</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-Term"><code>Term!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>Term course is offered in</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="doc-examples">
-                <div class="example-section example-section-is-code">
-                  <h5>Example</h5>
-                  <html>
-                  <head></head>
-                  <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"subject"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"title"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"code"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"term"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"FALL"</span>
 <span class="hljs-punctuation">}</span>
 </code></pre> </body>
                   </html>
@@ -2624,10 +2303,10 @@ https://seng499-c3-backend.herokuapp.com/graphql
   <span class="hljs-attr">"userId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"courses"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">CoursePreferenceInput</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"nonTeachingTerm"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"FALL"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"hasRelief"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"hasRelief"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"reliefReason"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"hasTopic"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"topicDescription"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
+  <span class="hljs-attr">"hasTopic"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"topicDescription"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span>
 <span class="hljs-punctuation">}</span>
 </code></pre> </body>
                   </html>
@@ -2698,7 +2377,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <html>
                   <head></head>
                   <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"username"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"password"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span>
@@ -2898,9 +2577,9 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <head></head>
                   <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"course"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">CourseInput</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"hoursPerWeek"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123.45</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"capacity"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">987</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"sectionNumber"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"hoursPerWeek"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">987.65</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"capacity"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"sectionNumber"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"startDate"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2007-12-03"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"endDate"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2007-12-03"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"meetingTimes"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">MeetingTimeInput</span><span class="hljs-punctuation">]</span>
@@ -2983,7 +2662,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <h5>Example</h5>
                   <html>
                   <head></head>
-                  <body><pre><code class="hljs language-json"><span class="hljs-number">123.45</span>
+                  <body><pre><code class="hljs language-json"><span class="hljs-number">987.65</span>
 </code></pre> </body>
                   </html>
                 </div>
@@ -3014,25 +2693,42 @@ https://seng499-c3-backend.herokuapp.com/graphql
                             <a href="#definition-Int"><code>Int!</code></a>
                           </span>
                         </td>
-                        <td> </td>
-                      </tr>
-                      <tr>
                         <td>
-                          <span class="property-name"><code>term</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-Term"><code>Term!</code></a>
-                          </span>
+                          <p>Base year for the schedule to be generated.</p>
                         </td>
-                        <td> </td>
                       </tr>
                       <tr>
                         <td>
-                          <span class="property-name"><code>courses</code></span> -
+                          <span class="property-name"><code>fallCourses</code></span> -
                           <span class="property-type">
                             <a href="#definition-CourseInput"><code>[CourseInput!]</code></a>
                           </span>
                         </td>
-                        <td> </td>
+                        <td>
+                          <p>Fall term courses to be scheduled. For fall, this would be same year as the base year.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="property-name"><code>springCourses</code></span> -
+                          <span class="property-type">
+                            <a href="#definition-CourseInput"><code>[CourseInput!]</code></a>
+                          </span>
+                        </td>
+                        <td>
+                          <p>Spring term courses to be scheduled. For spring, this would be base year + 1 (e.g. if base year is 2019, spring courses would be 2020)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="property-name"><code>summerCourses</code></span> -
+                          <span class="property-type">
+                            <a href="#definition-CourseInput"><code>[CourseInput!]</code></a>
+                          </span>
+                        </td>
+                        <td>
+                          <p>Summer term courses to be scheduled. For summer, this would be base year + 1 (e.g. if base year is 2019, summer courses would be 2020)</p>
+                        </td>
                       </tr>
                       <tr>
                         <td>
@@ -3062,9 +2758,10 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <html>
                   <head></head>
                   <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"year"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">987</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"term"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"FALL"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"courses"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">CourseInput</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"year"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"fallCourses"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">CourseInput</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"springCourses"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">CourseInput</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"summerCourses"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">CourseInput</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"algorithm1"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"COMPANY3"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"algorithm2"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"COMPANY3"</span>
 <span class="hljs-punctuation">}</span>
@@ -3091,7 +2788,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <h5>Example</h5>
                   <html>
                   <head></head>
-                  <body><pre><code class="hljs language-json"><span class="hljs-number">4</span>
+                  <body><pre><code class="hljs language-gql"><span class="hljs-symbol">"4"</span>
 </code></pre> </body>
                   </html>
                 </div>
@@ -3309,7 +3006,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <head></head>
                   <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"password"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span>
 <span class="hljs-punctuation">}</span>
 </code></pre> </body>
@@ -3503,7 +3200,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <head></head>
                   <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"4"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"year"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"year"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">987</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"createdAt"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2007-12-03"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"courses"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">CourseSection</span><span class="hljs-punctuation">]</span>
 <span class="hljs-punctuation">}</span>
@@ -3530,7 +3227,7 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <h5>Example</h5>
                   <html>
                   <head></head>
-                  <body><pre><code class="hljs language-gql"><span class="hljs-symbol">"abc123"</span>
+                  <body><pre><code class="hljs language-gql"><span class="hljs-symbol">"xyz789"</span>
 </code></pre> </body>
                   </html>
                 </div>
@@ -3628,152 +3325,6 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <html>
                   <head></head>
                   <body><pre><code class="hljs language-gql"><span class="hljs-symbol">"FALL"</span>
-</code></pre> </body>
-                  </html>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="definition-UpdateScheduleInput" class="definition definition-input-object" data-traverse-target="definition-UpdateScheduleInput">
-            <div class="definition-group-name">
-              <a href="#group-Types">Types</a>
-            </div>
-            <h2 class="definition-heading">UpdateScheduleInput</h2>
-            <div class="doc-row">
-              <div class="doc-copy">
-                <div class="definition-properties doc-copy-section">
-                  <h5>Fields</h5>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Input Field</th>
-                        <th>Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>id</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-ID"><code>ID</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>ID of the schedule to update. If not given, the current schedule will be updated.</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>courses</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-CourseSectionInput"><code>[CourseSectionInput!]!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>The updated courses</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>skipValidation</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-Boolean"><code>Boolean!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>Whether to perform validation on the backend through algorithm 1.</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="property-name"><code>validation</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-Company"><code>Company!</code></a>
-                          </span>
-                        </td>
-                        <td>
-                          <p>Which algorithm to use. 1 is the default. If COMPANY2 is selected then validation will not be performed regardless of skipValidation.</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="doc-examples">
-                <div class="example-section example-section-is-code">
-                  <h5>Example</h5>
-                  <html>
-                  <head></head>
-                  <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"4"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"courses"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">CourseSectionInput</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"skipValidation"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"validation"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"COMPANY3"</span>
-<span class="hljs-punctuation">}</span>
-</code></pre> </body>
-                  </html>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="definition-UpdateScheduleResponse" class="definition definition-object" data-traverse-target="definition-UpdateScheduleResponse">
-            <div class="definition-group-name">
-              <a href="#group-Types">Types</a>
-            </div>
-            <h2 class="definition-heading">UpdateScheduleResponse</h2>
-            <div class="doc-row">
-              <div class="doc-copy">
-                <div class="definition-properties doc-copy-section">
-                  <h5>Fields</h5>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Field Name</th>
-                        <th>Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td data-property-name="">
-                          <span class="property-name"><code>success</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-Boolean"><code>Boolean!</code></a>
-                          </span>
-                        </td>
-                        <td> Whether the update was successful </td>
-                      </tr>
-                      <tr>
-                        <td data-property-name="">
-                          <span class="property-name"><code>message</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-String"><code>String</code></a>
-                          </span>
-                        </td>
-                        <td> General messaging for the client to consume. </td>
-                      </tr>
-                      <tr>
-                        <td data-property-name="">
-                          <span class="property-name"><code>errors</code></span> -
-                          <span class="property-type">
-                            <a href="#definition-String"><code>[String!]</code></a>
-                          </span>
-                        </td>
-                        <td> Errors associated to updating the schedule. Only populated if success is false. This could include validation issues. </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="doc-examples">
-                <div class="example-section example-section-is-code">
-                  <h5>Example</h5>
-                  <html>
-                  <head></head>
-                  <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"success"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"errors"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">"abc123"</span><span class="hljs-punctuation">]</span>
-<span class="hljs-punctuation">}</span>
 </code></pre> </body>
                   </html>
                 </div>
@@ -3974,13 +3525,13 @@ https://seng499-c3-backend.herokuapp.com/graphql
                   <html>
                   <head></head>
                   <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">987</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"username"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"displayName"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"username"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"displayName"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"password"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"role"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"ADMIN"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"preferences"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">CoursePreference</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"active"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"active"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"hasPeng"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span>
 <span class="hljs-punctuation">}</span>
 </code></pre> </body>
