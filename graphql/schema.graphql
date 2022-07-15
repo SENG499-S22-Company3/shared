@@ -144,9 +144,22 @@ input CoursePreferenceInput {
 }
 
 input GenerateScheduleInput {
+  """
+  Base year for the schedule to be generated.
+  """
   year: Int!
-  term: Term!
-  courses: [CourseInput!]
+  """
+  Fall term courses to be scheduled. For fall, this would be same year as the base year.
+  """
+  fallCourses: [CourseInput!]
+  """
+  Spring term courses to be scheduled. For spring, this would be base year + 1 (e.g. if base year is 2019, spring courses would be 2020)
+  """
+  springCourses: [CourseInput!]
+  """
+  Summer term courses to be scheduled. For summer, this would be base year + 1 (e.g. if base year is 2019, summer courses would be 2020)
+  """
+  summerCourses: [CourseInput!]
   algorithm1: Company!
   algorithm2: Company!
 }
