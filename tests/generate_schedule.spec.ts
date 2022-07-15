@@ -3,7 +3,7 @@ import { request } from "../config";
 
 describe("Generate base schedule with courses to timeslots and professors to courses assigned", () => {
   it("should return an authentication error when not logged in", async () => {
-    const client = request.createApolloClient();
+    const { client } = request.createApolloClient();
     // Attempt to generate schedule
 
     const response = await client.mutate({
@@ -30,7 +30,7 @@ describe("Generate base schedule with courses to timeslots and professors to cou
   });
 
   it("should allow schedule generation when logged in", async () => {
-    const client = request.createApolloClient();
+    const { client } = request.createApolloClient();
     // Login
     const loginResponse = await client.mutate({
       mutation: gql`
