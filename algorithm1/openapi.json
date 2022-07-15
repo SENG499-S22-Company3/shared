@@ -38,6 +38,39 @@
         }
       }
     }
+    "/check_schedule" : {
+      "post" : {
+        "summary" : "Validates a schedule",
+        "description" : "Takes 3 inputs and returns a message stating the schedule is valid, or reasons it is invalid. The courses listed in the hardScheduled courses are evaluated, where coursesToSchedule are simply ignored",
+        "responses" : {
+          "200" : {
+            "description" : "Schedule validation message or issues printed",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "string",
+                  "example" : { 
+                    "error: ASTR 110 is scheduled at same time as another required course ASTR110 in Spring term,   Schedule given has some violations that should be resolved",
+                    "Schedule given is valid"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody" : {
+          "description" : "This is the request body format.",
+          "required" : true,
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/ScheduleConstraints"
+              }
+            }
+          }
+        }
+      }
+    }
   },
   "components" : {
     "schemas" : {
