@@ -395,6 +395,18 @@ input UpdateUserInput {
   ID of user to update
   """
   id: ID!
+  """
+  display name for the user
+  """
+  displayName: String
+  """
+  Determine if user has Peng
+  """
+  hasPeng: Boolean
+  """
+  Determine if the user is marked active
+  """
+  active: Boolean
 }
 
 type UpdateUserMutationResult {
