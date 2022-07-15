@@ -4,7 +4,6 @@ on:
   push:
     branches: [main]
   pull_request:
-    branches: [main]
   repository_dispatch:
     types: 
       - company3-algorithm-1
@@ -14,15 +13,29 @@ on:
 # Make sure URLs defined here correspond with ports defined below
 env:
   BACKEND_URL: http://localhost:4000/graphql
-  ALGORITHM1_URL: http://localhost:4040
-  ALGORITHM2_URL: http://localhost:5000
-
+  ALGO1_COMPANY_3_URL: http://localhost:4040
+  ALGO2_COMPANY_3_URL: http://localhost:5000
+  ALGO1_COMPANY_4_URL: http://localhost:5040
+  ALGO2_COMPANY_4_URL: http://localhost:5050
+  
 jobs:
   integration:
     name: End to End Integration Testing
     runs-on: ubuntu-latest
     # Service containers to run with `container-job`
     services:
+      algorithm1c4:
+        image: ghcr.io/seng499-company-4/company4-algorithm-1:latest
+        env:
+          PORT: 5040
+        ports:
+          - 5040:5040
+      algorithm2c4:
+        image: ghcr.io/seng499-company-4/company4-algorithm-2:latest
+        env:
+          PORT: 5050
+        ports:
+          - 5050:5050
       # Label used to access the service container
       algorithm1:
         image: ghcr.io/seng499-s22-company3/algorithm-1:latest
@@ -43,6 +56,10 @@ jobs:
           DATABASE_URL: postgres://postgres:postgres@postgres:5432/postgres
           CI: false
           NODE_ENV: development
+          ALGO1_COMPANY_3_URL: http://localhost:4040
+          ALGO2_COMPANY_3_URL: http://localhost:5000
+          ALGO1_COMPANY_4_URL: http://localhost:5040
+          ALGO2_COMPANY_4_URL: http://localhost:5050
         ports:
           - 4000:4000
         # options: >-
@@ -105,4 +122,6 @@ jobs:
       - name: Test
         env:
           BACKEND_URL: http://localhost:4000/graphql
+          ALGORITHM1_URL: http://localhost:4040
+          ALGORITHM2_URL: http://localhost:5000
         run: npm test
