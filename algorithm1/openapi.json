@@ -54,7 +54,10 @@
                   }
                 }
               }
-            }
+            },
+            "400" : {
+              "description" : "Error with request sent. Schedule couldn't be checked."
+          }
           },
           "requestBody" : {
             "description" : "This is the request body format.",
