@@ -30,7 +30,7 @@ describe("Generate base schedule with courses to timeslots and professors to cou
   });
 
   it("should allow schedule generation when logged in", async () => {
-    const { client } = request.createApolloClient();
+    const { client, setToken } = request.createApolloClient();
     // Login
     const loginResponse = await client.mutate({
       mutation: gql`
@@ -45,8 +45,9 @@ describe("Generate base schedule with courses to timeslots and professors to cou
     });
 
     expect(loginResponse.data.login.success).toBeTruthy();
-    expect(loginResponse.data.login.token).toEqual("");
+    expect(loginResponse.data.login.token).toBeDefined();
     expect(loginResponse.data.login.message).toEqual("Success");
+    setToken(loginResponse.data.login.token);
 
     const generateScheduleResponse = await client.mutate({
       mutation: gql`

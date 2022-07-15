@@ -48,7 +48,6 @@ export const request = {
         link: from([middlewareLink, httpLink]),
       }),
       setToken: (newToken: string) => {
-        console.log(newToken);
         token = newToken;
       },
     };
