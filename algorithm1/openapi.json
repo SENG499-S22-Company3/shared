@@ -49,7 +49,7 @@
                   "schema" : {
                     "message": {
                       "type" : "string",
-                      "example" : 
+                      "example" : "Schedule given is valid"
                     }
                   }
                 }
