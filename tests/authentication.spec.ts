@@ -35,7 +35,6 @@ describe("authentication", () => {
         const loginResponse = await client.mutate({ mutation });
         expect(loginResponse.errors).toBeUndefined();
         expect(loginResponse.data.login.success).toBeTruthy();
-        expect(loginResponse.data.login.message).toBeDefined();
         expect(loginResponse.data.login.token).toBeDefined();
 
         setToken(loginResponse.data.login.token);
@@ -70,7 +69,6 @@ describe("authentication", () => {
         const loginResponse = await client.mutate({ mutation });
         expect(loginResponse.errors).toBeUndefined();
         expect(loginResponse.data.login.success).toBeTruthy();
-        expect(loginResponse.data.login.message).toBeDefined();
         expect(loginResponse.data.login.token).toBeDefined();
 
         setToken(loginResponse.data.login.token);
