@@ -111,7 +111,7 @@ input UpdateScheduleInput {
   """
   skipValidation: Boolean!
   """
-  Which algorithm to use. 1 is the default. If COMPANY2 is selected then validation will not be performed regardless of skipValidation.
+  Which algorithm to use. If COMPANY4 is selected then validation will not be performed regardless of skipValidation.
   """
   validation: Company!
 }
