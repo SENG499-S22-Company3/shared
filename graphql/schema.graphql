@@ -116,6 +116,18 @@ input CreateTeachingPreferenceInput {
   reliefReason: String
   hasTopic: Boolean!
   topicDescription: String
+  """
+  Number of courses a professor prefers to teach in the FALL semester. Defaults to 1.
+  """
+  fallTermCourses: Int
+  """
+  Number of courses a professor prefers to teach in the SPRING semester. Defaults to 1.
+  """
+  springTermCourses: Int
+  """
+  Number of courses a professor prefers to teach in the SUMMER semester. Defaults to 1.
+  """
+  summerTermCourses: Int
 }
 
 type TeachingPreferenceSurvey {
