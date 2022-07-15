@@ -36,41 +36,6 @@
             }
           }
         }
-      },
-      "/check_schedule" : {
-        "post" : {
-          "summary" : "Validates a schedule",
-          "description" : "Takes 3 inputs and returns a message stating the schedule is valid, or reasons it is invalid. The courses listed in the hardScheduled courses are evaluated, where coursesToSchedule are simply ignored",
-          "responses" : {
-            "200" : {
-              "description" : "Schedule validation message or issues printed",
-              "content" : {
-                "application/json" : {
-                  "schema" : {
-                    "message": {
-                      "type" : "string",
-                      "example" : "Schedule given is valid"
-                    }
-                  }
-                }
-              }
-            },
-            "400" : {
-              "description" : "Error with request sent. Schedule couldn't be checked."
-          }
-          },
-          "requestBody" : {
-            "description" : "This is the request body format.",
-            "required" : true,
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/ScheduleConstraints"
-                }
-              }
-            }
-          }
-        }
       }
     }
   },
