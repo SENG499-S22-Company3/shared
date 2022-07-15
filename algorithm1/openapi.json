@@ -37,7 +37,7 @@
           }
         }
       }
-    }
+    },
     "/check_schedule" : {
       "post" : {
         "summary" : "Validates a schedule",
