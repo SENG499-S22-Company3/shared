@@ -100,7 +100,7 @@ jobs:
         run: npx -y prisma migrate dev && npx -y prisma db seed
         working-directory: c4/backend
         env:
-          DATABASE_URL: postgres://postgres:postgres@localhost:5432/postgres
+          DATABASE_URL: postgresql://admin:postgrespw@localhost:5432/mydb?schema=public
 
       - name: Test
         env:
