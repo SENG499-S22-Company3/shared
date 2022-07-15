@@ -48,10 +48,9 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "string",
-                  "example" : { 
-                    "error: ASTR 110 is scheduled at same time as another required course ASTR110 in Spring term,   Schedule given has some violations that should be resolved",
-                    "Schedule given is valid"
+                  "message": {
+                    "type" : "string",
+                    "example" : 
                   }
                 }
               }
