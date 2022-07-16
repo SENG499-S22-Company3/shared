@@ -1,12 +1,12 @@
 name: Company 4 E2E Testing
 
 on:
-  push: 
+  push:
     branches: [main]
   pull_request:
     branches: [main]
   repository_dispatch:
-    types: 
+    types:
       - company4-algorithm-1
       - company4-algorithm-2
       - company4-backend
@@ -53,8 +53,9 @@ jobs:
         image: postgres:14-alpine
         # Provide the password for postgres
         env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: mydb
+          POSTGRES_USER: admin
+          POSTGRES_PASSWORD: postgrespw
         # Set health checks to wait until postgres has started
         options: >-
           --health-cmd pg_isready
@@ -65,7 +66,7 @@ jobs:
           # Maps tcp port 5432 on service container to the host
           - 5432:5432
     steps:
-      - name: Checkout shared repo 
+      - name: Checkout shared repo
         uses: actions/checkout@v3
         with:
           ref: ${{ github.event.client_payload.ref }}
@@ -91,7 +92,7 @@ jobs:
           path: ~/.npm
           restore-keys: |
             npm-
-      
+
       - name: Install dependencies
         run: npm ci --no-audit --no-progress
 
@@ -99,7 +100,7 @@ jobs:
         run: npx -y prisma migrate dev && npx -y prisma db seed
         working-directory: c4/backend
         env:
-          DATABASE_URL: postgres://postgres:postgres@localhost:5432/postgres   
+          DATABASE_URL: postgresql://admin:postgrespw@localhost:5432/mydb?schema=public
 
       - name: Test
         env:

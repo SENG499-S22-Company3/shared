@@ -4,7 +4,7 @@ import { request } from "../config";
 describe("authentication", () => {
   describe("when a user is not logged in", () => {
     it("should return a null result for the GraphQL 'me' query", async () => {
-      const client = request.createApolloClient();
+      const { client } = request.createApolloClient();
       const query = gql`
         query {
           me {
@@ -21,7 +21,7 @@ describe("authentication", () => {
   describe("when a user is logged in", () => {
     describe("when the user is role ADMIN", () => {
       it("logins in as ADMIN and returns the role from the me query", async () => {
-        const client = request.createApolloClient();
+        const { client, setToken } = request.createApolloClient();
         const mutation = gql`
           mutation {
             login(username: "testadmin", password: "testpassword") {
@@ -35,8 +35,9 @@ describe("authentication", () => {
         const loginResponse = await client.mutate({ mutation });
         expect(loginResponse.errors).toBeUndefined();
         expect(loginResponse.data.login.success).toBeTruthy();
-        expect(loginResponse.data.login.message).toBeDefined();
         expect(loginResponse.data.login.token).toBeDefined();
+
+        setToken(loginResponse.data.login.token);
 
         const query = gql`
           query {
@@ -54,7 +55,7 @@ describe("authentication", () => {
     });
     describe("when the user is role USER", () => {
       it("logins in as ADMIN and returns the role from the me query", async () => {
-        const client = request.createApolloClient();
+        const { client, setToken } = request.createApolloClient();
         const mutation = gql`
           mutation {
             login(username: "testuser", password: "testpassword") {
@@ -68,8 +69,9 @@ describe("authentication", () => {
         const loginResponse = await client.mutate({ mutation });
         expect(loginResponse.errors).toBeUndefined();
         expect(loginResponse.data.login.success).toBeTruthy();
-        expect(loginResponse.data.login.message).toBeDefined();
         expect(loginResponse.data.login.token).toBeDefined();
+
+        setToken(loginResponse.data.login.token);
 
         const query = gql`
           query {
@@ -88,7 +90,7 @@ describe("authentication", () => {
   });
 
   it("should fail login with invalid credentials", async () => {
-    const client = request.createApolloClient();
+    const { client } = request.createApolloClient();
     // user doesn't exist
     const mutation = gql`
       mutation {

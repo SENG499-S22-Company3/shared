@@ -27,15 +27,14 @@ export const request = {
   algorithm1: supertest(ALGORITHM1_URL),
   algorithm2: supertest(ALGORITHM2_URL),
   createApolloClient: () => {
-    // store the cookie values
-    let session: null | string = null;
+    let token: null | string = null;
 
     // inject the cookie into the header
     const middlewareLink = new ApolloLink((operation, forward) => {
-      if (session) {
+      if (token) {
         operation.setContext({
           headers: {
-            Cookie: session.split(";")[0],
+            Authorization: token,
           },
         });
       }
@@ -43,28 +42,14 @@ export const request = {
       return forward(operation);
     });
 
-    // extract the cookie from the header
-    const afterwareLink = new ApolloLink((operation, forward) => {
-      return forward(operation).map((response) => {
-        const context = operation.getContext();
-        const {
-          response: { headers },
-        } = context;
-
-        if (headers) {
-          const sid = headers.get("Set-Cookie");
-          if (sid) {
-            session = sid;
-          }
-        }
-
-        return response;
-      });
-    });
-
-    return new ApolloClient({
-      cache: new InMemoryCache(),
-      link: from([middlewareLink, afterwareLink, httpLink]),
-    });
+    return {
+      client: new ApolloClient({
+        cache: new InMemoryCache(),
+        link: from([middlewareLink, httpLink]),
+      }),
+      setToken: (newToken: string) => {
+        token = newToken;
+      },
+    };
   },
 };
