@@ -30,9 +30,6 @@ describe("Generate schedule route generates valid schedules", () => {
         });
 
         // Then
-        const responseText = await response.text();
-        console.log(responseText);
-
         const responseJSON = await response.json();
 
         // Expect the total number of courses to be the sum of the number of hardcoded schedules + 
@@ -144,7 +141,6 @@ describe("Generate schedule route generates valid schedules", () => {
 
       // Then
       const responseJSON = await response.json();
-      console.log(responseJSON);
 
       // Validate that hard coded courses have exactly the same assignment as the input provided for each semester.
       areCoursesEqual(input.hardScheduled.fallCourses, responseJSON.fallCourses, true, true);
