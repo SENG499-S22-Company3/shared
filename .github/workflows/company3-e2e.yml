@@ -1,7 +1,8 @@
 name: Company 3 E2E Testing
 
 on:
-  branches: [main]
+  push:
+    branches: [main]
   pull_request:
     branches: [main]
   repository_dispatch:
