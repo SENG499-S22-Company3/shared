@@ -49,6 +49,11 @@ describe("Generate base schedule with courses to timeslots and professors to cou
     expect(loginResponse.data.login.message).toEqual("Success");
     setToken(loginResponse.data.login.token);
 
+    // TEST: REMOVE
+    const response = await request.algorithm2.get("/healthcheck");
+    expect(response.statusCode).toBe(200);
+    expect(response.text).toEqual("OK");
+
     const generateScheduleResponse = await client.mutate({
       mutation: gql`
         mutation {

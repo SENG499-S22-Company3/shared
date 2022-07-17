@@ -3,44 +3,61 @@
 # Run `docker-compose build` followed by `docker-compose up` to test the application.
 # Make sure postgresql is not running locally, you may have to disable the service with
 # `sudo systemctl stop postgresql`.
-version: "3"
+version: "3.9"  # optional since v1.27.0
 services:
-  c3algo1:
-    container_name: company-3-algorithm-1
+  # Label used to access the service container
+  algorithm1:
     image: ghcr.io/seng499-s22-company3/algorithm-1:latest
-    ports:
-      - 4040:4040
+    network_mode: "host"
     environment:
-      PORT: 4040
-  c3algo2:
-    container_name: company-3-algorithm-2
+      - PORT=4040
+    expose:
+      - 4040
+    #ports:
+    #  - 4040:4040
+  algorithm2:
     image: ghcr.io/seng499-s22-company3/algorithm-2:latest
-    ports:
-      - 5000:5000
+    network_mode: "host"
     environment:
-      PORT: 5000
-  c3backend:
-    container_name: company-3-backend
+      - PORT=5000
+    expose:
+      - 5000
+    #ports:
+    #  - 5000:5000
+  backend:
     image: ghcr.io/seng499-s22-company3/backend:latest
-    ports:
-      - 4000:4000
+    network_mode: "host"
     environment:
-      PORT: 4000
-      DATABASE_URL: postgres://postgres:postgres@postgres:5432/postgres
-  # Container name "database"
+      - ALGO1_COMPANY_3_URL=http://localhost:4040
+      - PORT=4000
+      - DATABASE_URL=postgres://postgres:postgres@localhost:5432/postgres
+      - CI=false
+      - NODE_ENV=development
+    expose:
+      - 4000
+    #ports:
+    #  - 4000:4000
+    # options: >-
+    #   --health-cmd "curl -f http://localhost:4000/healthcheck"
+    #   --health-interval 10s
+    #   --health-timeout 5s
+    #   --health-retries 5
   postgres:
-    # Official Postgres image from DockerHub (we use the last version)
-    container_name: postgresql
+    # Docker Hub image
     image: postgres:14-alpine
-    ports:
-      - 5432:5432
+    network_mode: "host"
+    # Provide the password for postgres
     environment:
-      POSTGRES_USER: admin # The PostgreSQL user (useful to connect to the database)
-      POSTGRES_PASSWORD: admin # The PostgreSQL password (useful to connect to the database)
-      POSTGRES_DB: postgresql # The PostgreSQL default database (automatically created at first launch)
-    volumes:
-      # the default PostgreSQL data path.
-      # It means that every time the repository is modifying the data inside
-      # of `/var/lib/postgresql/data/`, automatically the change will appear in `db-data`.
-      # You don't need to create the `db-data` folder. Docker Compose will do it for you.
-      - ./db-data/:/var/lib/postgresql/data/
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    # Set health checks to wait until postgres has started
+    # options: >-
+    #  --health-cmd pg_isready
+    #  --health-interval 10s
+    #  --health-timeout 5s
+    #  --health-retries 5
+    expose:
+      - 5432
+    #ports:
+      # Maps tcp port 5432 on service container to the host
+    #  - 5432:5432

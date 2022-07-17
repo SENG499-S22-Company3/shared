@@ -106,6 +106,45 @@ describe("authentication", () => {
     expect(response.errors).toBeUndefined();
     expect(response.data.login.success).toBeFalsy();
     expect(response.data.login.message).toBeDefined();
-    expect(response.data.login.token).toBeDefined();
+    expect(response.data.login.token).toEqual("");
+  });
+
+  it("should 'logout' successfully after being logged in, i.e.", async () => {
+    const { client } = request.createApolloClient();
+
+    // Log in
+    const loginMutation = gql`
+      mutation {
+        login(username: "testadmin", password: "testpassword") {
+          message
+          token
+          success
+        }
+      }
+    `;
+
+    const loginResponse = await client.mutate({ mutation: loginMutation });
+    expect(loginResponse.errors).toBeUndefined();
+    expect(loginResponse.data.login.success).toBeTruthy();
+    expect(loginResponse.data.login.message).toBeDefined();
+    expect(loginResponse.data.login.token).toBeDefined();
+
+    // Log out
+    const logoutMutation = gql`
+      mutation {
+        logout {
+          message
+          token
+          success
+        }
+      }
+    `;
+
+    // Response is dummy since it is up to the client-side to implement logout.
+    const logoutResponse = await client.mutate({ mutation: logoutMutation });
+    expect(logoutResponse.errors).toBeUndefined();
+    expect(logoutResponse.data.logout.success).toBeTruthy();
+    expect(logoutResponse.data.logout.message).toEqual("logged out");
+    expect(logoutResponse.data.logout.token).toEqual("");
   });
 });
