@@ -18,6 +18,10 @@ export const areProfessorAssignmentsValid = (expectedProfessors: any[], actualCo
 
     for (const course of actualCourses) {
         //console.log(course.prof);
+        if (course.prof.displayName == "TBD") {
+            continue;
+        }
+
         expect(expectedProfessorsNames.includes(course.prof.displayName)).toBeTruthy();
     }
 };

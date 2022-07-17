@@ -10,8 +10,8 @@
         "numSections": 1,
         "courseCapacity": 100,
         "assignment": {
-          "startDate": "Sep 05, 2018",
-          "endDate": "Dec 05, 2018",
+          "startDate": "Sep 01, 2022",
+          "endDate": "Dec 01, 2022",
           "beginTime": "1300",
           "endTime": "1420",
           "hoursWeek": 3,
@@ -37,8 +37,8 @@
         "numSections": 1,
         "courseCapacity": 100,
         "assignment": {
-          "startDate": "Sep 05, 2018",
-          "endDate": "Dec 05, 2018",
+          "startDate": "Sep 01, 2022",
+          "endDate": "Dec 01, 2022",
           "beginTime": "1330",
           "endTime": "1420",
           "hoursWeek": 3,
@@ -64,8 +64,8 @@
         "numSections": 1,
         "courseCapacity": 100,
         "assignment": {
-          "startDate": "Sep 05, 2018",
-          "endDate": "Dec 05, 2018",
+          "startDate": "Sep 01, 2022",
+          "endDate": "Dec 01, 2022",
           "beginTime": "1300",
           "endTime": "1220",
           "hoursWeek": 3,

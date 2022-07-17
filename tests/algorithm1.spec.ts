@@ -11,6 +11,7 @@ import algorithm1_input_with_only_hardcoded_courses_and_professors_no_courses_to
 import algorithm1_input_with_courses_and_professors_no_hardcoded from './data/algorithm1-input-with-courses-and-professors-no-hardcoded.json';
 import algorithm1_input_with_overflow_courses from './data/algorithm1-input-with-overflow-courses.json';
 import algorithm1_input_with_courses_but_no_professors_or_hardcoded from './data/algorithm1-input-with-courses-but-no-professors-or-hardcoded.json';
+import algorithm1_input_with_2_courses_per_semester_and_professors_preferences from './data/algorithm1-input-with-2-courses-per-semester-and-professors-preferences.json';
 
 import { areCoursesEqual, areProfessorAssignmentsValid } from './utils/algorithm1-utils';
 require('isomorphic-fetch'); 
@@ -225,5 +226,31 @@ describe("Generate schedule route generates valid schedules", () => {
         {
             expect(course.prof.displayName).toEqual("TBD");
         }
+    }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+
+    it("should generate a valid schedule with 2 courses per semester provided and professor preferences, no preference for SENG 265 in SPRING", async () => {
+        // Given
+        const input = algorithm1_input_with_2_courses_per_semester_and_professors_preferences;
+
+        // When (call algorithm 1)
+        const response = await fetch(ALGORITHM1_URL + "/schedule", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(input)            
+        });
+
+        // Then
+        const responseJSON = await response.json();
+
+        // Validate that each course in the semester is present with correct details (without comparing assignments or professors)
+        areCoursesEqual(input.coursesToSchedule.fallCourses, responseJSON.fallCourses, false, false);
+        areCoursesEqual(input.coursesToSchedule.springCourses, responseJSON.springCourses, false, false);
+        expect(responseJSON.summerCourses).toBeNull();
+
+        // Check that professors assigned to courses in each semester are all professors provided as input.
+        areProfessorAssignmentsValid(input.professors, responseJSON.fallCourses);
+        areProfessorAssignmentsValid(input.professors, responseJSON.springCourses);
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 });
