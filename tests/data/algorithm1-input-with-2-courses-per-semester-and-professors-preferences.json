@@ -1,0 +1,3513 @@
+{
+    "coursesToSchedule": {
+      "fallCourses": [
+        {
+          "subject": "SENG",
+          "courseNumber": "499",
+          "numSections": 1,
+          "courseCapacity": 14,
+          "courseTitle": "Untitled(New Course)",
+          "sequenceNumber": "A01",
+          "streamSequence": "4A"
+        },
+        {
+          "subject": "SENG",
+          "courseNumber": "426",
+          "numSections": 1,
+          "courseCapacity": 19,
+          "courseTitle": "Untitled(New Course)",
+          "sequenceNumber": "A01",
+          "streamSequence": "4A"
+        }
+      ],
+      "springCourses": [
+        {
+          "subject": "SENG",
+          "courseNumber": "265",
+          "numSections": 1,
+          "courseCapacity": 36,
+          "courseTitle": "Untitled(New Course)",
+          "sequenceNumber": "A01",
+          "streamSequence": "2A"
+        },
+        {
+          "subject": "SENG",
+          "courseNumber": "310",
+          "numSections": 1,
+          "courseCapacity": 32,
+          "courseTitle": "Untitled(New Course)",
+          "sequenceNumber": "A01",
+          "streamSequence": "2B"
+        }
+      ],
+      "summerCourses": []
+    },
+    "hardScheduled": {
+      "fallCourses": [],
+      "springCourses": [],
+      "summerCourses": []
+    },
+    "professors": [
+      {
+        "displayName": "Celina Berg",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG265",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG275",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG310",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG350",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG435",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Bill Bird",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC360",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG310",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG435",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG466",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Sean Chester",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG275",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC361",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC460",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Jason Corless",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC361",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC460",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Daniela Damian",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG265",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC320",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC360",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG321",
+            "term": "FALL",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "SENG421",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Neil Ernst",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG275",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC320",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC360",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG310",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG321",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG360",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG401",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG411",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG421",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG435",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG466",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG474",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Anthony Estey",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG275",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Sudhakar Ganti",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG275",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Daniel German",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG265",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC361",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG310",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG321",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG350",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG360",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG371",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC460",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG401",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG421",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG466",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG474",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Brandon Haworth",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC360",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Hosna Jabbari",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "LillAnne Jackson",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG371",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Bruce Kapron",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC320",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC360",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC361",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG371",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          }
+        ]
+      },
+      {
+        "displayName": "Valerie King",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG265",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG321",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG350",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG360",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG401",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG421",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Sajin Koroth",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC360",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG310",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG435",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG466",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Rich Little",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG265",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG310",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG321",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC460",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG401",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG421",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG435",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG466",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Nishant Mehta",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG275",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Hausi Muller",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG265",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG275",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC320",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC360",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          }
+        ]
+      },
+      {
+        "displayName": "Miguel Nacenta",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG265",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG310",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG321",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG421",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG435",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG466",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Ibrahim Numanagić",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG310",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG435",
+            "term": "FALL",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Jianping Pan",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG371",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG421",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Charles Perin",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG275",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG421",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Teseo Schneider",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG275",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC361",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG321",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG401",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG411",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG421",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG474",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Sowmya Somanath",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC320",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC360",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC361",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG350",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG421",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Venkatesh Srinivasan",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC320",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC360",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG350",
+            "term": "FALL",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Ulrike Stege",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG275",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG371",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Margaret-Anne Storey",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG371",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG421",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Cecilia Summers",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG275",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG421",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Alex Thomo",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG371",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          }
+        ]
+      },
+      {
+        "displayName": "George Tzanetakis",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG265",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC361",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG371",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC460",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Jens Weber",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC361",
+            "term": "SPRING",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "SENG321",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC460",
+            "term": "SPRING",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "SENG466",
+            "term": "FALL",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Kui Wu",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG265",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC360",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG360",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG411",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG421",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          }
+        ]
+      },
+      {
+        "displayName": "Michael Zastre",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "CSC111",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC225",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG265",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG275",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC355",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC360",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SPRING",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "SENG310",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC115",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "CSC226",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "CSC230",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "CSC370",
+            "term": "SUMMER",
+            "preferenceNum": 2
+          }
+        ]
+      },
+      {
+        "displayName": "Michael Adams",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE260",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE299",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 5
+          },
+          {
+            "courseNum": "ECE360",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE403",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG499",
+            "term": "FALL",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Panajotis Agathoklis",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE299",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE330",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE360",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE380",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE399",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE499",
+            "term": "SUMMER",
+            "preferenceNum": 2
+          }
+        ]
+      },
+      {
+        "displayName": "Riham AlTawy",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE241",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE242",
+            "term": "FALL",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE255",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE260",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE320",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE355",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE356",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE403",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE458",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG499",
+            "term": "FALL",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Amirali Baniasadi",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE241",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE242",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 5
+          },
+          {
+            "courseNum": "ECE255",
+            "term": "FALL",
+            "preferenceNum": 5
+          },
+          {
+            "courseNum": "ECE299",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE320",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE350",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE355",
+            "term": "FALL",
+            "preferenceNum": 5
+          },
+          {
+            "courseNum": "ECE356",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE399",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE403",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE410",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE455",
+            "term": "SPRING",
+            "preferenceNum": 5
+          },
+          {
+            "courseNum": "ECE458",
+            "term": "SPRING",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Jens Bornemann",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE216",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE220",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE260",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE299",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE300",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE320",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE330",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE340",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE350",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE365",
+            "term": "FALL",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Alexandra Branzan Albu",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE255",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE260",
+            "term": "SUMMER",
+            "preferenceNum": 5
+          },
+          {
+            "courseNum": "ECE299",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 5
+          },
+          {
+            "courseNum": "ECE399",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE403",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE458",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE499",
+            "term": "SUMMER",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "SENG499",
+            "term": "FALL",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Lin Cai",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE260",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE330",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE350",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE458",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE463",
+            "term": "FALL",
+            "preferenceNum": 6
+          }
+        ]
+      },
+      {
+        "displayName": "David Capson",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE241",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE255",
+            "term": "FALL",
+            "preferenceNum": 5
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE355",
+            "term": "FALL",
+            "preferenceNum": 5
+          },
+          {
+            "courseNum": "ECE360",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE455",
+            "term": "SPRING",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Ted Darcie",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE216",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE220",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE340",
+            "term": "SPRING",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Nikitas Dimopoulos",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE241",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE255",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE355",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE455",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE458",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE499",
+            "term": "SUMMER",
+            "preferenceNum": 2
+          }
+        ]
+      },
+      {
+        "displayName": "Xiaodai Dong",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE260",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE300",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 5
+          },
+          {
+            "courseNum": "ECE350",
+            "term": "FALL",
+            "preferenceNum": 5
+          },
+          {
+            "courseNum": "ECE360",
+            "term": "SPRING",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE399",
+            "term": "FALL",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE403",
+            "term": "FALL",
+            "preferenceNum": 2
+          }
+        ]
+      },
+      {
+        "displayName": "Peter Driessen",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE255",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE260",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE340",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE355",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE360",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE365",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE399",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE458",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE463",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE499",
+            "term": "SUMMER",
+            "preferenceNum": 5
+          }
+        ]
+      },
+      {
+        "displayName": "Fayez Gebali",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE241",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE255",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE260",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE300",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE330",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE350",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE355",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE360",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE365",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE463",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE499",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Reuven Gordon",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE216",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE220",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE260",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE300",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE320",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE330",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE340",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE350",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE380",
+            "term": "FALL",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Aaron Gulliver",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE260",
+            "term": "SUMMER",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE350",
+            "term": "FALL",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE403",
+            "term": "FALL",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Kin Fun Li",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE241",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE242",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE255",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE355",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE356",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE455",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE499",
+            "term": "SUMMER",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "SENG468",
+            "term": "SPRING",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Tao Lu",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE216",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE220",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE260",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE320",
+            "term": "SPRING",
+            "preferenceNum": 5
+          },
+          {
+            "courseNum": "ECE330",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE340",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE350",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE360",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE380",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE399",
+            "term": "FALL",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Michael McGuire",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE260",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE299",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE330",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE360",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE403",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE499",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Stephen Neville",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE355",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE360",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE403",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE458",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG426",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG468",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG499",
+            "term": "FALL",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Christo Papadopoulos",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE216",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE220",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE299",
+            "term": "SUMMER",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE300",
+            "term": "SPRING",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE320",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE330",
+            "term": "SPRING",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE340",
+            "term": "SPRING",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE380",
+            "term": "FALL",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Dr. Navneet Popli",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE242",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE255",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE330",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE355",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE356",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE399",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE455",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE458",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG440",
+            "term": "FALL",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "SENG499",
+            "term": "FALL",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Daler Rakhmatov",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE241",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE242",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE255",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE355",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE356",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE360",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE455",
+            "term": "SPRING",
+            "preferenceNum": 4
+          }
+        ]
+      },
+      {
+        "displayName": "Makhsud Saidaminov",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE220",
+            "term": "SUMMER",
+            "preferenceNum": 2
+          },
+          {
+            "courseNum": "ECE320",
+            "term": "SPRING",
+            "preferenceNum": 2
+          }
+        ]
+      },
+      {
+        "displayName": "Mihai Sima",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE255",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE300",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE320",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE330",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE355",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE356",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE380",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE455",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "SENG440",
+            "term": "FALL",
+            "preferenceNum": 6
+          }
+        ]
+      },
+      {
+        "displayName": "Levi Smith",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE216",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE220",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE299",
+            "term": "SUMMER",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE320",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE340",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE370",
+            "term": "FALL",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Poman So",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE216",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE330",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE340",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE360",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE370",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE458",
+            "term": "SPRING",
+            "preferenceNum": 3
+          }
+        ]
+      },
+      {
+        "displayName": "Ilamparithi Thirumarai Chelvan",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE216",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE299",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE300",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE330",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE340",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE360",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE365",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE370",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE380",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE399",
+            "term": "FALL",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE410",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE488",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE499",
+            "term": "SUMMER",
+            "preferenceNum": 6
+          }
+        ]
+      },
+      {
+        "displayName": "Issa Traore",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE458",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "SENG426",
+            "term": "FALL",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "SENG499",
+            "term": "FALL",
+            "preferenceNum": 1
+          }
+        ]
+      },
+      {
+        "displayName": "Hong-Chuan Yang",
+        "fallTermCourses": 1,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "ECE216",
+            "term": "SUMMER",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE250",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE260",
+            "term": "SUMMER",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE310",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE330",
+            "term": "SPRING",
+            "preferenceNum": 1
+          },
+          {
+            "courseNum": "ECE340",
+            "term": "SPRING",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE350",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE360",
+            "term": "SPRING",
+            "preferenceNum": 6
+          },
+          {
+            "courseNum": "ECE399",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE403",
+            "term": "FALL",
+            "preferenceNum": 4
+          },
+          {
+            "courseNum": "ECE458",
+            "term": "SPRING",
+            "preferenceNum": 3
+          },
+          {
+            "courseNum": "ECE463",
+            "term": "FALL",
+            "preferenceNum": 3
+          }
+        ]
+      }
+    ]
+  }

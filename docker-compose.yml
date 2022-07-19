@@ -13,8 +13,6 @@ services:
       - PORT=4040
     expose:
       - 4040
-    #ports:
-    #  - 4040:4040
   algorithm2:
     image: ghcr.io/seng499-s22-company3/algorithm-2:latest
     network_mode: "host"
@@ -22,8 +20,6 @@ services:
       - PORT=5000
     expose:
       - 5000
-    #ports:
-    #  - 5000:5000
   backend:
     image: ghcr.io/seng499-s22-company3/backend:latest
     network_mode: "host"
@@ -35,8 +31,6 @@ services:
       - NODE_ENV=development
     expose:
       - 4000
-    #ports:
-    #  - 4000:4000
     # options: >-
     #   --health-cmd "curl -f http://localhost:4000/healthcheck"
     #   --health-interval 10s
@@ -58,6 +52,3 @@ services:
     #  --health-retries 5
     expose:
       - 5432
-    #ports:
-      # Maps tcp port 5432 on service container to the host
-    #  - 5432:5432
