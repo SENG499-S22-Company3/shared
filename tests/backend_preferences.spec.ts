@@ -73,8 +73,12 @@ describe("Users are able to submit teaching preferences", () => {
                 ],
                 nonTeachingTerm: FALL,
                 hasRelief: false,
+                reliefReason: "",
                 hasTopic: false,
-                topicDescription: ""
+                topicDescription: "",
+                fallTermCourses: 2,
+                springTermCourses: 2,
+                summerTermCourses: 2
               }
             ) {
               message
@@ -88,22 +92,62 @@ describe("Users are able to submit teaching preferences", () => {
       expect(submitPreferenceResponse.data.createTeachingPreference.message).toEqual('Teaching preferences updated.');
       expect(submitPreferenceResponse.data.createTeachingPreference.success).toEqual(true);
 
-      // 
-      const getSurveysResponse = await client.query({
+      // Re-login as admin
+      setToken("");
+      const loginAdminResponse = await client.mutate({
+        mutation: gql`
+          mutation {
+              login(username: "testadmin", password: "testpassword") {
+              success
+              token
+              message
+              }
+          }
+        `,
+      });
+      expect(loginAdminResponse.data.login.success).toBeTruthy();
+      expect(loginAdminResponse.data.login.token).toBeDefined();
+      expect(loginAdminResponse.data.login.message).toEqual("Success");
+      setToken(loginAdminResponse.data.login.token);
+
+      // Validate that submitted course preference for professors is valid by querying for all users
+      const getAllUsersResponse = await client.query({
         query: gql`
           query {
-            survey {
-              courses {
-                subject
-                title
-                code
-                term
+            allUsers {
+              id
+              username
+              displayName
+              password
+              role
+              preferences {
+                id {
+                  subject
+                  title
+                  code
+                  term
+                }
+                preference
               }
+              active
+              hasPeng
             }
           }
         `,
       });
-      console.log(getSurveysResponse.data.survey.courses);
+
+      // Filter to search for new user
+      const filterNewUser = (element: any, index: any, array: any) => {
+          return element.username == randomUsername;
+      };
+      const newUser = getAllUsersResponse.data.allUsers.filter(filterNewUser)[0];    
+
+      // Validate preference is correct
+      expect(newUser.preferences.length).toEqual(1);
+      expect(newUser.preferences[0].id.subject).toEqual('CSC');
+      expect(newUser.preferences[0].id.code).toEqual('111');
+      expect(newUser.preferences[0].id.title).toEqual('Fundamentals of Programming with Engineering Applications');
+      expect(newUser.preferences[0].preference).toEqual(1);
     });
 
     it("should not allow preference survey submission if not logged in", async () => {

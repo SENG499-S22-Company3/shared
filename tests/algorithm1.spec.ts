@@ -262,6 +262,14 @@ describe("Generate schedule route generates valid schedules", () => {
         // Check that professors assigned to courses in each semester are all professors provided as input.
         areProfessorAssignmentsValid(input.professors, responseJSON.fallCourses);
         areProfessorAssignmentsValid(input.professors, responseJSON.springCourses);
+
+        // Validate that SENG 265 in the spring has no professors assigned (TBD)
+        const filterSENG265Course = (element: any, index: any, array: any) => {
+            return element.courseNumber == "265" && element.subject == "SENG";
+        };
+        const seng265Course = await responseJSON.springCourses.filter(filterSENG265Course)[0];
+        expect(seng265Course.prof.displayName).toEqual("TBD");
+
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
     it("should generate 1 course section in the fall, 2 sections in the spring, and 3 in the summer. All with profs as TBD.", async () => {
