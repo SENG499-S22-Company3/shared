@@ -12,6 +12,11 @@ import algorithm1_input_with_courses_and_professors_no_hardcoded from './data/al
 import algorithm1_input_with_overflow_courses from './data/algorithm1-input-with-overflow-courses.json';
 import algorithm1_input_with_courses_but_no_professors_or_hardcoded from './data/algorithm1-input-with-courses-but-no-professors-or-hardcoded.json';
 import algorithm1_input_with_2_courses_per_semester_and_professors_preferences from './data/algorithm1-input-with-2-courses-per-semester-and-professors-preferences.json';
+import algorithm1_input_with_split_cases_no_professors_no_hardcoded from './data/algorithm1-input-with-split-cases-no-professors-no-hardcoded.json';
+import algorithm1_input_valid_check_schedule_tbd from './data/algorithm1-input-valid-check-schedule-tbd.json';
+import algorithm1_input_invalid_check_schedule_no_preferences from "./data/algorithm1-input-invalid-check-schedule-no-preferences.json"
+import algorithm1_input_invalid_check_schedule_max_term_violation from "./data/algorithm1-input-invalid-check-schedule-max-term-violation.json"
+import algorithm1_input_invalid_check_schedule_double_assigned from "./data/algorithm1-input-invalid-check-schedule-double-assigned.json"
 
 import { areCoursesEqual, areProfessorAssignmentsValid } from './utils/algorithm1-utils';
 require('isomorphic-fetch'); 
@@ -253,4 +258,108 @@ describe("Generate schedule route generates valid schedules", () => {
         areProfessorAssignmentsValid(input.professors, responseJSON.fallCourses);
         areProfessorAssignmentsValid(input.professors, responseJSON.springCourses);
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+
+    it("should generate 1 course section in the fall, 2 sections in the spring, and 3 in the summer. All with profs as TBD.", async () => {
+        // Given
+        const input = algorithm1_input_with_split_cases_no_professors_no_hardcoded;
+
+        // When (call algorithm 1)
+        const response = await fetch(ALGORITHM1_URL + "/schedule", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(input)            
+        });
+
+        // Then
+        const responseJSON = await response.json();
+
+        expect(responseJSON.fallCourses.length).toEqual(1);
+        expect(responseJSON.springCourses.length).toEqual(2);
+        expect(responseJSON.summerCourses.length).toEqual(3);
+
+        for (const course of responseJSON.fallCourses.concat(responseJSON.springCourses).concat(responseJSON.summerCourses))
+        {
+            expect(course.prof.displayName).toEqual("TBD");
+        }
+
+    }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+
+    it("should generate a valid schedule check. Schedule contains 1 course a term with profs as TBD.", async () => {
+        // Given
+        const input = algorithm1_input_valid_check_schedule_tbd;
+
+        // When (call algorithm 1)
+        const response = await fetch(ALGORITHM1_URL + "/check_schedule", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(input)            
+        });
+
+        // Then
+        const responseText = await response.text();
+        expect(responseText).toEqual("Schedule given is valid");
+
+    }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+
+    it("should generate a invalid schedule check. Professor does not have the preferences for this course.", async () => {
+        // Given
+        const input = algorithm1_input_invalid_check_schedule_no_preferences;
+
+        // When (call algorithm 1)
+        const response = await fetch(ALGORITHM1_URL + "/check_schedule", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(input)            
+        });
+
+        // Then
+        const responseText = await response.text();
+        expect(responseText).toEqual("Error: Sean Chester cannot teach Fall SENG499 since they have no (0) preference.\nSchedule given has some violations that should be resolved");
+
+    }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+
+    it("should generate a invalid schedule check. Professor teaching more than perferred amount of courses to teach a term.", async () => {
+        // Given
+        const input = algorithm1_input_invalid_check_schedule_max_term_violation;
+
+        // When (call algorithm 1)
+        const response = await fetch(ALGORITHM1_URL + "/check_schedule", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(input)            
+        });
+
+        // Then
+        const responseText = await response.text();
+        expect(responseText).toEqual("Error: Sean Chester assigned 1 Fall courses which is more than their prefered maximum 0 courses to teach this term.\nSchedule given has some violations that should be resolved");
+
+    }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+
+    it("should generate a invalid schedule check. Professor teaching two courses at the same time.", async () => {
+        // Given
+        const input = algorithm1_input_invalid_check_schedule_double_assigned;
+
+        // When (call algorithm 1)
+        const response = await fetch(ALGORITHM1_URL + "/check_schedule", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(input)            
+        });
+
+        // Then
+        const responseText = await response.text();
+        expect(responseText).toEqual("Error: Sean Chester teaching another Fall course at TWF1030. Prof cannot two classes at the same time.\nerror: SENG 499 is scheduled at same time as another required course SENG499 in Fall term,   Schedule given has some violations that should be resolved");
+
+    }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+
 });
