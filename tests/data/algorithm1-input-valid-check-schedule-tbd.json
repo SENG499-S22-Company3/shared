@@ -1,0 +1,94 @@
+{
+    "coursesToSchedule": {
+      "fallCourses": [],
+      "springCourses": [],
+      "summerCourses": []
+    },
+    "hardScheduled": {
+    "fallCourses": [
+        {
+            "courseNumber": "499",
+            "subject": "SENG",
+            "sequenceNumber": "A01",
+            "courseTitle": "Untitled(New Course)",
+            "streamSequence": "4A",
+            "assignment": {
+                "startDate": "Sep 01, 2022",
+                "endDate": "Dec 01, 2022",
+                "beginTime": "1030",
+                "endTime": "1120",
+                "hoursWeek": 3,
+                "sunday": false,
+                "monday": false,
+                "tuesday": true,
+                "wednesday": true,
+                "thursday": false,
+                "friday": true,
+                "saturday": false
+            },
+            "prof": {
+                "displayName": "TBD"
+            },
+            "courseCapacity": 140,
+            "numSections": 1
+        }
+    ],
+    "springCourses": [
+        {
+            "courseNumber": "265",
+            "subject": "SENG",
+            "sequenceNumber": "A01",
+            "courseTitle": "Untitled(New Course)",
+            "streamSequence": "2A",
+            "assignment": {
+                "startDate": "Jan 01, 2023",
+                "endDate": "Apr 01, 2023",
+                "beginTime": "0830",
+                "endTime": "0920",
+                "hoursWeek": 3,
+                "sunday": false,
+                "monday": false,
+                "tuesday": true,
+                "wednesday": true,
+                "thursday": false,
+                "friday": true,
+                "saturday": false
+            },
+            "prof": {
+                "displayName": "TBD"
+            },
+            "courseCapacity": 115,
+            "numSections": 1
+        }
+    ],
+    "summerCourses": [
+        {
+            "courseNumber": "310",
+            "subject": "SENG",
+            "sequenceNumber": "A01",
+            "courseTitle": "Untitled(New Course)",
+            "streamSequence": "3A",
+            "assignment": {
+                "startDate": "May 01, 2023",
+                "endDate": "Aug 01, 2023",
+                "beginTime": "1330",
+                "endTime": "1420",
+                "hoursWeek": 3,
+                "sunday": false,
+                "monday": false,
+                "tuesday": true,
+                "wednesday": true,
+                "thursday": false,
+                "friday": true,
+                "saturday": false
+            },
+            "prof": {
+                "displayName": "TBD"
+            },
+            "courseCapacity": 48,
+            "numSections": 1
+        }
+    ]
+    },
+    "professors": []
+}

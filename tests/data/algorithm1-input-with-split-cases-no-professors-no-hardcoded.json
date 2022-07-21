@@ -1,0 +1,43 @@
+{
+    "coursesToSchedule": {
+      "fallCourses": [
+        {
+          "subject": "SENG",
+          "courseNumber": "499",
+          "numSections": 1,
+          "courseCapacity": 140,
+          "courseTitle": "Untitled(New Course)",
+          "sequenceNumber": "A01",
+          "streamSequence": "4A"
+        }
+      ],
+      "springCourses": [
+        {
+          "subject": "SENG",
+          "courseNumber": "265",
+          "numSections": 0,
+          "courseCapacity": 230,
+          "courseTitle": "Untitled(New Course)",
+          "sequenceNumber": "A01",
+          "streamSequence": "2A"
+        }
+      ],
+      "summerCourses": [
+        {
+            "subject": "SENG",
+            "courseNumber": "310",
+            "numSections": 3,
+            "courseCapacity": 140,
+            "courseTitle": "Untitled(New Course)",
+            "sequenceNumber": "A01",
+            "streamSequence": "3A"
+          }
+      ]
+    },
+    "hardScheduled": {
+      "fallCourses": [],
+      "springCourses": [],
+      "summerCourses": []
+    },
+    "professors": []
+  }
