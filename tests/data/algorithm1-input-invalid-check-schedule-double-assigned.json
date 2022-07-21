@@ -1,0 +1,77 @@
+{
+    "coursesToSchedule": {
+      "fallCourses": [],
+      "springCourses": [],
+      "summerCourses": []
+    },
+    "hardScheduled": {
+    "fallCourses": [
+        {
+            "courseNumber": "499",
+            "subject": "SENG",
+            "sequenceNumber": "A01",
+            "courseTitle": "test",
+            "streamSequence": "4A",
+            "assignment": {
+                "startDate": "Sep 01, 2022",
+                "endDate": "Dec 01, 2022",
+                "beginTime": "1030",
+                "endTime": "1120",
+                "hoursWeek": 3,
+                "sunday": false,
+                "monday": false,
+                "tuesday": true,
+                "wednesday": true,
+                "thursday": false,
+                "friday": true,
+                "saturday": false
+            },
+            "prof": {
+                "displayName": "Sean Chester"
+            },
+            "courseCapacity": 140,
+            "numSections": 1
+        },
+        {
+            "courseNumber": "499",
+            "subject": "SENG",
+            "sequenceNumber": "A02",
+            "courseTitle": "test",
+            "streamSequence": "4A",
+            "assignment": {
+                "startDate": "Sep 01, 2022",
+                "endDate": "Dec 01, 2022",
+                "beginTime": "1030",
+                "endTime": "1120",
+                "hoursWeek": 3,
+                "sunday": false,
+                "monday": false,
+                "tuesday": true,
+                "wednesday": true,
+                "thursday": false,
+                "friday": true,
+                "saturday": false
+            },
+            "prof": {
+                "displayName": "Sean Chester"
+            },
+            "courseCapacity": 140,
+            "numSections": 1
+        }
+    ],
+    "springCourses": [],
+    "summerCourses": []
+},
+    "professors": [{
+        "displayName": "Sean Chester",
+        "fallTermCourses": 2,
+        "springTermCourses": 1,
+        "summerTermCourses": 1,
+        "preferences": [
+          {
+            "courseNum": "SENG499",
+            "preferenceNum": 4
+          }
+        ]
+      }]
+  }
