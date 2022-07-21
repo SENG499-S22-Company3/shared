@@ -301,11 +301,7 @@ describe("Generate schedule route generates valid schedules", () => {
 
         // Then
         const responseText = await response.text();
-        console.log(responseText)
-        const responseJSON = await response.json();
-        console.log(responseJSON)
-
-        // expect(responseText).toEqual("Schedule given is valid");
+        expect(responseText).toEqual("Schedule given is valid");
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
@@ -323,7 +319,8 @@ describe("Generate schedule route generates valid schedules", () => {
         });
 
         // Then
-        // expect(response.text).toEqual("Error: Sean Chester cannot teach Fall SENG499 since they have no (0) preference.\nSchedule given has some violations that should be resolved");
+        const responseText = await response.text();
+        expect(responseText).toEqual("Error: Sean Chester cannot teach Fall SENG499 since they have no (0) preference.\nSchedule given has some violations that should be resolved");
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
@@ -341,7 +338,8 @@ describe("Generate schedule route generates valid schedules", () => {
         });
 
         // Then
-        // expect(response.text).toEqual("Error: Sean Chester assigned 1 Fall courses which is more than their prefered maximum 0 courses to teach this term.\nSchedule given has some violations that should be resolved");
+        const responseText = await response.text();
+        expect(responseText).toEqual("Error: Sean Chester assigned 1 Fall courses which is more than their prefered maximum 0 courses to teach this term.\nSchedule given has some violations that should be resolved");
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
@@ -359,7 +357,8 @@ describe("Generate schedule route generates valid schedules", () => {
         });
 
         // Then
-        // expect(response.text).toEqual("Error: Sean Chester teaching another Fall course at TWF1030. Prof cannot two classes at the same time.\nerror: SENG 499 is scheduled at same time as another required course SENG499 in Fall term,   Schedule given has some violations that should be resolved");
+        const responseText = await response.text();
+        expect(responseText).toEqual("Error: Sean Chester teaching another Fall course at TWF1030. Prof cannot two classes at the same time.\nerror: SENG 499 is scheduled at same time as another required course SENG499 in Fall term,   Schedule given has some violations that should be resolved");
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
