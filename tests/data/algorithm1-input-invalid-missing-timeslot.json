@@ -1,0 +1,214 @@
+{
+  "hardScheduled": {
+    "fallCourses": [
+      {
+        "courseNumber": "310",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "streamSequence": "2B",
+        "courseTitle": "HCI",
+        "numSections": 1,
+        "courseCapacity": 100,
+        "assignment": {
+          "startDate": "Sep 05, 2018",
+          "endDate": "Dec 05, 2018",
+          "beginTime": "",
+          "endTime": "",
+          "hoursWeek": 3,
+          "sunday": false,
+          "monday": true,
+          "tuesday": false,
+          "wednesday": false,
+          "thursday": true,
+          "friday": false,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "Bird, Bill",
+          "preferences": []
+        }
+      },
+      {
+        "courseNumber": "275",
+        "subject": "SENG",
+        "sequenceNumber": "A01",
+        "streamSequence": "2B",
+        "courseTitle": "Test",
+        "numSections": 1,
+        "courseCapacity": 100,
+        "assignment": {
+          "startDate": "Sep 05, 2018",
+          "endDate": "Dec 05, 2018",
+          "beginTime": "1300",
+          "endTime": "1420",
+          "hoursWeek": 3,
+          "sunday": false,
+          "monday": true,
+          "tuesday": false,
+          "wednesday": false,
+          "thursday": true,
+          "friday": false,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "Chester, Sean",
+          "preferences": []
+        }
+      },
+      {
+        "courseNumber": "111",
+        "subject": "CSC",
+        "sequenceNumber": "A01",
+        "streamSequence": "1A",
+        "courseTitle": "Test",
+        "numSections": 1,
+        "courseCapacity": 100,
+        "assignment": {
+          "startDate": "Sep 05, 2018",
+          "endDate": "Dec 05, 2018",
+          "beginTime": "1300",
+          "endTime": "1220",
+          "hoursWeek": 3,
+          "sunday": false,
+          "monday": true,
+          "tuesday": false,
+          "wednesday": false,
+          "thursday": true,
+          "friday": false,
+          "saturday": false
+        },
+        "prof": {
+          "displayName": "Corless, Jason",
+          "preferences": []
+        }
+      }
+    ]
+  },
+  "coursesToSchedule": {
+    "fallCourses": [],
+    "springCourses": [],
+    "summerCourses": []
+  },
+  "professors": [
+    {
+      "displayName": "Bird, Bill",
+      "fallTermCourses": 2,
+      "springTermCourses": 2,
+      "summerTermCourses": 2,
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC360",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "CSC370",
+          "preferenceNum": 1
+        },
+        {
+          "courseNum": "SENG310",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG435",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "SENG466",
+          "preferenceNum": 6
+        }
+      ]
+    },
+    {
+      "displayName": "Chester, Sean",
+      "fallTermCourses": 2,
+      "springTermCourses": 2,
+      "summerTermCourses": 2,
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "SENG275",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC361",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC460",
+          "preferenceNum": 4
+        }
+      ]
+    },
+    {
+      "displayName": "Corless, Jason",
+      "fallTermCourses": 2,
+      "springTermCourses": 2,
+      "summerTermCourses": 2,
+      "preferences": [
+        {
+          "courseNum": "CSC111",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC115",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC225",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC226",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC230",
+          "preferenceNum": 3
+        },
+        {
+          "courseNum": "CSC355",
+          "preferenceNum": 6
+        },
+        {
+          "courseNum": "CSC361",
+          "preferenceNum": 4
+        },
+        {
+          "courseNum": "CSC460",
+          "preferenceNum": 4
+        }
+      ]
+    }
+  ]
+}

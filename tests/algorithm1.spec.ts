@@ -14,9 +14,14 @@ import algorithm1_input_with_courses_but_no_professors_or_hardcoded from './data
 import algorithm1_input_with_2_courses_per_semester_and_professors_preferences from './data/algorithm1-input-with-2-courses-per-semester-and-professors-preferences.json';
 import algorithm1_input_with_split_cases_no_professors_no_hardcoded from './data/algorithm1-input-with-split-cases-no-professors-no-hardcoded.json';
 import algorithm1_input_valid_check_schedule_tbd from './data/algorithm1-input-valid-check-schedule-tbd.json';
-import algorithm1_input_invalid_check_schedule_no_preferences from "./data/algorithm1-input-invalid-check-schedule-no-preferences.json"
-import algorithm1_input_invalid_check_schedule_max_term_violation from "./data/algorithm1-input-invalid-check-schedule-max-term-violation.json"
-import algorithm1_input_invalid_check_schedule_double_assigned from "./data/algorithm1-input-invalid-check-schedule-double-assigned.json"
+import algorithm1_input_invalid_check_schedule_no_preferences from "./data/algorithm1-input-invalid-check-schedule-no-preferences.json";
+import algorithm1_input_invalid_check_schedule_max_term_violation from "./data/algorithm1-input-invalid-check-schedule-max-term-violation.json";
+import algorithm1_input_invalid_check_schedule_double_assigned from "./data/algorithm1-input-invalid-check-schedule-double-assigned.json";
+import algorithm1_input_valid_no_issues from './data/algorithm1-input-valid-no-issues.json';
+import algorithm1_input_invalid_timeslot_violation from './data/algorithm1-input-invalid-timeslot-violation.json';
+import algorithm1_input_invalid_missing_stream_sequence from './data/algorithm1-input-invalid-missing-stream-sequence.json';
+import algorithm1_input_invalid_bad_timeslot from './data/algorithm1-input-invalid-bad-timeslot.json';
+import algorithm1_input_invalid_missing_timeslot from './data/algorithm1-input-invalid-missing-timeslot.json';
 
 import { areCoursesEqual, areProfessorAssignmentsValid } from './utils/algorithm1-utils';
 require('isomorphic-fetch'); 
@@ -285,6 +290,27 @@ describe("Generate schedule route generates valid schedules", () => {
         }
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+});
+
+describe("Check schedule route should give back a valid message when given a valid schedule, and an error when given an invalid one", () => {
+    it("should generate a valid schedule check when given a valid schedule", async () => {
+        // Given
+        const input = algorithm1_input_valid_no_issues;
+
+        // When (call algorithm 1)
+        const response = await fetch(ALGORITHM1_URL + "/check_schedule", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(input)            
+        });
+
+        // Then
+        const responseText = await response.text();
+        expect(responseText).toEqual("Schedule given is valid");
+
+    }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
     it("should generate a valid schedule check. Schedule contains 1 course a term with profs as TBD.", async () => {
         // Given
@@ -305,7 +331,7 @@ describe("Generate schedule route generates valid schedules", () => {
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
-    it("should generate a invalid schedule check. Professor does not have the preferences for this course.", async () => {
+    it("should generate an invalid schedule check. Professor does not have the preferences for this course.", async () => {
         // Given
         const input = algorithm1_input_invalid_check_schedule_no_preferences;
 
@@ -324,7 +350,7 @@ describe("Generate schedule route generates valid schedules", () => {
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
-    it("should generate a invalid schedule check. Professor teaching more than perferred amount of courses to teach a term.", async () => {
+    it("should generate an invalid schedule check. Professor teaching more than perferred amount of courses to teach a term.", async () => {
         // Given
         const input = algorithm1_input_invalid_check_schedule_max_term_violation;
 
@@ -343,7 +369,7 @@ describe("Generate schedule route generates valid schedules", () => {
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
-    it("should generate a invalid schedule check. Professor teaching two courses at the same time.", async () => {
+    it("should generate an invalid schedule check. Professor teaching two courses at the same time.", async () => {
         // Given
         const input = algorithm1_input_invalid_check_schedule_double_assigned;
 
@@ -359,6 +385,82 @@ describe("Generate schedule route generates valid schedules", () => {
         // Then
         const responseText = await response.text();
         expect(responseText).toEqual("Error: Sean Chester teaching another Fall course at TWF1030. Prof cannot two classes at the same time.\nerror: SENG 499 is scheduled at same time as another required course SENG499 in Fall term,   Schedule given has some violations that should be resolved");
+
+    }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+
+    it("should generate an invalid schedule check. Two courses in same stream sequence are scheduled at the same time.", async () => {
+        // Given
+        const input = algorithm1_input_invalid_timeslot_violation;
+
+        // When (call algorithm 1)
+        const response = await fetch(ALGORITHM1_URL + "/check_schedule", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(input)            
+        });
+
+        // Then
+        const responseText = await response.text();
+        expect(responseText).toEqual("error: SENG 275 is scheduled at same time as another required course SENG310 in Fall term,   Schedule given has some violations that should be resolved");
+
+    }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+
+    it("should generate an invalid schedule check. A course is missing a stream sequence.", async () => {
+        // Given
+        const input = algorithm1_input_invalid_missing_stream_sequence;
+
+        // When (call algorithm 1)
+        const response = await fetch(ALGORITHM1_URL + "/check_schedule", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(input)            
+        });
+
+        // Then
+        const responseText = await response.text();
+        expect(responseText).toEqual("error: SENG 310 has no stream sequence value in Fall termSchedule given has some violations that should be resolved");
+
+    }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+
+    it("should generate an invalid schedule check. A course is set to an invalid timeslot.", async () => {
+        // Given
+        const input = algorithm1_input_invalid_bad_timeslot;
+
+        // When (call algorithm 1)
+        const response = await fetch(ALGORITHM1_URL + "/check_schedule", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(input)            
+        });
+
+        // Then
+        const responseText = await response.text();
+        expect(responseText).toEqual("error: SENG 310 is scheduled outside a regular block time at 1330 in  Fall term   Schedule given has some violations that should be resolved");
+
+    }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+
+    it("should generate an invalid schedule check. A course has no timeslot assignment.", async () => {
+        // Given
+        const input = algorithm1_input_invalid_missing_timeslot;
+
+        // When (call algorithm 1)
+        const response = await fetch(ALGORITHM1_URL + "/check_schedule", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(input)            
+        });
+
+        // Then
+        const responseText = await response.text();
+        expect(responseText).toEqual("Error: Fall SENG310 course missing prof and/or timeslot assignment.\nSchedule given has some violations that should be resolved");
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
