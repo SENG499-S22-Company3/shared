@@ -300,9 +300,12 @@ describe("Generate schedule route generates valid schedules", () => {
         });
 
         // Then
-        console.log(response)
-        console.log(response.body)
-        // expect(response.text).toEqual("Schedule given is valid");
+        const responseText = await response.text();
+        console.log(responseText)
+        const responseJSON = await response.json();
+        console.log(responseJSON)
+
+        // expect(responseText).toEqual("Schedule given is valid");
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
