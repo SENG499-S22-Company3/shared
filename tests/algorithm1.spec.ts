@@ -329,7 +329,7 @@ describe("Check schedule route should give back a valid message when given a val
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
-    it("should generate a invalid schedule check. Professor does not have the preferences for this course.", async () => {
+    it("should generate an invalid schedule check. Professor does not have the preferences for this course.", async () => {
         // Given
         const input = algorithm1_input_invalid_check_schedule_no_preferences;
 
@@ -348,7 +348,7 @@ describe("Check schedule route should give back a valid message when given a val
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
-    it("should generate a invalid schedule check. Professor teaching more than perferred amount of courses to teach a term.", async () => {
+    it("should generate an invalid schedule check. Professor teaching more than perferred amount of courses to teach a term.", async () => {
         // Given
         const input = algorithm1_input_invalid_check_schedule_max_term_violation;
 
@@ -367,7 +367,7 @@ describe("Check schedule route should give back a valid message when given a val
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
-    it("should generate a invalid schedule check. Professor teaching two courses at the same time.", async () => {
+    it("should generate an invalid schedule check. Professor teaching two courses at the same time.", async () => {
         // Given
         const input = algorithm1_input_invalid_check_schedule_double_assigned;
 
@@ -386,7 +386,7 @@ describe("Check schedule route should give back a valid message when given a val
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
-    it("should generate a invalid schedule check. Two courses in same stream sequence are scheduled at the same time.", async () => {
+    it("should generate an invalid schedule check. Two courses in same stream sequence are scheduled at the same time.", async () => {
         // Given
         const input = algorithm1_input_invalid_timeslot_violation;
 
@@ -405,7 +405,7 @@ describe("Check schedule route should give back a valid message when given a val
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
-    it("should generate a invalid schedule check. A course is missing a stream sequence.", async () => {
+    it("should generate an invalid schedule check. A course is missing a stream sequence.", async () => {
         // Given
         const input = algorithm1_input_invalid_missing_stream_sequence;
 
