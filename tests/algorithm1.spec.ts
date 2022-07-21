@@ -20,6 +20,8 @@ import algorithm1_input_invalid_check_schedule_double_assigned from "./data/algo
 import algorithm1_input_valid_no_issues from './data/algorithm1-input-valid-no-issues.json';
 import algorithm1_input_invalid_timeslot_violation from './data/algorithm1-input-invalid-timeslot-violation.json';
 import algorithm1_input_invalid_missing_stream_sequence from './data/algorithm1-input-invalid-missing-stream-sequence.json';
+import algorithm1_input_invalid_bad_timeslot from './data/algorithm1-input-invalid-bad-timeslot.json';
+import algorithm1_input_invalid_missing_timeslot from './data/algorithm1-input-invalid-missing-timeslot.json';
 
 import { areCoursesEqual, areProfessorAssignmentsValid } from './utils/algorithm1-utils';
 require('isomorphic-fetch'); 
@@ -421,6 +423,44 @@ describe("Check schedule route should give back a valid message when given a val
         // Then
         const responseText = await response.text();
         expect(responseText).toEqual("error: SENG 310 has no stream sequence value in Fall termSchedule given has some violations that should be resolved");
+
+    }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+
+    it("should generate an invalid schedule check. A course is set to an invalid timeslot.", async () => {
+        // Given
+        const input = algorithm1_input_invalid_bad_timeslot;
+
+        // When (call algorithm 1)
+        const response = await fetch(ALGORITHM1_URL + "/check_schedule", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(input)            
+        });
+
+        // Then
+        const responseText = await response.text();
+        expect(responseText).toEqual("error: SENG 310 is scheduled outside a regular block time at 1330 in  Fall term   Schedule given has some violations that should be resolved");
+
+    }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
+
+    it("should generate an invalid schedule check. A course has no timeslot assignment.", async () => {
+        // Given
+        const input = algorithm1_input_invalid_missing_timeslot;
+
+        // When (call algorithm 1)
+        const response = await fetch(ALGORITHM1_URL + "/check_schedule", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(input)            
+        });
+
+        // Then
+        const responseText = await response.text();
+        expect(responseText).toEqual("Error: Fall SENG310 course missing prof and/or timeslot assignment.\nSchedule given has some violations that should be resolved");
 
     }, 60000); // Timeout of 1 minute to allow genetic algorithm to process
 
