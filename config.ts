@@ -63,6 +63,7 @@ export const login = async (role: "ADMIN" | "USER") => {
       mutation ($username: String!, $password: String!) {
         login(username: $username, password: $password) {
           success
+          token
         }
       }
     `,
@@ -73,7 +74,6 @@ export const login = async (role: "ADMIN" | "USER") => {
   });
   expect(res.data.login.success).toBeTruthy();
   expect(res.data.login.token).toBeDefined();
-  expect(res.data.login.message).toEqual("Success");
   setToken(res.data.login.token);
   return client;
 };
