@@ -28,7 +28,7 @@ export const isCourseSectionArrayValid = (courseSectionArray: any[]) => {
 
         // Validate capacity is defined and greater than 0
         expect(typeof courseSection.capacity).toEqual('number');
-        expect(courseSection.capacity).toBeGreaterThan(0);
+        expect(courseSection.capacity).toBeGreaterThanOrEqual(0);
 
         // Validate start date & end date are defined
         expect(courseSection.startDate).toBeDefined();
