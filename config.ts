@@ -67,7 +67,7 @@ export const login = async (role: "ADMIN" | "USER") => {
       }
     `,
     variables: {
-      username: role === "ADMIN" ? "admin" : "user",
+      username: role === "ADMIN" ? "testadmin" : "testuser",
       password: "testpassword",
     },
   });
