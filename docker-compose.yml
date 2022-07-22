@@ -25,6 +25,9 @@ services:
     network_mode: "host"
     environment:
       - ALGO1_COMPANY_3_URL=http://localhost:4040
+      - ALGO2_COMPANY_3_URL=http://localhost:5000
+      - ALGO1_COMPANY_4_URL=https://seng499company4algorithm1.herokuapp.com
+      - ALGO2_COMPANY_4_URL=https://seng499company4algorithm2.herokuapp.com
       - PORT=4000
       - DATABASE_URL=postgres://postgres:postgres@localhost:5432/postgres
       - CI=false
