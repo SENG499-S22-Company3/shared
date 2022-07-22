@@ -4,6 +4,7 @@ import {
   ApolloLink,
   createHttpLink,
   from,
+  gql,
 } from "@apollo/client/core";
 import fetch from "cross-fetch";
 import supertest from "supertest";
@@ -52,4 +53,27 @@ export const request = {
       },
     };
   },
+};
+
+export const login = async (role: "ADMIN" | "USER") => {
+  const { client, setToken } = request.createApolloClient();
+  // login as admin
+  const res = await client.mutate({
+    mutation: gql`
+      mutation ($username: String!, $password: String!) {
+        login(username: $username, password: $password) {
+          success
+        }
+      }
+    `,
+    variables: {
+      username: role === "ADMIN" ? "admin" : "user",
+      password: "testpassword",
+    },
+  });
+  expect(res.data.login.success).toBeTruthy();
+  expect(res.data.login.token).toBeDefined();
+  expect(res.data.login.message).toEqual("Success");
+  setToken(res.data.login.token);
+  return client;
 };
