@@ -24,7 +24,7 @@ export const isCourseSectionArrayValid = (courseSectionArray: any[]) => {
 
         // Validate hoursPerWeek is a number greter than 0
         expect(typeof courseSection.hoursPerWeek).toEqual('number');
-        expect(courseSection.hoursPerWeek).toBeGreaterThanOrEqual(0);
+        expect(courseSection.hoursPerWeek).toBeGreaterThan(0);
 
         // Validate capacity is defined and greater than 0
         expect(typeof courseSection.capacity).toEqual('number');

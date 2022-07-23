@@ -38,7 +38,6 @@ export const isCourseCapacityPredictionValid = (inputCourseArray: any[], actualC
         // Ensure capacity is defined.
         expect(actualCourse.capacity).toBeDefined();
         expect(typeof actualCourse.capacity).toEqual('number');
-        expect(Number.isInteger(actualCourse.capacity)).toBeTruthy();
         expect(actualCourse.capacity).toBeGreaterThanOrEqual(0);
 
         expect(actualCourse.code).toEqual(inputCourse.code);
