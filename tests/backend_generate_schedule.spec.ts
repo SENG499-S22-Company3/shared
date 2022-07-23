@@ -402,7 +402,6 @@ describe("Generate base schedule with courses to timeslots and professors to cou
         }
       `,
     });
-    console.log(generateScheduleResponse);
 
     // Then (expect schedule is being generated)
     expect(generateScheduleResponse.data.generateSchedule.message).toEqual(
@@ -443,7 +442,6 @@ describe("Generate base schedule with courses to timeslots and professors to cou
         }
       `,
     });
-    console.log(getScheduleQueryResponse.data.schedule.courses);
 
     // Validate that generated schedule is valid.
     expect(typeof getScheduleQueryResponse.data.schedule.id).toBe("string");
@@ -557,7 +555,6 @@ describe("Generate base schedule with courses to timeslots and professors to cou
         }
       `,
     });
-    console.log(getScheduleQueryResponse);
 
     // Validate that generated schedule is valid.
     expect(typeof getScheduleQueryResponse.data.schedule.id).toBe("string");
@@ -592,7 +589,6 @@ describe("Generate base schedule with courses to timeslots and professors to cou
 
   }, 60000); // Set timeout to 60s to allow for genetic algorithm generation
 
-  // TODO: Include in test run when alg 2 fixes class size prediction
   it("should allow schedule generation when logged in with 2 courses, 1 of which is not to be scheduled by department (Summer 2022)", async () => {
     // Given
     const { client, setToken } = request.createApolloClient();
@@ -778,11 +774,12 @@ describe("Generate base schedule with courses to timeslots and professors to cou
             input: {
               algorithm1: COMPANY3
               algorithm2: COMPANY3
-              term: SUMMER
               year: 2022
-              courses: [
-                { subject: "SENG", code: "350", section: 3}
+              fallCourses: [
+                { subject: "SENG", code: "350", section: 5}
               ]
+              springCourses: []
+              summerCourses: []
             }
           ) {
             message
@@ -842,20 +839,12 @@ describe("Generate base schedule with courses to timeslots and professors to cou
     expect(getScheduleQueryResponse.data.schedule.courses.length).toEqual(5);
     isCourseSectionArrayValid(getScheduleQueryResponse.data.schedule.courses);
 
-    console.log(getScheduleQueryResponse.data.schedule.courses);
-
     // Validate expected number of each course returned.
-    // Check that CSC 349A has 5 sections
-    /*const filterCSC349ACourses = (element: any, index: any, array: any) => {
-      return element.CourseID.code == "349A" && element.CourseID.subject == "CSC";
+    // Check that SENG 350 has 5 sections
+    const filterSENG350Courses = (element: any, index: any, array: any) => {
+      return element.CourseID.code == "350" && element.CourseID.subject == "SENG";
     };
-    expect(getScheduleQueryResponse.data.schedule.courses.filter(filterCSC349ACourses).length).toEqual(5);
-
-    // Check that ECE 255 has 1 section.
-    const filterECE255Courses = (element: any, index: any, array: any) => {
-      return element.CourseID.code == "255" && element.CourseID.subject == "ECE";
-    };
-    expect(getScheduleQueryResponse.data.schedule.courses.filter(filterECE255Courses).length).toEqual(1);*/
+    expect(getScheduleQueryResponse.data.schedule.courses.filter(filterSENG350Courses).length).toEqual(5);
 
   }, 60000); // Set timeout to 60s to allow for genetic algorithm generation
 });
