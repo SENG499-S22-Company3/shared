@@ -425,7 +425,7 @@ describe("Check schedule route should give back a valid message when given a val
             headers: {
               "Content-type": "application/json"
             },
-            body: JSON.stringify(input)            
+            body: JSON.stringify(input)
         });
 
         // Then
