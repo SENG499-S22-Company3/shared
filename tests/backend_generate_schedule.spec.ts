@@ -169,7 +169,7 @@ describe("Generate base schedule with courses to timeslots and professors to cou
               year: 2022
               fallCourses: [
                 { subject: "CSC", code: "111", section: 2},
-                { subject: "CSC", code: "116", section: 1},
+                { subject: "CSC", code: "226", section: 1},
                 { subject: "CSC", code: "320", section: 1}
               ]
               springCourses: [
@@ -178,7 +178,7 @@ describe("Generate base schedule with courses to timeslots and professors to cou
               summerCourses: [
                 { subject: "CSC", code: "225", section: 0 },
                 { subject: "SENG", code: "275", section: 2},
-                { subject: "ECE", code: "250", section: 1}
+                { subject: "ENGR", code: "141", section: 1}
               ]
             }
           ) {
@@ -286,16 +286,16 @@ describe("Generate base schedule with courses to timeslots and professors to cou
               year: 2022
               fallCourses: [
                 { subject: "CSC", code: "111", section: 1},
-                { subject: "CSC", code: "116", section: 1},
+                { subject: "CSC", code: "226", section: 1},
                 { subject: "CSC", code: "320", section: 1}
               ]
               springCourses: [
-                { subject: "SENG", code: "401", section: 1}
+                { subject: "SENG", code: "401", section: 1},
+                { subject: "ECE", code: "255", section: 1}
               ]
               summerCourses: [
                 { subject: "CSC", code: "225", section: 1},
-                { subject: "SENG", code: "275", section: 1},
-                { subject: "ECE", code: "250", section: 1}
+                { subject: "SENG", code: "275", section: 1}
               ]
             }
           ) {
@@ -357,7 +357,7 @@ describe("Generate base schedule with courses to timeslots and professors to cou
     isCourseSectionArrayValid(getScheduleQueryResponse.data.schedule.courses);
   }, 60000); // Set timeout to 60s to allow for genetic algorithm generation
 
-  it.skip("should allow schedule generation when logged in with 2 courses, 1 course split into 5 sections explicitly (Summer 2022)", async () => {
+  it("should allow schedule generation when logged in with 2 courses, 1 course split into 5 sections explicitly (Summer 2022)", async () => {
     // Given
     const { client, setToken } = request.createApolloClient();
 
@@ -391,8 +391,8 @@ describe("Generate base schedule with courses to timeslots and professors to cou
               fallCourses: []
               springCourses: []
               summerCourses: [
-                { subject: "CSC", code: "349A", section: 5 },
-                { subject: "ECE", code: "255", section: 1}
+                { subject: "SENG", code: "310", section: 5 },
+                { subject: "ENGR", code: "141", section: 1}
               ]
             }
           ) {
@@ -454,22 +454,22 @@ describe("Generate base schedule with courses to timeslots and professors to cou
     isCourseSectionArrayValid(getScheduleQueryResponse.data.schedule.courses);
 
     // Validate expected number of each course returned.
-    // Check that CSC 349A has 5 sections
-    const filterCSC349ACourses = (element: any, index: any, array: any) => {
-      return element.CourseID.code == "349A" && element.CourseID.subject == "CSC" && element.CourseID.term == "SUMMER";
+    // Check that SENG 310 has 5 sections
+    const filterSENG310Courses = (element: any, index: any, array: any) => {
+      return element.CourseID.code == "310" && element.CourseID.subject == "SENG" && element.CourseID.term == "SUMMER";
     };
-    expect(getScheduleQueryResponse.data.schedule.courses.filter(filterCSC349ACourses).length).toEqual(5);
+    expect(getScheduleQueryResponse.data.schedule.courses.filter(filterSENG310Courses).length).toEqual(5);
 
-    // Check that ECE 255 has 1 section.
-    const filterECE255Courses = (element: any, index: any, array: any) => {
-      return element.CourseID.code == "255" && element.CourseID.subject == "ECE" && element.CourseID.term == "SUMMER";
+    // Check that ENGR 141 has 1 section.
+    const filterENGR141Courses = (element: any, index: any, array: any) => {
+      return element.CourseID.code == "141" && element.CourseID.subject == "ENGR" && element.CourseID.term == "SUMMER";
     };
-    expect(getScheduleQueryResponse.data.schedule.courses.filter(filterECE255Courses).length).toEqual(1);
+    expect(getScheduleQueryResponse.data.schedule.courses.filter(filterENGR141Courses).length).toEqual(1);
 
   }, 60000); // Set timeout to 60s to allow for genetic algorithm generation
 
 
-  it.skip("should allow schedule generation when logged in with normal set of course (Summer 2022)", async () => {
+  it("should allow schedule generation when logged in with normal set of course (Summer 2022)", async () => {
     // Given
     const { client, setToken } = request.createApolloClient();
 
@@ -505,7 +505,7 @@ describe("Generate base schedule with courses to timeslots and professors to cou
               summerCourses: [
                 { subject: "CSC", code: "225", section: 0 },
                 { subject: "SENG", code: "275", section: 2},
-                { subject: "ECE", code: "250", section: 1}                
+                { subject: "SENG", code: "310", section: 1}                
               ]
             }
           ) {
@@ -580,11 +580,11 @@ describe("Generate base schedule with courses to timeslots and professors to cou
     expect(getScheduleQueryResponse.data.schedule.courses.filter(filterSENG275Courses).length).toEqual(2);
 
 
-    // Check that ECE 250 has 1 section
-    const filterECE250Courses = (element: any, index: any, array: any) => {
-      return element.CourseID.code == "250" && element.CourseID.subject == "ECE";
+    // Check that SENG 310 has 1 section
+    const filterSENG310Courses = (element: any, index: any, array: any) => {
+      return element.CourseID.code == "310" && element.CourseID.subject == "SENG";
     };
-    expect(getScheduleQueryResponse.data.schedule.courses.filter(filterECE250Courses).length).toEqual(1);
+    expect(getScheduleQueryResponse.data.schedule.courses.filter(filterSENG310Courses).length).toEqual(1);
     
 
   }, 60000); // Set timeout to 60s to allow for genetic algorithm generation
@@ -623,7 +623,7 @@ describe("Generate base schedule with courses to timeslots and professors to cou
               fallCourses: []
               springCourses: []
               summerCourses: [
-                { subject: "SENG", code: "321", section: 1 },
+                { subject: "SENG", code: "499", section: 1 },
                 { subject: "ECON", code: "180", section: 1}             
               ]
             }
@@ -744,7 +744,7 @@ describe("Generate base schedule with courses to timeslots and professors to cou
     expect(generateScheduleResponse.data.generateSchedule.success).toBeFalsy();
   }, 60000); // Set timeout to 60s to allow for genetic algorithm generation
 
-  it.skip("should split course in 5 sections when generating a schedule (Summer 2022)", async () => {
+  it("should split course in 5 sections when generating a schedule (Fall 2022)", async () => {
     // Given
     const { client, setToken } = request.createApolloClient();
 
