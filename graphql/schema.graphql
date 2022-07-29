@@ -96,11 +96,6 @@ type Mutation {
   """
   generateSchedule(input: GenerateScheduleInput!): Response!
   """
-  Edit schedule and Plug and Play Compnay 3's and 4's Algorithms
-  """
-  editCourse(input: EditCourseInput): Response!
-    @deprecated(reason: "Use updateSchedule instead")
-  """
   Update an entire schdule.
   """
   updateSchedule(input: UpdateScheduleInput!): UpdateScheduleResponse!
@@ -351,40 +346,6 @@ input GenerateScheduleInput {
   Algorithm to use for algorithm 2 (capacity forecasting).
   """
   algorithm2: Company!
-}
-
-"""
-Input to edit course information.
-"""
-input EditCourseInput {
-  """
-  The course that is being edited.
-  """
-  course: CourseInput!
-  """
-  Hours per week a course takes.
-  """
-  hoursPerWeek: Float
-  """
-  Maximum capacity of the section.
-  """
-  capacity: Int
-  """
-  Section number for courses, eg: A01, A02
-  """
-  sectionNumber: String
-  """
-  The start date of the course
-  """
-  startDate: Date!
-  """
-  The end date of the course
-  """
-  endDate: Date!
-  """
-  Days of the week the class is offered in - see Day
-  """
-  meetingTimes: [MeetingTimeInput!]
 }
 
 """
