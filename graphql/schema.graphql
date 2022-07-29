@@ -1,5 +1,6 @@
 """
-ECMAScript Date object
+ECMAScript Date object.
+https://tc39.es/ecma262/multipage/numbers-and-dates.html
 """
 scalar Date
 
@@ -567,7 +568,7 @@ type AuthPayload {
 }
 
 """
-The user type.
+User type.
 """
 type User {
   """
