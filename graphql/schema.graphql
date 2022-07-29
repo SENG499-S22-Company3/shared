@@ -1,5 +1,11 @@
+"""
+ECMAScript Date object
+"""
 scalar Date
 
+"""
+Root type query.
+"""
 type Query {
   """
   Get the current user
@@ -53,6 +59,9 @@ type Schedule {
   courses(term: Term!): [CourseSection!]
 }
 
+"""
+Root type mutation.
+"""
 type Mutation {
   """
   Login into a user account using email and password
@@ -97,6 +106,9 @@ type Mutation {
   updateSchedule(input: UpdateScheduleInput!): UpdateScheduleResponse!
 }
 
+"""
+Input when updating a schedule. The input is used to replace the entire contents of a schedule.
+"""
 input UpdateScheduleInput {
   """
   ID of the schedule to update. If not given, the current schedule will be updated.
@@ -116,13 +128,16 @@ input UpdateScheduleInput {
   validation: Company!
 }
 
+"""
+Input for specifying a course to update while updating a schedule.
+"""
 input CourseSectionInput {
   """
   The course identifier
   """
   id: CourseUpdateInput!
   """
-  How many hours per week a course takes
+  Hours per week a course takes
   """
   hoursPerWeek: Float!
   """
@@ -151,6 +166,9 @@ input CourseSectionInput {
   meetingTimes: [MeetingTimeInput!]!
 }
 
+"""
+Response from updating a schedule.
+"""
 type UpdateScheduleResponse {
   """
   Whether the update was successful
@@ -161,34 +179,88 @@ type UpdateScheduleResponse {
   """
   message: String
   """
-  Errors associated to updating the schedule. Only populated if success is false. This could include validation issues.
+  Errors associated to updating the schedule. Only populated if success is false. This could include validation issues if validation is on.
   """
   errors: [String!]
 }
 
+"""
+Generic response type for queries and mutations.
+"""
 type Response {
+  """
+  Whether the request was successful
+  """
   success: Boolean!
+  """
+  General messaging for the client to consume. May contain error message or success message.
+  """
   message: String
 }
 
+"""
+Generic error response type for queries and mutations.
+"""
 type Error {
+  """
+  Error message
+  """
   message: String!
+  """
+  Multiple errors in the case
+  """
   errors: [Error!]
 }
 
+"""
+Input for changing the password of a user
+"""
 input ChangeUserPasswordInput {
+  """
+  The current password
+  """
   currentPassword: String!
+  """
+  The new password
+  """
   newPassword: String!
 }
 
+"""
+Input for submitting teaching preferences for a professor
+"""
 input CreateTeachingPreferenceInput {
+  """
+  Whether the user has a PEng or not. Determines whether they are qualified to teach certain courses.
+  """
   peng: Boolean!
+  """
+  User's ID
+  """
   userId: ID!
+  """
+  User's preferred courses
+  """
   courses: [CoursePreferenceInput!]!
+  """
+  If a user has a non-teaching term, they can specify it here. If this is specified then the user will not be scheduled to teach in that term.
+  """
   nonTeachingTerm: Term
+  """
+  Whether the user has relief from teaching. If true, the user will not be scheduled to teach in any term.
+  """
   hasRelief: Boolean!
+  """
+  If the user has relief and wishes to specify the reason.
+  """
   reliefReason: String
+  """
+  Whether the user has a topic course to teach.
+  """
   hasTopic: Boolean!
+  """
+  If the user has a topic course, they can specify the details of the course.
+  """
   topicDescription: String
   """
   Number of courses a professor prefers to teach in the FALL semester. Defaults to 1.
@@ -204,15 +276,33 @@ input CreateTeachingPreferenceInput {
   summerTermCourses: Int
 }
 
+"""
+The type used to determine what courses a professor can fill out course preferences for.
+"""
 type TeachingPreferenceSurvey {
+  """
+  The list of courses a professor can fill out course preferences for.
+  """
   courses: [CourseID!]!
 }
 
+"""
+Used to attach a preference value for a given course.
+"""
 type CoursePreference {
+  """
+  The course ID
+  """
   id: CourseID!
+  """
+  The preference value. "With Effort" and "Unwilling" = 1, "Able" and "Unwilling" = 2, "With Effort" and "Willing" = 3, "Able" and "Willing" = 4, "With Effort" and "Very Willing" = 5, "Able" and "Very Willing" = 6
+  """
   preference: Int!
 }
 
+"""
+Input used for submitting a course preference value for a given course.
+"""
 input CoursePreferenceInput {
   """
   Course subject, e.g. SENG, CSC
@@ -226,9 +316,15 @@ input CoursePreferenceInput {
   Term course is offered in
   """
   term: Term!
+  """
+  The preference value. "Unwilling" = 0, "With Effort" and "Unwilling" = 1, "Able" and "Unwilling" = 2, "With Effort" and "Willing" = 3, "Able" and "Willing" = 4, "With Effort" and "Very Willing" = 5, "Able" and "Very Willing" = 6.
+  """
   preference: Int!
 }
 
+"""
+Input used to generate a schedule.
+"""
 input GenerateScheduleInput {
   """
   Base year for the schedule to be generated.
@@ -239,33 +335,79 @@ input GenerateScheduleInput {
   """
   fallCourses: [CourseInput!]
   """
-  Spring term courses to be scheduled. For spring, this would be base year + 1 (e.g. if base year is 2019, spring courses would be 2020)
+  Spring term courses to be scheduled. For spring, this would be base year + 1 (e.g. if base year is 2019, spring courses would be 2020).
   """
   springCourses: [CourseInput!]
   """
-  Summer term courses to be scheduled. For summer, this would be base year + 1 (e.g. if base year is 2019, summer courses would be 2020)
+  Summer term courses to be scheduled. For summer, this would be base year + 1 (e.g. if base year is 2019, summer courses would be 2020).
   """
   summerCourses: [CourseInput!]
+  """
+  Algorithm to use for algorithm 1 (schedule generation).
+  """
   algorithm1: Company!
+
+  """
+  Algorithm to use for algorithm 2 (capacity forecasting).
+  """
   algorithm2: Company!
 }
 
+"""
+Input to edit course information.
+"""
 input EditCourseInput {
+  """
+  The course that is being edited.
+  """
   course: CourseInput!
+  """
+  Hours per week a course takes.
+  """
   hoursPerWeek: Float
+  """
+  Maximum capacity of the section.
+  """
   capacity: Int
+  """
+  Section number for courses, eg: A01, A02
+  """
   sectionNumber: String
-  startDate: Date
-  endDate: Date
+  """
+  The start date of the course
+  """
+  startDate: Date!
+  """
+  The end date of the course
+  """
+  endDate: Date!
+  """
+  Days of the week the class is offered in - see Day
+  """
   meetingTimes: [MeetingTimeInput!]
 }
 
+"""
+Meeting time for a course on a given day.
+"""
 input MeetingTimeInput {
+  """
+  Weekday - see DayEnum
+  """
   day: Day!
+  """
+  Start time
+  """
   startTime: Date!
+  """
+  End time
+  """
   endTime: Date!
 }
 
+"""
+Input to specify a course to be scheduled.
+"""
 input CourseInput {
   """
   Course subject, e.g. SENG, CSC
@@ -281,6 +423,9 @@ input CourseInput {
   section: Int!
 }
 
+"""
+Input to specify a course when updating a schedule.
+"""
 input CourseUpdateInput {
   """
   Course subject, e.g. SENG, CSC
@@ -300,6 +445,9 @@ input CourseUpdateInput {
   term: Term!
 }
 
+"""
+Unique identifier for a course.
+"""
 type CourseID {
   """
   Course subject, e.g. SENG, CSC
@@ -319,6 +467,9 @@ type CourseID {
   term: Term!
 }
 
+"""
+Response after resetting the password for a user.
+"""
 type ResetPasswordMutationResult {
   """
   Whether the password was successfully reset
@@ -329,7 +480,7 @@ type ResetPasswordMutationResult {
   """
   message: String
   """
-  New user password
+  New user password. Only returned if password change is successful.
   """
   password: String
 }
@@ -343,7 +494,7 @@ type CourseSection {
   """
   CourseID: CourseID!
   """
-  How many hours per week a course takes
+  Hours per week a course takes
   """
   hoursPerWeek: Float!
   """
@@ -390,6 +541,9 @@ type MeetingTime {
   endTime: Date!
 }
 
+"""
+Input used to update user information.
+"""
 input UpdateUserInput {
   """
   ID of user to update
@@ -397,15 +551,39 @@ input UpdateUserInput {
   id: ID!
 }
 
+"""
+Response from updating user information.
+"""
 type UpdateUserMutationResult {
+  """
+  The user updated. Only returned if update was successful.
+  """
   user: User
+  """
+  Errors from updating user information. Only returned if update was unsuccessful.
+  """
   errors: [Error!]
 }
 
+"""
+Response from creating a user.
+"""
 type CreateUserMutationResult {
+  """
+  If the user was created successfully.
+  """
   success: Boolean!
+  """
+  General message field. May contain error message if mutation was unsuccessful.
+  """
   message: String
+  """
+  Username of the created user. Only returned if user was created successfully.
+  """
   username: String
+  """
+  Temporary password of the created user. Only returned if user was created successfully.
+  """
   password: String
 }
 
@@ -427,6 +605,9 @@ type AuthPayload {
   message: String
 }
 
+"""
+The user type.
+"""
 type User {
   """
   Unique User  ID
@@ -466,12 +647,38 @@ type User {
 Days of the Week
 """
 enum Day {
+  """
+  Monday is the first day of the business week. Generally lectures on Monday are 80 minutes long.
+  """
   MONDAY
+  """
+  Tuesday is the second day of the business week. Generally lectures on Tuesday are 50 minutes long.
+  """
   TUESDAY
+  """
+  Wednesday is the third day of the business week.
+  Generally lectures on Wednesday are 50 minutes long.
+  """
   WEDNESDAY
+  """
+  Thursday is the fourth day of the business week.
+  Generally lectures on Thursday are 80 minutes long.
+  """
   THURSDAY
+  """
+  Friday is the fifth day of the business week.
+  Generally lectures on Friday are 50 minutes long.
+  """
   FRIDAY
+  """
+  Saturday is outside of the business week.
+  Generally nothing is scheduled on Saturday.
+  """
   SATURDAY
+  """
+  Sunday is outside of the business week.
+  Generally nothing is scheduled on Sunday.
+  """
   SUNDAY
 }
 
@@ -490,11 +697,26 @@ enum Role {
 }
 
 """
-UVic Terms
+The UVic academic year is divided into a winter session and a summer session.
+The winter session includes the fall term (September-December) and the spring term (January-April).
+The summer session runs May-August and has multiple terms.
+https://www.uvic.ca/students/undergraduate/program-planning/index.php
 """
 enum Term {
+  """
+  The fall term (September-December).
+  Fall is under the winter session.
+  """
   FALL
+  """
+  The spring term (January-April).
+  Spring is under the winter session.
+  """
   SPRING
+  """
+  The summer term (May-August).
+  Summer is under the summer session.
+  """
   SUMMER
 }
 
@@ -502,6 +724,14 @@ enum Term {
 Company 3 and 4
 """
 enum Company {
+  """
+  SENG499 Summer 2022 - Company 3
+  https://github.com/SENG499-S22-Company3
+  """
   COMPANY3
+  """
+  SENG499 Summer 2022 - Company 4
+  https://github.com/SENG499-Company-4
+  """
   COMPANY4
 }
