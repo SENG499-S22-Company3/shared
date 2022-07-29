@@ -291,7 +291,14 @@ type CoursePreference {
   """
   id: CourseID!
   """
-  The preference value. "With Effort" and "Unwilling" = 1, "Able" and "Unwilling" = 2, "With Effort" and "Willing" = 3, "Able" and "Willing" = 4, "With Effort" and "Very Willing" = 5, "Able" and "Very Willing" = 6
+  The preference value. The value definitions are the following:
+  "Unable to teach" = 0
+  "With Effort" and "Unwilling" = 1
+  "Able" and "Unwilling" = 2
+  "With Effort" and "Willing" = 3
+  "Able" and "Willing" = 4
+  "With Effort" and "Very Willing" = 5
+  "Able" and "Very Willing" = 6
   """
   preference: Int!
 }
@@ -313,7 +320,14 @@ input CoursePreferenceInput {
   """
   term: Term!
   """
-  The preference value. "Unwilling" = 0, "With Effort" and "Unwilling" = 1, "Able" and "Unwilling" = 2, "With Effort" and "Willing" = 3, "Able" and "Willing" = 4, "With Effort" and "Very Willing" = 5, "Able" and "Very Willing" = 6.
+  The preference value. The value definitions are the following:
+  "Unable to teach" = 0
+  "With Effort" and "Unwilling" = 1
+  "Able" and "Unwilling" = 2
+  "With Effort" and "Willing" = 3
+  "Able" and "Willing" = 4
+  "With Effort" and "Very Willing" = 5
+  "Able" and "Very Willing" = 6
   """
   preference: Int!
 }
